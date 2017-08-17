@@ -16,9 +16,9 @@
   <link rel='stylesheet' href='wp-content/themes/themetek/assets/css/bootstrap.min.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/style.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/dynamic.css' type='text/css' media='all' />
-  
+
   <link rel='stylesheet' href='wp-content/themes/themetek/colors.css' type='text/css' media='all' />
-  
+
   <link rel='stylesheet' href='wp-content/themes/jquery.tree-multiselect.css' type='text/css' media='all' />
   <link rel='stylesheet' href='./wp-content/themes/build.css' type='text/css' media='all' />
   <link rel='stylesheet' href='./wp-content/themes/jquery-listslider.css' type='text/css' media='all' />
@@ -31,7 +31,7 @@
   <script type='text/javascript' src='wp-content/plugins/tt-vc-addon/assets/js/jquery.easytabs.min.js'></script>
   <script type='text/javascript' src='wp-content/plugins/tt-vc-addon/assets/js/map.js'></script>
   <script type='text/javascript' src='wp-content/plugins/tt-vc-addon/assets/js/tt_vc_script.js'></script>
-
+  <link rel="stylesheet" type="text/css" media="print" href="wp-content/themes/print-style.css">
 
 
   <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://keysoft-wp.keydesign-themes.com/demo3/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
@@ -181,6 +181,9 @@
         <!-- Tab panes -->
         <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="1">
+          <div class="print-tablepanel-header">
+            <h3>Case</h3>
+          </div>
         <div class="panel-body">
 
           <div class="case-box">
@@ -200,6 +203,9 @@
 
         </div>
         <div role="tabpanel" class="tab-pane" id="2">
+          <div class="print-tablepanel-header">
+            <h3>Bench</h3>
+          </div>
           <div class="panel-body">
             <div class="bench-list">
                 <ul class="arrow-list">
@@ -212,6 +218,9 @@
 
         </div>
         <div role="tabpanel" class="tab-pane" id="3">
+          <div class="print-tablepanel-header">
+            <h3>Citation</h3>
+          </div>
           <div class="panel-body">
             <div class="cititaton-text">
                 <p>
@@ -237,6 +246,9 @@
 
         </div>
         <div role="tabpanel" class="tab-pane" id="4">
+          <div class="print-tablepanel-header">
+            <h3>Advocates</h3>
+          </div>
           <div class="panel-body">
             <div class="advocate-detail">
               <div class="">
@@ -270,7 +282,7 @@
                     <strong>Leave granted.</strong><br>
                   </p>
 
-                <p>
+
 <hr>
  <span id="selectedfacts-1" tabindex="1"><span class="point-text">2.</span> Parties to a marriage tying nuptial knot are supposed to bring about the union of souls. It creates a new relationship of love, affection care and concern between the husband and wife. According to Hindu Vedic philosophy it is sanskar - a sacrament; one of the sixteen important sacrament essential to be taken during one's lifetime. There may be physical union as a result of marriage for procreation to perpetuate the lineal progeny for ensuring spiritual salvation and performance of religious rites, but what is essential contemplated is union of two souls. Marriage is considered to be a junction of three important duties i.e. social religious and spiritual.</span><br>
 <hr>
@@ -394,23 +406,69 @@
 
      </aside>
 
+     <div id="customizer" class="hidden-xs">
+            <div class="options"><i class="pc nc-icon-outline-pc"></i></div>
 
-  
+            <div class="reading-option">
+              <span>Night Mode Toggle</span>
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="night-toggle">
+                <label class="onoffswitch-label" for="night-toggle">
+                    <div class="onoffswitch-inner"></div>
+                    <div class="onoffswitch-switch"></div>
+                </label>
+            </div>
+            </div>
+<hr>
+          <div class="reading-option">
+            <span>Font Size</span>
+
+            <select class="" name="">
+              <option>Small</option>
+              <option>Large</option>
+              <option>Extra Large</option>
+              <option>Huge</option>
+            </select>
+          </div>
+<hr>
+          <div class="reading-option">
+            <span>Color Theme</span>
+            <ul id="colors">
+              <li>
+                 <a class="normal"></a>
+             </li>
+                <li>
+                    <a class="lightgray"></a>
+                </li>
+                <li>
+                    <a class="lightblue"></a>
+                </li>
+                 <li>
+                    <a class="sepia"></a>
+                </li>
+          </ul>
+          </div>
+
+        </div>
+
+
+
   <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type='text/css' media='all' />
 
-  
+
   <script type='text/javascript' src='wp-content/themes/themetek/assets/js/bootstrap.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/particles.js'></script>
   <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC6EUUQ9DSc3iyu0uNEcTYTYJbX-K5XA3Q'></script>
   <script type='text/javascript' src='wp-content/themes/js/map.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/SmoothScroll.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/scripts.js'></script>
-  
+
   <script type='text/javascript' src='wp-content/themes/js/jquery-ui.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.tree-multiselect.js'></script>
   <script type='text/javascript' src='./wp-content/themes/js/jquery-listslider.js'></script>
   <script type='text/javascript'>
     $(function() {
+
       $('.cort-btn .btn ').on('click', function(e) {
         $(this).parent().prev().addClass('open-dropdown');
         $(this).parent().addClass('btn-expand');
@@ -445,6 +503,39 @@
       $('.search-field').removeClass('open-dropdown');
       $('.cort-btn').removeClass('btn-expand');
     });
+
+
+  $('#night-toggle').on('click', function(){
+
+    if($('.search-result-listing').hasClass("night-mode"))
+    {
+      $('.search-result-listing').attr('class', 'search-result-listing');
+    }
+    else {
+      $('.search-result-listing').attr('class', 'search-result-listing night-mode');
+    }
+
+
+  });
+
+  $('#colors a').on('click', function(){
+
+     $("#night-toggle").prop('checked', false);
+
+    if($(this).hasClass('normal'))
+    {
+      $('.search-result-listing').attr('class', 'search-result-listing');
+    }
+    else if ($(this).hasClass('lightgray')) {
+        $('.search-result-listing').attr('class', 'search-result-listing lightgray');
+    }
+    else if ($(this).hasClass('lightblue')) {
+        $('.search-result-listing').attr('class', 'search-result-listing lightblue');
+    }
+    else {
+      $('.search-result-listing').attr('class', 'search-result-listing sepia');
+    }
+  });
   </script>
   <script type="text/javascript">
     var tree3 = $("#test-select-3").treeMultiselect({
@@ -475,11 +566,6 @@
 
 					})
 
-
-
-
-
-
 							$('.slimscroll').slimScroll({
 								height: '100%',
 								touchScrollStep: 50,
@@ -501,6 +587,13 @@
   }
   });
 </script>
+
+<script type="text/javascript">
+  $(function(){
+
+  });
+</script>
+
 </body>
 
 </html>

@@ -1,0 +1,89 @@
+@media print {
+	*
+	{
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:12px;
+	}
+	body {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+#footer{
+  display: none;
+}
+.text-slider
+{
+  display: none;
+}
+.tab-action-box
+{
+  display: none;
+}
+.search-result-section {
+
+    padding-top: 0px;
+}
+.navbar-default
+{
+  display: none;
+}
+.nav-tabs {
+    display: none;
+}
+.tab-content > .tab-pane {
+    display: block;
+    margin-bottom: 26px;
+}
+.print-tablepanel-header h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 15px;
+    background-color: #eaeaea !important;
+    border: 1px solid #e4e4e4 !important;
+    border-radius: 4px 4px 0px 0px;
+    font-size: 26px;
+    display: block;
+    padding-left: 20px
+
+}
+ .panel-heading {
+    color: #333;
+    background-color: #eaeaea !important;
+    border-color: #e4e4e4 !important;
+    font-size: 26px;
+    padding: 15px;
+    padding-left: 20px;
+
+}
+.arrow-list li {
+    font-size: 25px;
+    margin-bottom: 28px;
+    p
+}
+.arrow-list li::before {
+
+    top: auto;
+}
+
+.advocate-detail  {
+
+    line-height: 44px;
+}
+.advocate-detail div, .advocate-detail strong, .advocate-detail p{
+  font-size: 20px ;
+}
+p.judgement-head strong {
+    font-size: 30px;
+}
+.judgement-content span, .judgement-content p, .judgement-content  {
+  font-size: 20px;
+  line-height: 30px
+}
+.search-result-listing {
+    padding: 10px;
+}
+.point-text {
+    font-weight: 800;
+    font-size: 34px !important;
+}
+}
