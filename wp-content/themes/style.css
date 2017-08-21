@@ -4998,7 +4998,7 @@ body.overlay-open {
 }
 .home-header .intro-text {
     margin-bottom: 15px;
-    padding-top: 70px;
+    padding-top: 10px;
 }
 .home-header .container {
     background-image: url(./images/glow-bg.png);
