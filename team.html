@@ -15,9 +15,9 @@
         <link rel='stylesheet'  href='wp-content/themes/themetek/assets/css/bootstrap.min.css' type='text/css' media='all'/>
         <link rel='stylesheet'  href='wp-content/themes/style.css' type='text/css' media='all'/>
         <link rel='stylesheet' href='wp-content/themes/themetek/dynamic.css' type='text/css' media='all' />
-  
+
   <link rel='stylesheet' href='wp-content/themes/themetek/colors.css' type='text/css' media='all' />
-        
+
         <link
             rel='stylesheet'
             id='redux-google-fonts-css'
@@ -86,7 +86,7 @@
           </li>
 
           <li class="menu-item ">
-            <a href="#" class="signin-btn">Sign In</a>
+            <a href="#" class="signin-btn" data-toggle="modal" data-target="#login-modal">Sign In</a>
           </li>
 
         </ul>
@@ -818,8 +818,8 @@
                                                   <p class="contact-info">   A-149,Block A, LGF, Defence Colony, New Delhi, India - 110024.</p>
                                                 </div>
                                                 <div>
-                                                    <span><i class="fa fa-phone"></i></span>
-                                                    <p class="contact-info"> 011 - 41717029 &nbsp;, 011 - 41717030 </p>
+                                                  <span><i class="fa fa-map-marker"></i></span>
+                                                  <p class="contact-info"> 519 Balestier Road, #02-03 Le Shantier, Singapore 329852</p>
                                                 </div>
                                                 <div>
                                                   <span><i class="fa fa-envelope"></i></span>
@@ -873,6 +873,136 @@
 </div>
 </footer>
 
+
+<!-- Modal -->
+<div class="modal fade login-modal" id="login-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="login-main">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="content-login">
+        <h4>Please Log In, or <a href="#" class="register-btn">Sign Up</a></h4>
+        <div class="row social-login">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <a href="#" class="btn btn-lg btn-primary btn-block">Linked In</a>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <a href="#" class="btn btn-lg btn-danger btn-block">Google</a>
+          </div>
+        </div>
+        <div class="login-or">
+          <hr class="hr-or">
+          <span class="span-or">or</span>
+        </div>
+        <div class="login-form-box">
+          <form role="form">
+            <div class="form-group">
+              <label for="inputUsernameEmail">Username or email</label>
+              <input type="text" class="form-control" id="inputUsernameEmail">
+            </div>
+            <div class="form-group">
+              <a class="pull-right" href="#">Forgot password?</a>
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+            <div class="checkbox pull-right">
+              <label>
+                <input type="checkbox">
+                Remember me </label>
+            </div>
+            <button type="submit" class="btn btn btn-primary">
+              <i class="fa fa-lock" aria-hidden="true"></i> Log In
+            </button>
+            <button type="submit" class="btn btn btn-default register-btn">
+              <i class="fa fa-user" aria-hidden="true"></i> Register
+            </button>
+          </form>
+        </div>
+          </div>
+
+          <div class="content-register">
+      <h4 class="text-center">Already have an account?  <a href="#" class="signin-link">Sign in</a></h4>
+      <div class="login-form-box">
+        <form role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputUsernameEmail">First Name</label>
+                <input type="text" class="form-control" id="inputUsernameEmail">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputUsernameEmail">Last Name</label>
+                <input type="text" class="form-control" id="inputUsernameEmail">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputUsernameEmail">Phone No.</label>
+                <input type="text" class="form-control" id="inputUsernameEmail">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputPassword">Email Id</label>
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputUsernameEmail">Password</label>
+                <input type="text" class="form-control" id="inputUsernameEmail">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+            </div>
+          </div>
+
+
+          <p><small>Help us customize your experience by telling us a bit about yourself:</small></p>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              I am a licensed attorney. </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              I am a litigator. </label>
+          </div>
+          <button type="submit" class="btn btn btn-primary">
+            Next
+          </button>
+        </form>
+      </div>
+
+
+
+          </div>
+
+
+
+    </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type='text/css' media='all'/>
 
 
@@ -882,6 +1012,16 @@
 <script type='text/javascript' src='wp-content/themes/js/map.js'></script>
 <script type='text/javascript' src='wp-content/themes/js/SmoothScroll.js'></script>
 <script type='text/javascript' src='wp-content/themes/js/scripts.js'></script>
+<script type="text/javascript">
+  $(function(){
+    $('.register-btn').on('click', function(){
+      $('.login-main').addClass('register-active')
+    });
+    $('.signin-link').on('click', function() {
+      $('.login-main').removeClass('register-active')
+    })
+  });
+</script>
 
 </body>
 

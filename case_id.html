@@ -421,14 +421,15 @@
             </div>
 <hr>
           <div class="reading-option">
-            <span>Font Size</span>
+            <span>Reader Mode</span>
 
-            <select class="" name="">
-              <option>Small</option>
-              <option>Large</option>
-              <option>Extra Large</option>
-              <option>Huge</option>
-            </select>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="reader-mode">
+              <label class="onoffswitch-label" for="reader-mode">
+                  <div class="onoffswitch-inner"></div>
+                  <div class="onoffswitch-switch"></div>
+              </label>
+          </div>
           </div>
 <hr>
           <div class="reading-option">
@@ -516,6 +517,10 @@
     }
 
 
+  });
+
+  $('#reader-mode').on('click', function(){
+    $('body').toggleClass('reader-mode-on')
   });
 
   $('#colors a').on('click', function(){
