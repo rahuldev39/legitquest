@@ -653,6 +653,22 @@ padding-bottom: 50px; ">
     </div>
   </div>
 
+  <div id="welcome-popup" class="confirm" style="">
+    <div class="popup-inner">
+      <p>
+          Thank you for reaching out to <strong><em>Legit Quest</em></strong>.
+          Apply to the Campus Ambassador Program (CAP) through the tab below.
+          Fill the form and wait for our revert. We will get back to you soon.
+      </p>
+      <div class="popup-footer">
+        <button id="capapply">Apply</button>
+        <button id="popupclose">Cancel</button>
+      </div>
+
+    </div>
+
+  </div>
+
   <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type='text/css' media='all' />
 
 
@@ -732,8 +748,15 @@ padding-bottom: 50px; ">
         $('.search-overlay div').removeClass('active');
         $('body').removeClass('overlay-open');
       });
+      $('#popupclose').on('click', function() {
+
+        $('#welcome-popup').addClass('close')
+
+      });
     });
   </script>
+
+
   <script type="text/javascript">
     $(document).ready(function() {
 
