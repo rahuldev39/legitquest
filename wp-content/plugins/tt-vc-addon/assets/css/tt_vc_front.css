@@ -473,7 +473,9 @@
 .features-tabs h2.section-heading {
     text-align: left;
     max-width: 526px;
-    line-height: 42px;
+    line-height: 21px;
+    color: #333333;
+    font-size: 22px;
 }
 .features-tabs .section-subheading {
     margin-bottom: 30px;

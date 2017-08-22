@@ -2597,9 +2597,9 @@ color: white !important
 background: #51799c !important;
 }
 
-.features-tabs > div
-{
-  position: relative;
+.features-tabs > div {
+    position: relative;
+    min-height: 440px;
 }
 .tab-container
 {
