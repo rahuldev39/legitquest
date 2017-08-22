@@ -905,7 +905,7 @@
               <input type="text" class="form-control" id="inputUsernameEmail">
             </div>
             <div class="form-group">
-              <a class="pull-right" href="#">Forgot password?</a>
+              <a class="pull-right forgot-link" href="#">Forgot password?</a>
               <label for="inputPassword">Password</label>
               <input type="password" class="form-control" id="inputPassword">
             </div>
@@ -916,6 +916,62 @@
             </div>
             <button type="submit" class="btn btn btn-primary">
               <i class="fa fa-lock" aria-hidden="true"></i> Log In
+            </button>
+            <button type="submit" class="btn btn btn-default otp-login">
+              <i class="fa fa-user" aria-hidden="true"></i> OTP Login
+            </button>
+          </form>
+        </div>
+          </div>
+
+
+          <div class="content-otp">
+        <h4>OTP Login</h4>
+
+
+        <div class="login-form-box">
+          <form role="form">
+            <div class="form-group">
+              <label for="inputUsernameEmail">Last Name</label>
+              <input type="text" class="form-control" id="inputUsernameEmail">
+            </div>
+            <div class="form-group">
+              <label for="inputUsernameEmail">Phone No.</label>
+              <input type="text" class="form-control" id="inputUsernameEmail">
+            </div>
+
+            <button type="submit" class="btn btn-block btn-primary otp-btn">
+              <i class="fa fa-lock" aria-hidden="true"></i> Send OTP
+            </button>
+              <hr>
+              <div class="otp-block ">
+
+                  <label for="inputUsernameEmail">Enter OTP</label>
+                  <input type="text" class="form-control">
+                  <button type="submit" class="btn btn-warning">
+                     Login
+                  </button>
+
+
+              </div>
+          </form>
+        </div>
+          </div>
+
+
+          <div class="forgot-pass">
+        <h4>Please email, we send <a href="#">New Password</a></h4>
+
+
+        <div class="login-form-box">
+          <form role="form">
+            <div class="form-group">
+              <label for="inputUsernameEmail">Email Address</label>
+              <input type="text" class="form-control" id="inputUsernameEmail">
+            </div>
+            <hr>
+            <button type="submit" class="btn btn btn-primary">
+              <i class="fa fa-lock" aria-hidden="true"></i> Send Password
             </button>
             <button type="submit" class="btn btn btn-default register-btn">
               <i class="fa fa-user" aria-hidden="true"></i> Register
@@ -1015,11 +1071,26 @@
 <script type="text/javascript">
   $(function(){
     $('.register-btn').on('click', function(){
-      $('.login-main').addClass('register-active')
+      $('.login-main').attr('class', 'login-main register-active')
+
     });
     $('.signin-link').on('click', function() {
-      $('.login-main').removeClass('register-active')
+      $('.login-main').attr('class', 'login-main')
+    });
+
+    $('.forgot-link').on('click', function(){
+
+        $('.login-main').addClass('forgot-active')
+    });
+
+    $('.otp-login').on('click', function(){
+      $('.login-main').attr('class', 'login-main otp-active')
+    });
+
+    $('.otp-btn').on('click', function(){
+      $('.content-otp').addClass('otp-block-active')
     })
+
   });
 </script>
 
