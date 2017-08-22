@@ -4627,7 +4627,7 @@ body.overlay-open {
     border: 1px solid #b8c2d0;
 }
 .register-block .login-main {
-    max-width: 700px;
+    max-width: 700px !important;
 }
 .otp-box
 {
