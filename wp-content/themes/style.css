@@ -1741,8 +1741,15 @@ footer {
     }
 }
 @media (max-width: 960px) {
+  .features-tabs ul {
 
-
+      max-width: 80%;
+      margin: 0 auto;
+  }
+  .tab-image-container
+  {
+    display: none;
+  }
     #main-menu .navbar-nav .menu-item-has-children .mobile-dropdown {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -1916,25 +1923,25 @@ footer {
         margin: 0 auto 20px auto;
     }
     .features-tabs .tab {
-        display: block;
-        width: 100%!important;
-    }
+    display: inline-block;
+}
     .features-tabs h2.section-heading {
-    	text-align: center;
-    }
+    text-align: center;
+    max-width: initial;
+}
     .features-tabs .tab-image-container {
     	position: relative;
     	margin: 0!important;
     }
     #features .section-subheading {
-        margin: auto;
-        margin-bottom: 50px;
-        margin-top: 10px;
-        float: none;
-        line-height: 21px;
-        max-width: 80%;
-        text-align: center;
-    }
+      margin: auto;
+      margin-bottom: 24px;
+      margin-top: 10px;
+      float: none;
+      line-height: 21px;
+      max-width: 80%;
+      text-align: left;
+  }
     section h2.section-heading {
         text-align: center;
     }
@@ -1954,16 +1961,14 @@ footer {
         display: none;
     }
     .features-tabs li {
-        background: none;
-        padding-left: 0;
-        list-style: none;
-        margin: 0;
-        text-align: center;
-        color: #666;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 25px;
-    }
+    list-style: none;
+    margin: 0;
+    text-align: left;
+    color: #666;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 31px;
+}
     .video-modal .modal-content {
         width: 100%;
         margin: 0;
@@ -2574,7 +2579,7 @@ header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     letter-spacing: -1px;
     font-weight: 500;
-    font-size: 41px;
+    font-size: 37px;
     color: #4a7ba5;
 }
 .primary-button.button-inverse:hover, .primary-button.button-inverse {
@@ -5094,4 +5099,90 @@ body.overlay-open {
     margin-bottom: 9px;
     font-weight: 600;
     font-size: 16px;
+}
+.animated-img {
+    position: absolute;
+    top: 29%;
+    left: 19%;
+    width: 173px;
+
+}
+@media (max-width: 1200px)
+{
+  .tab-img1{
+    margin-right: -330px !important;
+  }
+}
+
+@media (max-width: 992px)
+{
+  .tab-img1 {
+    margin-right: -521px !important;
+}
+  .navbar-nav {
+      margin: 0px;
+  }
+  .navbar-default .nav li a {
+
+    padding: 15px 10px;
+
+}
+  .signin-btn
+  {
+    max-width: 150px
+  }
+  .team-section .nav-tabs li a {
+    font-size: 15px;
+    padding: 10px 8px;
+}
+.team-section {
+
+    margin-top: -44px;
+}
+}
+@media (max-width: 848px)
+{
+.team-header {
+        padding-bottom: 55px;
+}
+.team-section .nav-tabs li a span{
+  display: none;
+}
+}
+@media (max-width: 626px)
+{
+  .team-section .nav-tabs > li {
+    margin-right: 2px;
+}
+  .team-header {
+    padding-bottom: 19px;
+}
+  .team-section {
+    margin-top: 0px;
+}
+.nav-tabs {
+    border-bottom: 0px;
+}
+.team-section .nav-tabs li a {
+    font-size: 13px;
+    padding: 9px 11px;
+    border-radius: 4px;
+    min-width: auto;
+    font-weight: 400;
+}
+.team-section .nav-tabs > li.active > a {
+
+    border-bottom-color: #dddddd !important;
+}
+.team-section .nav-tabs {
+    margin-top: 16px;
+}
+}
+@media (max-width: 512px)
+{
+  .team-section .nav-tabs > li {
+    margin-right: 0px;
+    width: 50%;
+    margin-bottom: 4px;
+}
 }
