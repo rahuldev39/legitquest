@@ -174,13 +174,12 @@ section h2.section-heading {
     margin-bottom: 25px;
     letter-spacing: -1px;
 }
-.blog-header .section-subheading,
-section .section-subheading {
+.blog-header .section-subheading, section .section-subheading {
     margin-bottom: 95px;
     text-transform: none;
     text-align: center;
     margin-top: 25px;
-    font-size: 1.125em;
+    font-size: 16px;
     line-height: 1;
 }
 .separator {
