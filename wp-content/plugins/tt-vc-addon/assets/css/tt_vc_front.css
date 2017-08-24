@@ -569,7 +569,7 @@
     top: -10px;
     left: -8px;
 }
-.features-tabs ul {
+ul.featured-list {
     padding-left: 0px;
     margin-bottom: 30px;
 
@@ -578,7 +578,7 @@
 {
   max-width: 450px;
 }
-.features-tabs li {
+.featured-list li {
     background: url(../img/checked.png) no-repeat left 3px;
     padding-left: 32px;
     list-style: none;

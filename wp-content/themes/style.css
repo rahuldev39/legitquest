@@ -5015,9 +5015,9 @@ body.overlay-open {
 }
 .home-header p {
     color: #ed7e1f;
-    margin-bottom: 13px;
+    margin-bottom: 7px;
     font-size: 34px;
-    margin-top: 6px;
+    margin-top: 14px;
 }
 .separatot-img img {
     max-width: 481px;
@@ -5295,4 +5295,104 @@ body.overlay-open {
 }
 .popup-body p {
     font-size: 14px;
+}
+.feature-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-content {
+    flex: 1;
+}
+.feature-content h4 {
+    margin-top: 0px;
+    font-size: 41px;
+    color: #4a7ba5;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+}
+.feature-content p {
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+.feature-img {
+  max-width: 700px;
+}
+.feature-img img {
+    width: 100%;
+}
+.right {
+    margin-left: 100px;
+    margin-right: -200px !important;
+}
+.left {
+    margin-right: 100px;
+    margin-left: -200px !important;
+}
+.i-img {
+    margin-right: 8px;
+    width: 25px;
+}
+@media (max-width: 992px)
+{
+  .feature-box {
+    flex-direction: column;
+}
+.right {
+    margin-left: 0px;
+    margin-right: 0px !important;
+    order: -1;
+    margin-bottom: 31px;
+}
+.left {
+    margin-right: 0px;
+    margin-left: 0px !important;
+    margin-bottom: 31px;
+}
+.feature-img img {
+    width: 100%;
+    max-width: 493px;
+}
+}
+.top-links {
+    display: flex;
+}
+.top-links .links {
+    text-align: center;
+    background-color: #f0f3f5;
+    padding: 0px;
+    margin-bottom: 25px;
+    border: 1px solid #d4dfe8;
+    margin-left: 20px;
+    display: flex;
+    padding-right: 20px;
+    min-width: 200px;
+}
+.top-links .links div {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    flex-direction: column;
+    text-align: left;
+}
+.top-links .links:first-child{
+  margin-left: 0px
+}
+.top-links .links img {
+    width: 70px;
+    height: 70px;
+    border-right: 1px solid #d4dfe8;
+    margin-right: 15px;
+}
+.top-links .links div h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 31px;
+    color: #ff8201;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.top-links .links div span {
+    color: #565656;
 }
