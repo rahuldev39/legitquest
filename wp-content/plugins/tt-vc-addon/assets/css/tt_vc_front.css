@@ -492,6 +492,7 @@
     background-color: transparent;
     border: 0px;
     margin-bottom: 72px;
+    text-align: center;
 }
 .features-tabs .tab {
     -webkit-transition: 0.3s;
@@ -508,6 +509,9 @@
     font-weight: 700;
     height: 58px;
     line-height: 60px;
+    max-width: 335px !important;
+    margin: 0 auto;
+    float: none;
 }
 .features-tabs .tab a, .features-tabs .tab a:hover {
     color: #3b6b94 !important;
