@@ -59,7 +59,7 @@
  * easy-pie-chart
  * Lightweight plugin to render simple, animated and retina optimized pie charts
  *
- * @license 
+ * @license
  * @author Robert Fleischmann <rendro87@gmail.com> (http://robert-fleischmann.de)
  * @version 2.1.7
  **/
@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
 /* ------------------------------------------------------------------------
     //AUTO PLAY YOUTUBE VIDEO ELEMENT
  ------------------------------------------------------------------------*/
- 
+
     function autoPlayYouTubeModal() {
       var trigger = $("body").find('[data-toggle="modal"]');
       trigger.click(function() {
@@ -131,20 +131,7 @@ if ( $( ".slider.testimonials" ).length ) {
     $( ".tt-image" ).appendTo( ".tt-images" );
 }
 
-/* ------------------------------------------------------------------------
-  TABS ELEMENT
- ------------------------------------------------------------------------*/
 
-$('.features-tabs li.tab').appendTo('.features-tabs .tabs');
-var tabsnumber = $('.tabs > li.tab').length;
-$('.tabs li.tab').css('width',100/tabsnumber + '%');
-
-if ( $( ".features-tabs" ).length ) {
-  $('.features-tabs').easytabs({
-    animationSpeed: 'normal',
-    updateHash: false
-  });
-}
 
 /* ------------------------------------------------------------------------
   CLIENTS ELEMENT
@@ -159,6 +146,5 @@ if ( $( ".slider.clients" ).length ) {
       items: 5,
     });
 }
-    
-});
 
+});

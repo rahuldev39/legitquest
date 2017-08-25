@@ -459,9 +459,10 @@
 
  ------------------------------------------------------------------------*/
 
-.features-tabs {
-    margin: 0 -15px;
-}
+ .features-tabs {
+     margin: 0 -15px;
+     position: relative;
+ }
 .features-tabs .container {
     position: relative;
 }
@@ -509,7 +510,7 @@
     font-weight: 700;
     height: 58px;
     line-height: 60px;
-    max-width: 335px !important;
+    max-width: 560px !important;
     margin: 0 auto;
     float: none;
 }

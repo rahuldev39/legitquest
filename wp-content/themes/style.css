@@ -647,10 +647,9 @@ body.modal-open {
 .navbar-default.navbar-shrink .nav .active a {
     opacity: 1
 }
-.navbar-default.navbar-shrink .nav li a:hover,
-.navbar-default.navbar-shrink .nav li a:focus {
+.navbar-default.navbar-shrink .nav li a:hover, .navbar-default.navbar-shrink .nav li a:focus {
     outline: 0;
-    color: #fff;
+    color: #3b6b94;
     opacity: 1;
     background: none;
 }
@@ -697,8 +696,10 @@ header .intro-text {
 header .intro-text .intro-heading {
     font-size: 20px;
     font-weight: 400;
-    line-height: 10px;
+    line-height: 27px;
     display: block;
+    max-width: 500px;
+    margin: 0 auto;
 }
 header .intro-text {
     padding-top: 165px;
@@ -957,9 +958,9 @@ header .container {
     color: white;
     letter-spacing: -1px;
     font-size: 30px;
-    float: left;
     margin: 0;
     line-height: 50px;
+    text-align: center;
 }
 .subscribe form {
     float: right;
@@ -5266,9 +5267,38 @@ body.overlay-open {
     margin-right: 100px;
     margin-left: -200px !important;
 }
-.i-img {
-    margin-right: 8px;
-    width: 37px;
+.i-text {
+    display: inline-flex;
+    color: #ed7e1f;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    border: 2px solid #ed7e1f;
+    margin-right: 4px;
+    margin-top: 3px;
+}
+.btn-white{
+  width: 150px;
+    border: 2px solid white;
+    height: 50px;
+    color: inherit;
+    font-size: 0.875em;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    background-color: white;
+    border-radius: 2px;
+    margin-left: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: inline-block;
+}
+.footer-register-btn{
+  margin-top: 30px
 }
 @media (max-width: 992px)
 {
