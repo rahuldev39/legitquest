@@ -1744,22 +1744,30 @@ footer {
   {
     display: none;
   }
-    #main-menu .navbar-nav .menu-item-has-children .mobile-dropdown {
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    padding: 11px;
-    color: #fff;
-    top: 0;
-    z-index: 99;
-    font-size: 14px;
-    right: -7px;
-    position: absolute;
-    -webkit-font-smoothing: antialiased;}
+  #main-menu .navbar-nav .menu-item-has-children .mobile-dropdown {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  padding: 11px;
+  color: #4a7ba5;
+  top: 0;
+  z-index: 99;
+  font-size: 14px;
+  right: -7px;
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+}
     #main-menu .navbar-nav .menu-item-has-children .mobile-dropdown:before {  content: "\f078"; }
     #main-menu .navbar-nav .menu-item-has-children.mobile-visible .mobile-dropdown:before {  content: "\f077"; }
     #main-menu .navbar-nav .menu-item-has-children .dropdown-menu { display: none;    opacity: 0;    visibility: hidden;}
-    #main-menu .navbar-nav .menu-item-has-children.mobile-visible .dropdown-menu { display: block;    opacity: 1;    visibility: visible;}
+    #main-menu .navbar-nav .menu-item-has-children.mobile-visible .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    float: none;
+    margin-bottom: 7px;
+}
 
     .container {padding-right: 15px; padding-left: 15px;}
 
@@ -3411,11 +3419,15 @@ select.form-control
 }
 @media (max-width: 960px)
 {
+  .navbar-default .nav > li {
+    border-bottom: 1px solid #efefef;
+}
   .navbar-fixed-top .navbar-collapse {
-      background-color: whitesmoke;
-      border: 1px solid #e8e8e8;
-      box-shadow: 0px 0px 3px #dedede;
-  }
+    background-color: whitesmoke;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0px 0px 3px #dedede;
+    padding-bottom: 15px;
+}
   .navbar-shrink .navbar-collapse {
       background-color: none;
       border: 0px solid #e8e8e8;
@@ -5460,6 +5472,9 @@ line-height: 34px;
 .features-container .section {
     padding: 40px 0px;
 }
+.i-img {
+    margin-right: 3px;
+}
 /*############-------Responsive Changes---------###############*/
 
 
@@ -5472,6 +5487,7 @@ line-height: 34px;
 
 @media (max-width: 992px)
 {
+
   .tab-img1 {
     margin-right: -521px !important;
 }
@@ -5581,7 +5597,7 @@ line-height: 34px;
 }
 header .intro-text .intro-heading {
 
-  
+
 }
 header .intro-text .intro-lead-in {
 
