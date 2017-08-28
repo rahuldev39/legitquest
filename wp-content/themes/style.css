@@ -695,10 +695,10 @@ header .intro-text {
 }
 header .intro-text .intro-heading {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 27px;
     display: block;
-    max-width: 500px;
+    max-width: 470px;
     margin: 0 auto;
 }
 header .intro-text {
@@ -1048,10 +1048,7 @@ header .container {
 
 /*6.10 CONTACT*/
 
-.contact {
-    float: right;
-    width: 585px;
-}
+
 .contact .vc_column_container .vc_column-inner {
     padding: 0;
 }
@@ -1071,8 +1068,8 @@ header .container {
 .contact .wpcf7-form-control-wrap {
     margin-bottom: 30px;
     float: left;
-    width: 278px;
     position: relative;
+    width: 48%;
 }
 .contact .form-textarea {
     width: 100%;
@@ -1158,16 +1155,15 @@ header .container {
     margin: 0;
 }
 .contact-map-container {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    z-index: 10;
-    width: 50%;
-    margin-left: -85px;
+    flex: 1;
 }
 .contact-map-container #map {
     width: 100%;
     height: 100%;
+}
+.contact-form-wrapper{
+  width: 50%;
+padding: 33px;
 }
 .contactForm .alert-success {
     background-color: #fff;
@@ -1677,12 +1673,8 @@ footer {
         width: 570px;
         margin: auto;
     }
-    .contact {
-    	width: 100%;
-    }
-    .contact-map-container {
-        display: none;
-    }
+
+
     #features-tab2 img {
         margin-right: 0;
         max-width: 350px;
@@ -2943,12 +2935,12 @@ label small {
     margin-bottom: 10px;
     font-size: 15px;
 }
-#contact
-{
-  padding: 58px 0;
+#contact {
+    padding: 0px 0;
     position: relative;
+    display: flex;
 }
-#contact .container h2{
+#contact .contact-form-wrapper h2{
 line-height: 40px;
 font-weight: 60ppx;
 
@@ -5270,15 +5262,12 @@ body.overlay-open {
 .i-text {
     display: inline-flex;
     color: #ed7e1f;
-    height: 35px;
-    width: 35px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    font-size: 27px;
-    border: 2px solid #ed7e1f;
     margin-right: 4px;
-    margin-top: 3px;
+    font-style: italic;
+    font-weight: 600;
 }
 .btn-white{
   width: 150px;
@@ -5300,8 +5289,32 @@ body.overlay-open {
 .footer-register-btn{
   margin-top: 30px
 }
+.key-icon-box p {
+    text-align: justify;
+    font-size: 15px;
+}
+.key-icon-box {
+    border-right: 1px solid #e6e6e6;
+    padding-right: 30px;
+}
+.key-icon-box.last {
+    border-right: 0px solid #e6e6e6;
+    padding-right: 0px;
+}
 @media (max-width: 992px)
 {
+  #contact {
+
+    flex-direction: column;
+}
+.contact-map-container {
+    flex: 1;
+    height: 280px;
+}
+.contact-form-wrapper {
+    width: 100%;
+    padding: 33px;
+}
   .feature-box {
     flex-direction: column;
 }
@@ -5444,7 +5457,9 @@ line-height: 34px;
     display: initial;
     font-size: 14px;
 }
-
+.features-container .section {
+    padding: 40px 0px;
+}
 /*############-------Responsive Changes---------###############*/
 
 
@@ -5488,6 +5503,13 @@ line-height: 34px;
       border-bottom: 1px solid #e2e2e2;
       padding-bottom: 10px;
   }
+  .key-icon-box {
+    border-right: 0px;
+    padding-right: 0px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 62px;
+}
   #modern-tools .vc_column_container {
     width: 47%;
     display: inline-block;
