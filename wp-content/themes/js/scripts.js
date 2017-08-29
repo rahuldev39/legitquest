@@ -105,16 +105,16 @@
 
         $( "<span class='mobile-dropdown'></span>" ).appendTo( $( "#menu-main-menu .menu-item-has-children" ) );
 
-        $("#menu-main-menu .dropdown a").click(function(event) {
+        $("#menu-main-menu .dropdown a").click(function() {
         $(this).closest(".menu-item-has-children").toggleClass('mobile-visible');
-        event.preventDefault();
+        
         });
 
 
         // ------------------------------------------------------------------------
         // Main Smooth Scroll and Scroll Spy
         // ------------------------------------------------------------------------
-        
+
         $(function() {
             $('.navbar-nav li a, .wpb_wrapper .menu li a').bind('click', function(event) {
                 var $anchor = $(this);
