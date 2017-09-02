@@ -14,6 +14,7 @@
   <link rel='stylesheet' href='wp-content/plugins/tt-vc-addon/assets/css/tt_vc_front.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/plugins/tt-vc-addon/assets/css/font-awesome.min.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/assets/css/bootstrap.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' href='wp-content/themes/bootstrap-select.min.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/style.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/dynamic.css' type='text/css' media='all' />
 
@@ -36,7 +37,7 @@
 
 </head>
 
-<body class="page-template-default page page-parent subscribe-form   vc_responsive">
+<body class="page-template-default page page-parent subscribe-form   vc_responsive ">
   <div id="preloader">
     <div class="spinner"></div>
   </div>
@@ -58,6 +59,15 @@
       <div class="search-nav-main">
         <div class="search-bar">
           <div class="search-filed-box">
+            <div class="select-search">
+              <select class="selectpicker">
+                <option>All</option>
+                <option>Citation</option>
+                <option>Party names</option>
+                <option>Judge Name</option>
+                <option>Advocate name</option>
+              </select>
+            </div>
             <div class="search-field">
 
               <input type="text" class="form-control" placeholder="Search Cases, Statutes and Regulations">
@@ -145,43 +155,114 @@
   </nav>
   <div id="wrapper">
 
-    <div class="search-result-section">
+    <div class="search-result-section ">
       <div class="search-sidebar">
-        <aside id="menu">
-          <div id="navigation">
+        <aside id="menu" class="slimScroll">
+          <div id="navigation" >
 
             <div class="menu-title">
               <h4><i class="fa fa-filter" aria-hidden="true"></i> FILTERS</h4>
             </div>
-            <ul class="filter-list">
-              <li><h4>By Court</h4></li>
+
+            <div class="filter-collapse">
+<div class="filter-panel">
+	<div class="filter-heading">
+    	<a data-toggle="collapse" href="#collaps1" aria-expanded="false" aria-controls="collaps1">
+    		<h4>By Court</h4>
+        </a>
+    </div>
+    <div class="filter-content collapse in" id="collaps1">
+    	<ul class="filter-list">
               <li><div class="checkbox checkbox-primary">
-                          <label><input class="styled" type="checkbox" checked><span> Supreme Court</span></label>
+                          <label><input class="styled" type="checkbox" checked=""><span> Supreme Court</span></label>
                         </div></li>
 
                         <li><div class="checkbox checkbox-primary">
-                                    <label><input class="styled" type="checkbox" checked><span> heigh Court</span></label>
+                                    <label><input class="styled" type="checkbox" checked=""><span> high Court</span></label>
                                   </div></li>
 
                                   <li><div class="checkbox checkbox-primary">
                                               <label><input class="styled" type="checkbox"><span> Other Court</span></label>
                                             </div></li>
             </ul>
+    </div>
+</div>
 
-            <hr>
+<div class="filter-panel">
+	<div class="filter-heading">
+    	<a data-toggle="collapse" href="#collaps2" class="collapsed">
+    		<h4>Distinguished Acts</h4>
+        </a>
+    </div>
+    <div class="filter-content collapse" id="collaps2">
+    	<ul class="filter-list">
+              <li><div class="checkbox checkbox-primary">
+                          <label><input class="styled" type="checkbox" checked=""><span> Section 7.1
+</span></label>
+                        </div></li>
 
-            <ul class="filter-list">
-              <li><h4>By  Type</h4></li>
+                        <li><div class="checkbox checkbox-primary">
+                                    <label><input class="styled" type="checkbox" checked=""><span> Section 8.2
+</span></label>
+                                  </div></li>
+
+                                  <li><div class="checkbox checkbox-primary">
+                                              <label><input class="styled" type="checkbox"><span> Select all
+</span></label>
+                                            </div></li>
+            </ul>
+    </div>
+</div>
+
+<div class="filter-panel">
+	<div class="filter-heading">
+    	<a data-toggle="collapse" href="#collaps3" class="collapsed">
+    		<h4>By Type</h4>
+        </a>
+    </div>
+    <div class="filter-content collapse" id="collaps3">
+    	<ul class="filter-list">
               <li><div class="checkbox checkbox-primary">
                           <label><input class="styled" type="checkbox"><span> Judgment
  </span></label>
                         </div></li>
 
                         <li><div class="checkbox checkbox-primary">
-                                    <label><input class="styled" type="checkbox" checked><span>Statutes</span></label>
+                                    <label><input class="styled" type="checkbox" checked=""><span>Statutes</span></label>
                                   </div></li>
 
             </ul>
+    </div>
+</div>
+
+<div class="filter-panel">
+	<div class="filter-heading">
+    	<a data-toggle="collapse" href="#collaps4" class="collapsed">
+    		<h4>Other</h4>
+        </a>
+    </div>
+    <div class="filter-content collapse" id="collaps4">
+      <ul class="filter-list">
+
+                          <li><div class="checkbox checkbox-primary">
+                                      <label><input class="styled" type="checkbox"><span> Procedural
+            </span></label>
+                                    </div></li>
+
+                                    <li><div class="checkbox checkbox-primary">
+                                                <label><input class="styled" type="checkbox"><span> Substantial
+                      </span></label>
+                                              </div></li>
+
+                        </ul>
+    </div>
+</div>
+
+
+
+</div>
+
+
           </div>
         </aside>
       </div>
@@ -463,6 +544,8 @@
   <script type='text/javascript' src='wp-content/themes/js/jquery-ui.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.tree-multiselect.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/mdb.min.js'></script>
+  <script type='text/javascript' src='wp-content/themes/js/jquery.slimscroll.min.js'></script>
+  <script type='text/javascript' src='wp-content/themes/js/bootstrap-select.min.js'></script>
   <script type='text/javascript'>
     $(function() {
       $('.cort-btn .btn ').on('click', function(e) {
@@ -618,6 +701,33 @@ var myBarChart = new Chart(ctxB2, {
         e.preventDefault();
       });
     });
+  </script>
+
+  <script type="text/javascript">
+  $(function(){
+  $('.slimScroll').slimScroll({
+      height: 'calc(100vh - 63px)',
+
+  });
+});
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $(window).resize(function resize(){
+        if ($(window).width() < 960) {
+      $('body').removeClass('fixed-sidebar');
+      } else {
+        $('body').addClass('fixed-sidebar');
+
+      }
+      }).trigger('resize');;
+
+    });
+  </script>
+  <script type="text/javascript">
+      $('.selectpicker').selectpicker({
+    });
+
   </script>
 </body>
 

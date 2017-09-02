@@ -14,6 +14,7 @@
   <link rel='stylesheet' href='wp-content/plugins/tt-vc-addon/assets/css/tt_vc_front.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/plugins/tt-vc-addon/assets/css/font-awesome.min.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/assets/css/bootstrap.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' href='wp-content/themes/bootstrap-select.min.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/style.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/dynamic.css' type='text/css' media='all' />
 
@@ -107,7 +108,7 @@
 
       <div class="search-main">
         <div class="tab-action-box">
-          <div class="tab-action-links">
+          <div class="tab-action-links" >
             <div class="row">
               <div class="pull-left">
 
@@ -161,29 +162,45 @@
 
           </div>
 
-          <div class="top-links">
-            <a href="#" class="links top-link-toggle">
+          <div class="top-links" style="padding-left:28px">
+            <a href="#" class="links top-link-toggle link-yellow">
               <span class="sr-only title-text">Cited</span>
-                <img src="./wp-content/themes/images/law.png" alt="">
+               
                 <div class="">
                   <h4>33%</h4>
                   <span>Cited</span>
                 </div>
             </a>
-            <a href="#" class="links top-link-toggle">
-              <span class="sr-only title-text">Referred to</span>
-                <img src="./wp-content/themes/images/media.png" alt="">
+            <a href="#" class="links top-link-toggle link-green">
+              <span class="sr-only title-text">Distinguished</span>
+               
                 <div class="">
                   <h4>33%</h4>
-                  <span>Referred to</span>
+                  <span>Distinguished</span>
                 </div>
             </a>
-            <a href="#" class="links top-link-toggle">
-              <span class="sr-only title-text">Relied On</span>
-                <img src="./wp-content/themes/images/school.png" alt="">
+            <a href="#" class="links top-link-toggle link-light-green">
+              <span class="sr-only title-text">Overruled</span>
+                
                 <div class="">
                   <h4>33%</h4>
-                  <span>Relied On</span>
+                  <span>Overruled</span>
+                </div>
+            </a>
+            <a href="#" class="links top-link-toggle link-red">
+              <span class="sr-only title-text">Relied upon</span>
+                
+                <div class="">
+                  <h4>33%</h4>
+                  <span>Relied upon</span>
+                </div>
+            </a>
+            <a href="#" class="links top-link-toggle link-gyelow">
+              <span class="sr-only title-text">Referred</span>
+                
+                <div class="">
+                  <h4>33%</h4>
+                  <span>Referred</span>
                 </div>
             </a>
           </div>
@@ -356,6 +373,98 @@
         </div>
 
       </div>
+
+
+
+
+
+
+         <aside class="right-sidebar-wrap sidebar-fixed note-sidebar ">
+
+
+               <div class="sidebar-inner slimScroll">
+
+                 <div class="block">
+                   <div class="sidebar-header bg-main font-12 font-header">
+                       <span class="text-white">Create A Note</span>
+                     </div>
+                   <div class="notes-Form block-body">
+
+                       <div class="form-group">
+
+                         <input type="text" class="form-control " placeholder="Enter Note Title">
+                       </div>
+
+                       <div class="form-group sidebar-tabs-link">
+                         <select class="selectpicker">
+                           <option>Facts</option>
+                           <option>Reasoning</option>
+                           <option>Case Cited</option>
+                           <option>Decision</option>
+                           <option>Issue</option>
+                           <option>Arguments Of Petitioner</option>
+                         </select>
+
+                       </div>
+
+                       <div class="form-group">
+
+                         <textarea name="name" rows="5" cols="80" class="form-control" placeholder="Enter Discription Here"></textarea>
+                       </div>
+
+
+                       <div class="sidebar-action-btn">
+                         <button class="btn btn-default btn-sm" name="button">Clear</button>
+                         <button class="btn btn-primary btn-sm" name="button">Save</button>
+                         <button class="btn btn-default btn-sm" name="button">Cancel</button>
+                       </div>
+
+
+                   </div>
+                 </div>
+
+                 <div class="block">
+                   <div class="sidebar-header bg-main font-12 font-header">
+                       <span class="text-white">Acts/ Sections Cited</span>
+                     </div>
+                   <div class="block-body">
+                   
+                  <div class="">
+
+                         <textarea name="name" rows="5" cols="80" class="form-control" placeholder="Enter Discription Here"></textarea>
+                       </div>
+
+                       
+
+
+                   </div>
+                 </div>
+
+                 <div class="block">
+                   <div class="sidebar-header bg-main font-12 font-header">
+                       <span class="text-white">Referred Cases</span>
+                     </div>
+                   <div class="r-case-list block-body">
+
+                      <div class="">
+
+                         <textarea name="name" rows="5" cols="80" class="form-control" placeholder="Enter Discription Here"></textarea>
+                       </div>
+
+                   </div>
+                 </div>
+
+
+
+               </div>
+
+
+
+
+
+            </aside>
+
+
     </div>
 
   </div>
@@ -389,101 +498,9 @@
     </div>
   </footer>
 
-  <aside class="right-sidebar-wrap sidebar-fixed note-sidebar">
-      <div class="sidebar-header bg-main font-12 font-header">
-          <span class="text-white">Create A Note</span>
-          <button type="button" class="close h4 no-m toggle-right-sidebar">×</button>
-        </div>
-
-        <div class="sidebar-inner">
-
-					<div class="notes-Form">
-							<div class="form-group">
-							  <label>Title</label>
-							  <input type="text" class="form-control" placeholder="Enter Note Title">
-							</div>
-							<hr>
-							<div class="form-group sidebar-tabs-link">
-								<a href="#">Facts</a>
-								<a href="#" class="active">Reasoning</a>
-								<a href="#">Case Cited</a>
-								<a href="#">Decision</a>
-								<a href="#">Issue</a>
-								<a href="#">Arguments Of Petitioner</a>
-							</div>
-							<hr>
-							<div class="form-group">
-							  <label>Discription</label>
-							  <textarea name="name" rows="10" cols="80" class="form-control" placeholder="Enter Discription Here"></textarea>
-							</div>
-							<hr>
-
-							<div class="sidebar-action-btn text-center">
-								<button class="btn btn-default" name="button">Clear</button>
-								<button class="btn btn-warning" name="button">Save</button>
-								<button class="btn btn-default" name="button">Cancel</button>
-							</div>
-
-
-					</div>
-
-        </div>
 
 
 
-     </aside>
-
-     <aside class="right-sidebar-wrap sidebar-fixed charts-sidebar">
-         <div class="sidebar-header bg-main font-12 font-header">
-             <span class="text-white chart-legend">legend Text</span>
-             <button type="button" class="close h4 no-m toggle-right-sidebar">×</button>
-           </div>
-
-           <div class="sidebar-inner">
-
-   					<div class="chart-data">
-   					  <div id="citedresult" class="cited_body">
-                <h4>
-                  <a href="#" class="content_heading_txt" >
-                  Satyavir Singh &amp; Others .Vs Union of India &amp; Others
-                </a>
-              </h4>
-
-                <h4><strong class="citatedText">LQ 1985 SC 0274</strong></h4>
-          <hr>
-                <ul class="lq-list">
-                  <li>
-                    <strong>CASE NO.</strong>
-                    <p>Civil Appeal Nos. 242 &amp; 576 of 1982</p>
-                  </li>
-                  <li>
-                    <strong>DATE OF JUDGEMENT </strong>
-                    <p>12-09-1985</p>
-                  </li>
-                  <li>
-                    <strong>COURT NAME</strong>
-                    <p>Supreme Court of India</p>
-                  </li>
-                  <li>
-                    <p>(32) The majority view in
-                    <span style="color:red;font-weight:bold;">A. K. Gopalan</span>v. The
-                    <span style="color:red;font-weight:bold;">State of Madras</span>
-                    (1950) S.C.R. 88, namely that particular Article governing certain Fundamental
-                    Rights operate exclusively without having any inter-relation with any other Article
-                    in the Chapter on Fundamental Rights was disapproved and held to be not correct in
-                    Rustom Cawasji Cooper v. Union of India (1970) 3 S.C.R. 530. The position that the
-                     majority view in Gopalan case (supra) was overruled in R. C. Co
-                   </p>
-                   </li>
-                 </ul>
-        </div>
-   					</div>
-
-           </div>
-
-
-
-        </aside>
 
      <div id="customizer" class="hidden-xs">
             <div class="options"><i class="pc nc-icon-outline-pc"></i></div>
@@ -546,6 +563,21 @@
   <script type='text/javascript' src='wp-content/themes/js/jquery-ui.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.tree-multiselect.js'></script>
   <script type='text/javascript' src='./wp-content/themes/js/jquery-listslider.js'></script>
+  <script type='text/javascript' src='wp-content/themes/js/bootstrap-select.min.js'></script>
+  <script type='text/javascript' src='wp-content/themes/js/jquery.slimscroll.min.js'></script>
+  <script type="text/javascript">
+    $(function(){
+      $(window).resize(function resize(){
+        if ($(window).width() < 960) {
+      $('body').removeClass('fixed-sidebar-right');
+      } else {
+        $('body').addClass('fixed-sidebar-right');
+
+      }
+      }).trigger('resize');
+
+    });
+  </script>
   <script type='text/javascript'>
     $(function() {
 
@@ -695,9 +727,18 @@
 </script>
 
 <script type="text/javascript">
-  $(function(){
-
+    $('.selectpicker').selectpicker({
   });
+
+</script>
+
+<script type="text/javascript">
+$(function(){
+$('.slimScroll').slimScroll({
+    height: 'calc(100vh - 63px)',
+
+});
+});
 </script>
 
 </body>
