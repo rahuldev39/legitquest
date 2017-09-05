@@ -16,13 +16,14 @@
   <link rel='stylesheet' href='wp-content/themes/themetek/assets/css/bootstrap.min.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/style.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/dynamic.css' type='text/css' media='all' />
-  
+
   <link rel='stylesheet' href='wp-content/themes/themetek/colors.css' type='text/css' media='all' />
-  
+
   <link rel='stylesheet' href='wp-content/themes/jquery.tree-multiselect.css' type='text/css' media='all' />
   <link rel='stylesheet' href='./wp-content/themes/build.css' type='text/css' media='all' />
   <link rel='stylesheet' id='redux-google-fonts-css' href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic%7CWork+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1474625187' type='text/css' media='all'
   />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900" rel="stylesheet">
   <script type='text/javascript' src="wp-content/themes/js/jquery.js"></script>
   <script type='text/javascript' src='wp-content/plugins/tt-vc-addon/assets/js/jquery.easing.min.js'></script>
   <script type='text/javascript' src='wp-content/plugins/tt-vc-addon/assets/js/owl.carousel.min.js'></script>
@@ -154,38 +155,44 @@
               <h4><i class="fa fa-filter" aria-hidden="true"></i> FILTERS</h4>
             </div>
             <ul class="filter-list">
-              <li><h4>By Court</h4></li>
               <li><div class="checkbox checkbox-primary">
-                          <label><input class="styled" type="checkbox" checked><span> Supreme Court</span></label>
+                          <label class="sidebar-label"><input class="styled" type="checkbox" checked><span> Display dockets</span></label>
                         </div></li>
 
                         <li><div class="checkbox checkbox-primary">
-                                    <label><input class="styled" type="checkbox" checked><span> heigh Court</span></label>
-                                  </div></li>
+                                    <label class="sidebar-label"><input class="styled" type="checkbox" checked><span> Display documents</span></label>
+                                  </div>
 
-                                  <li><div class="checkbox checkbox-primary">
-                                              <label><input class="styled" type="checkbox"><span> Other Court</span></label>
-                                            </div></li>
+                                  <ul class="sublist">
+        <li><input type="radio" name="dectype" id="rdo_decisions" ><label for="rdo_decisions">Decisions and Orders</label></li>
+        <li><input type="radio" name="dectype" id="rdo_exhibits" ><label for="rdo_exhibits">Exhibits</label></li>
+        <li><input type="radio" name="dectype" id="rdo_briefs" ><label for="rdo_briefs">Briefs and Motions</label></li>
+        <li><input type="radio" name="dectype" id="rdo_pleadings" ><label for="rdo_pleadings">Pleadings</label></li>
+        </ul>
+
+                        </li>
+
+
             </ul>
 
-            <hr>
+
 
             <ul class="filter-list">
               <li><h4>By  Type</h4></li>
               <li><div class="checkbox checkbox-primary">
-                          <label><input class="styled" type="checkbox"><span> Judgment
+                          <label class="sidebar-label"><input class="styled" type="checkbox"><span> Judgment
  </span></label>
                         </div></li>
 
                         <li><div class="checkbox checkbox-primary">
-                                    <label><input class="styled" type="checkbox" checked><span>Statutes</span></label>
+                                    <label class="sidebar-label"><input class="styled" type="checkbox" checked><span>Statutes</span></label>
                                   </div></li>
 
             </ul>
           </div>
         </aside>
       </div>
-      <div class="search-main">
+      <div class="search-main search-padder">
 
         <div class="tab-action-box">
           <div class="tab-action-links">
@@ -195,7 +202,7 @@
                 <i class="fa fa-indent" aria-hidden="true"></i> Filters
                 </a>
                 <a href="#" class="action-link">
-                  <i class="fa fa-bookmark-o" aria-hidden="true"></i> Track Search
+                  <i class="fa fa-bell" aria-hidden="true"></i> Track Search
                 </a>
               </div>
 
@@ -244,9 +251,9 @@
                   </div>
 
                   <div class="search-action">
-                    <a href="#"><i class="fa fa-gavel" aria-hidden="true"></i> Order</a>
-                    <div class="dropdown">
-                   <a href="#"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="tag-link"><i class="fa fa-gavel" aria-hidden="true"></i> Order</a>
+                    <div class="dropdown inline-view">
+                   <a href="#"  class="tag-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      <i class="fa fa-search" aria-hidden="true"></i> Analyze
                      <span class="caret"></span>
                    </a>
@@ -258,7 +265,7 @@
                    </ul>
                  </div>
 
-                <a href="#"> <i class="fa fa-search" aria-hidden="true"></i>  Alternative Citation</a>
+                <a href="#" class="tag-link"> <i class="fa fa-search" aria-hidden="true"></i>  Alternative Citation</a>
                 </div>
               </div>
               <div class="search-chart">
@@ -300,9 +307,9 @@
                   </div>
 
                   <div class="search-action">
-                    <a href="#"><i class="fa fa-gavel" aria-hidden="true"></i> Order</a>
-                    <div class="dropdown">
-                   <a href="#"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="tag-link"><i class="fa fa-gavel" aria-hidden="true"></i> Order</a>
+                    <div class="dropdown inline-view">
+                   <a href="#"  class="tag-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      <i class="fa fa-search" aria-hidden="true"></i> Analyze
                      <span class="caret"></span>
                    </a>
@@ -314,7 +321,7 @@
                    </ul>
                  </div>
 
-                <a href="#"> <i class="fa fa-search" aria-hidden="true"></i>  Alternative Citation</a>
+                <a href="#" class="tag-link"> <i class="fa fa-search" aria-hidden="true"></i>  Alternative Citation</a>
                 </div>
               </div>
               <div class="search-chart">
@@ -388,17 +395,17 @@
       </div>
     </div>
   </footer>
-  
+
   <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type='text/css' media='all' />
 
-  
+
   <script type='text/javascript' src='wp-content/themes/themetek/assets/js/bootstrap.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/particles.js'></script>
   <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC6EUUQ9DSc3iyu0uNEcTYTYJbX-K5XA3Q'></script>
   <script type='text/javascript' src='wp-content/themes/js/map.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/SmoothScroll.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/scripts.js'></script>
-  
+
   <script type='text/javascript' src='wp-content/themes/js/jquery-ui.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.tree-multiselect.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/mdb.min.js'></script>

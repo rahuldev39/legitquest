@@ -23,6 +23,7 @@
 
 html {font-size: 100%;}
 body {
+  font-family: 'Lato', sans-serif !important;
     overflow-x: hidden;
     font-weight: normal;
     padding: 0;
@@ -3274,7 +3275,7 @@ select.form-control
     display: inline-block;
     border-right: 0px;
     font-weight: 600;
-    color: #4a7ba5;
+    color: #ed7e1f;
     position: relative;
 }
 .tab-action-links a.action-link i {
@@ -3314,9 +3315,10 @@ select.form-control
     font-style: normal;
 }
 .result-box h2 {
-    font-size: 21px;
+    font-size: 19px;
     margin-top: 0px;
     margin-bottom: 4px;
+    text-decoration: underline;
 }
 .result-box .info_line {
     padding: 2px 0px;
@@ -3327,7 +3329,7 @@ select.form-control
 }
 
 .result-box {
-    padding: 40px 0px;
+    padding: 25px 0px;
     position: relative;
 }
 .snippet table tr {
@@ -5691,6 +5693,55 @@ line-height: 34px;
     margin-right: 8px;
     border-right: 1px solid #cccccc;
     padding-right: 14px;
+}
+.num_results{
+    color: #8d8d8f;
+}
+.sublist {
+    padding: 0px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.sublist li {
+    padding-left: 20px;
+    padding-bottom: 0px;
+}
+.sublist li label {
+    margin-bottom: 0px;
+    font-weight: 500;
+    margin-left: 7px;
+    font-size: 15px;
+    color: black;
+    vertical-align: top;
+}
+.sidebar-label{
+  font-size: 15px !important;
+    color: #4a7ba5;
+}
+.checkbox .sidebar-label span::after {
+    width: 17px;
+    height: 17px;
+    margin-left: -20px;
+    font-size: 11px;
+}
+.checkbox .sidebar-label span::before {
+    width: 17px;
+    height: 17px;
+
+}
+.inline-view{
+  display: inline-block;
+}
+.tag-link {
+    border: none !important;
+    background-color: transparent !important;
+    margin-right: 11px !important;
+}
+.search-padder .tab-action-links{
+  padding-left: 103px
+}
+.search-padder .search-result-listing{
+  padding-left: 120px
 }
 /*############-------Responsive Changes---------###############*/
 
