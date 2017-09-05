@@ -227,9 +227,7 @@ section {
     padding: 80px 0;
     position: relative;
 }
-.row {
-    margin: 0;
-}
+
 .container {
     padding: 0;
     position: relative;
@@ -5309,13 +5307,13 @@ body.overlay-open {
 .search-filed-box .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: auto;
 }
-.search-filed-box .bootstrap-select .btn{
+.search-filed-box .bootstrap-select .btn {
     border-radius: 20px 0px 0px 20px;
     padding: 10px 15px;
     font-size: 13px;
-    background-color: #f9f9f9;
+    background-color: #dcdcdc;
     border-right: 0px;
-    outline: none
+    outline: none;
 }
 .search-filed-box .bootstrap-select .btn:focus, .search-filed-box .bootstrap-select .btn:active{
   outline: none !important
@@ -5419,6 +5417,51 @@ body.overlay-open {
     line-height: 0;
     vertical-align: baseline;
     top: -1.2em;
+}
+.user-cration{
+  margin-top: 30px;
+}
+.user-cration-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  margin-top: 30px;
+    background-color: rgb(247, 247, 247);
+    border: 12px solid rgba(74, 123, 165, 0.42);
+    box-shadow: 0px 17px 24px -9px rgba(54, 71, 93, 0.18);
+    position: relative;
+}
+.side-icon {
+    position: absolute;
+    left: 50%;
+    top: -39px;
+    font-size: 34px;
+    color: #ffffff;
+    height: 60px;
+    width: 60px;
+    background-color: #b3c7d9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+}
+.form-heading h4 {
+    font-weight: 600;
+    font-size: 31px;
+    margin-bottom: 25px;
+}
+.action-btn .btn {
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: none;
+}
+.user-cration .table>thead>tr>th {
+    background-color: rgb(233, 241, 251) !important;
+    font-weight: 600;
+    color: rgb(20, 29, 45);
+    border-bottom: 2px solid rgb(206, 220, 237) !important;
+    padding: 9px 9px !important;
 }
 @media (max-width: 992px)
 {
@@ -5582,6 +5625,72 @@ line-height: 34px;
 }
 .i-img {
     margin-right: 3px;
+}
+.db-heading h4 {
+    margin-top: 0px;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 21px;
+    position: relative;
+}
+.db-heading h4:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    background-color: #ed7e1f;
+    left: 0px;
+    bottom: -10px;
+}
+.flex-element{
+  display: flex;
+
+}
+.flex-element.v-align{
+  align-items: center;
+
+}
+.db-box label {
+    font-size: 16px;
+    font-weight: 200;
+}
+.db-box div {
+    font-size: 23px;
+    margin-top: 1px;
+    color: #4a7ba5;
+    font-weight: 600;
+}
+.db-box-container {
+    display: flex;
+    justify-content: space-between;
+}
+.db-box {
+    flex: 1;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 4px solid #eaeaea;
+    max-width: 30%;
+}
+.box-link {
+    display: flex;
+}
+.box-link a {
+    text-align: center;
+    padding: 15px;
+    background-color: whitesmoke;
+    margin-right: 20px;
+    border: 4px solid #eaeaea;
+    font-size: 18px;
+}
+.box-link a img {
+    display: inline-block;
+    width: 47px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-right: 8px;
+    border-right: 1px solid #cccccc;
+    padding-right: 14px;
 }
 /*############-------Responsive Changes---------###############*/
 
