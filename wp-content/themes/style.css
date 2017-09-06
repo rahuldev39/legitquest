@@ -5737,11 +5737,11 @@ line-height: 34px;
     background-color: transparent !important;
     margin-right: 11px !important;
 }
-.search-padder .tab-action-links{
-  padding-left: 103px
+.search-padder .tab-action-links {
+    padding-left: 78px;
 }
-.search-padder .search-result-listing{
-  padding-left: 120px
+.search-padder .search-result-listing {
+    padding-left: 80px;
 }
 /*############-------Responsive Changes---------###############*/
 

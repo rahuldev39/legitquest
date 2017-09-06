@@ -14,6 +14,7 @@
   <link rel='stylesheet' href='wp-content/plugins/tt-vc-addon/assets/css/tt_vc_front.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/plugins/tt-vc-addon/assets/css/font-awesome.min.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/assets/css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/themes/bootstrap-select.min.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/style.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/dynamic.css' type='text/css' media='all' />
 
@@ -59,6 +60,15 @@
       <div class="search-nav-main">
         <div class="search-bar">
           <div class="search-filed-box">
+            <div class="select-search">
+              <select class="selectpicker">
+                <option>All</option>
+                <option>Citation</option>
+                <option>Party names</option>
+                <option>Judge Name</option>
+                <option>Advocate name</option>
+              </select>
+            </div>
             <div class="search-field">
 
               <input type="text" class="form-control" placeholder="Search Cases, Statutes and Regulations">
@@ -148,47 +158,119 @@
 
     <div class="search-result-section">
       <div class="search-sidebar">
-        <aside id="menu">
-          <div id="navigation">
+        <aside id="menu" class="slimScroll">
+          <div id="navigation" >
 
             <div class="menu-title">
               <h4><i class="fa fa-filter" aria-hidden="true"></i> FILTERS</h4>
             </div>
-            <ul class="filter-list">
+
+            <div class="filter-collapse">
+<div class="filter-panel">
+	<div class="filter-heading">
+    	<a data-toggle="collapse" href="#collaps1" aria-expanded="false" aria-controls="collaps1">
+    		<h4>By Court</h4>
+        </a>
+    </div>
+    <div class="filter-content collapse in" id="collaps1">
+    	<ul class="filter-list">
               <li><div class="checkbox checkbox-primary">
-                          <label class="sidebar-label"><input class="styled" type="checkbox" checked><span> Display dockets</span></label>
+                          <label><input class="styled" type="checkbox" checked=""><span> Supreme Court</span></label>
                         </div></li>
 
                         <li><div class="checkbox checkbox-primary">
-                                    <label class="sidebar-label"><input class="styled" type="checkbox" checked><span> Display documents</span></label>
-                                  </div>
-
-                                  <ul class="sublist">
-        <li><input type="radio" name="dectype" id="rdo_decisions" ><label for="rdo_decisions">Decisions and Orders</label></li>
-        <li><input type="radio" name="dectype" id="rdo_exhibits" ><label for="rdo_exhibits">Exhibits</label></li>
-        <li><input type="radio" name="dectype" id="rdo_briefs" ><label for="rdo_briefs">Briefs and Motions</label></li>
-        <li><input type="radio" name="dectype" id="rdo_pleadings" ><label for="rdo_pleadings">Pleadings</label></li>
-        </ul>
-
-                        </li>
-
-
-            </ul>
-
-
-
-            <ul class="filter-list">
-              <li><h4>By  Type</h4></li>
-              <li><div class="checkbox checkbox-primary">
-                          <label class="sidebar-label"><input class="styled" type="checkbox"><span> Judgment
- </span></label>
-                        </div></li>
-
-                        <li><div class="checkbox checkbox-primary">
-                                    <label class="sidebar-label"><input class="styled" type="checkbox" checked><span>Statutes</span></label>
+                                    <label><input class="styled" type="checkbox" checked=""><span> high Court</span></label>
                                   </div></li>
 
+                                  <li><div class="checkbox checkbox-primary">
+                                              <label><input class="styled" type="checkbox"><span> Other Court</span></label>
+                                            </div></li>
             </ul>
+    </div>
+</div>
+
+<div class="filter-panel">
+	<div class="filter-heading">
+    	<a data-toggle="collapse" href="#collaps2" class="collapsed">
+    		<h4>Distinguished Acts</h4>
+        </a>
+    </div>
+    <div class="filter-content collapse" id="collaps2">
+    	<ul class="filter-list">
+              <li><div class="checkbox checkbox-primary">
+                          <label><input class="styled" type="checkbox" checked=""><span> Section 7.1
+</span></label>
+                        </div></li>
+
+                        <li><div class="checkbox checkbox-primary">
+                                    <label><input class="styled" type="checkbox" checked=""><span> Section 8.2
+</span></label>
+                                  </div></li>
+
+                                  <li><div class="checkbox checkbox-primary">
+                                              <label><input class="styled" type="checkbox"><span> Select all
+</span></label>
+                                            </div></li>
+            </ul>
+    </div>
+</div>
+
+<div class="filter-panel">
+	<div class="filter-heading">
+    	<a data-toggle="collapse" href="#collaps3" class="collapsed">
+    		<h4>Bench Size</h4>
+        </a>
+    </div>
+    <div class="filter-content collapse" id="collaps3">
+    	<ul class="filter-list">
+              <li><div class="checkbox checkbox-primary">
+                          <label><input class="styled" type="checkbox" checked=""><span> Value 1
+</span></label>
+                        </div></li>
+
+                        <li><div class="checkbox checkbox-primary">
+                                    <label><input class="styled" type="checkbox" checked=""><span> Value 2
+</span></label>
+                                  </div></li>
+
+                                  <li><div class="checkbox checkbox-primary">
+                                              <label><input class="styled" type="checkbox"><span> Value 3
+</span></label>
+                                            </div></li>
+            </ul>
+    </div>
+</div>
+
+
+
+<div class="filter-panel">
+	<div class="filter-heading">
+    	<a data-toggle="collapse" href="#collaps4" class="collapsed">
+    		<h4>Other</h4>
+        </a>
+    </div>
+    <div class="filter-content collapse" id="collaps4">
+      <ul class="filter-list">
+
+                          <li><div class="checkbox checkbox-primary">
+                                      <label><input class="styled" type="checkbox"><span> Procedural
+            </span></label>
+                                    </div></li>
+
+                                    <li><div class="checkbox checkbox-primary">
+                                                <label><input class="styled" type="checkbox"><span> Substantial
+                      </span></label>
+                                              </div></li>
+
+                        </ul>
+    </div>
+</div>
+
+
+
+</div>
+
+
           </div>
         </aside>
       </div>
@@ -409,6 +491,8 @@
   <script type='text/javascript' src='wp-content/themes/js/jquery-ui.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.tree-multiselect.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/mdb.min.js'></script>
+  <script type='text/javascript' src='wp-content/themes/js/jquery.slimscroll.min.js'></script>
+  <script type='text/javascript' src='wp-content/themes/js/bootstrap-select.min.js'></script>
   <script type='text/javascript'>
     $(function() {
       $('.cort-btn .btn ').on('click', function(e) {
@@ -478,6 +562,8 @@ var myLineChart = new Chart(ctxD, {
       ]
   },
   options: {
+    rotation: 1 * Math.PI,
+      circumference: 1 * Math.PI,
       responsive: true,
       legend: {
               display: true,
@@ -507,18 +593,35 @@ var myLineChart2 = new Chart(ctxD2, {
       ]
   },
   options: {
+    rotation: 1 * Math.PI,
+      circumference: 1 * Math.PI,
       responsive: true,
       legend: {
               display: true,
               position:'bottom',
+
             labels: {
                 // This more specific font property overrides the global property
                 fontColor: 'black',
                 fontSize:12,
                 boxWidth:10,
+
             }
         }
   }
+});
+  </script>
+  <script type="text/javascript">
+      $('.selectpicker').selectpicker({
+    });
+
+  </script>
+  <script type="text/javascript">
+  $(function(){
+  $('.slimScroll').slimScroll({
+      height: 'calc(100vh - 63px)',
+
+  });
 });
   </script>
 </body>
