@@ -624,6 +624,19 @@ var myLineChart2 = new Chart(ctxD2, {
   });
 });
   </script>
+  <script type="text/javascript">
+    $(function(){
+      $(window).resize(function resize(){
+        if ($(window).width() < 960) {
+      $('body').removeClass('fixed-sidebar');
+      } else {
+        $('body').addClass('fixed-sidebar');
+
+      }
+      }).trigger('resize');;
+
+    });
+  </script>
 </body>
 
 </html>
