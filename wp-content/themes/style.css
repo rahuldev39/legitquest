@@ -5181,18 +5181,16 @@ body.overlay-open {
     padding: 7px 0px;
 }
 
-.case-popup
-{
-  position: absolute;
+.case-popup {
+    position: absolute;
     right: -700px;
     background-color: #fffefe;
-    height: 100%;
     top: 0px;
-  max-width: 50%;
+    max-width: 50%;
     border: 1px solid #e0e0e0;
     box-shadow: 0px 0px 2px #e0e0e0;
     border-radius: 4px;
-    transition: all 300ms ease-in-out
+    transition: all 300ms ease-in-out;
 }
 .case-popup.active{
   right: 0
