@@ -2285,7 +2285,7 @@ footer {
 
 #customizer {
     position: fixed;
-    top: 254px;
+    top: 337px;
     padding: 20px;
     background: #f0f3f5;
     width: 190px;
@@ -3508,6 +3508,7 @@ padding-top: 109px;
     color: #333;
     background-color: #fdfdfd;
     border-color: #ddd;
+    font-size: 19px;
 }
 .billing_top_btn
 {
@@ -3722,6 +3723,42 @@ padding-top: 109px;
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0;
     background-color: #eaeaea;
+}
+
+.hpanel .nav-tabs > li > a {
+    line-height: inherit;
+    border-radius: 33px;
+    padding: 6px 29px;
+    margin-bottom: 10px;
+    margin-right: 13px;
+}
+
+.hpanel .nav-tabs > li.active > a, .hpanel .nav-tabs > li.active > a:hover,
+.hpanel .nav-tabs > li.active > a:focus {
+    color: #fff;
+    position: relative;
+    cursor: default;
+    background-color: #3a6890;
+    border: 1px solid #4a7ba5;
+    border-bottom-color: #4a7ba5;
+    background: #4a7ba5;
+    background: -moz-linear-gradient(top, #4a7ba5 0%, #4a7ba5 44%, #3a6890 100%);
+    background: -webkit-linear-gradient(top, #4a7ba5 0%,#4a7ba5 44%,#3a6890 100%);
+    background: linear-gradient(to bottom, #4a7ba5 0%,#4a7ba5 44%,#3a6890 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a7ba5', endColorstr='#3a6890',GradientType=0 );
+}
+.hpanel .nav-tabs > li.active > a::after {
+    content: "";
+    position: absolute;
+    border-color: transparent;
+    border-width: 8px;
+    border-style: solid;
+    left: 50%;
+    top: 100%;
+    height: 0px;
+    width: 0px;
+    border-top-color: #3c6a92;
+    margin-left: -8px;
 }
 #menu hr {
     margin-top: 8px;
@@ -3996,16 +4033,17 @@ p.judgement-head {
 }
 .text-slider ul li a {
     display: block;
-    padding: 3px 8px;
-    background-color: #4a7ba5;
-    border: 1px solid #c8d3dc;
-    font-size: 13px;
-    border-radius: 7px;
-    color: #ffffff;
+    padding: 6px 9px;
+    background-color: #ffffff;
+    border: 1px solid #b3cde2;
+    font-size: 12.4px;
+    border-radius: 1px;
+    color: #4a7ba5;
+    line-height: initial;
+    border-left: 3px solid rgb(74, 123, 165);
 }
-.listslider-arrow span
-{
-
+.listslider-arrow span {
+    color: #4a7ca7;
 }
 .search-overlay {
     height: 100%;
@@ -4810,8 +4848,8 @@ body.overlay-open {
     display: none;
 }
 .judgement-content {
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 35px;
 }
 .login-modal .modal-content {
     background-color: transparent;
@@ -5464,6 +5502,12 @@ body.overlay-open {
     color: rgb(20, 29, 45);
     border-bottom: 2px solid rgb(206, 220, 237) !important;
     padding: 9px 9px !important;
+}
+.chart-judgement {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: -14px;
 }
 @media (max-width: 992px)
 {
