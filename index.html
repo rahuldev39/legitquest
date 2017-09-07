@@ -493,6 +493,10 @@ padding-bottom: 50px; ">
 
   </div>
 
+  <div class="scroll-top-wrapper ">
+  <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
   <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type='text/css' media='all' />
 
 
@@ -608,6 +612,35 @@ padding-bottom: 50px; ">
       });
 
     });
+  </script>
+
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+$(function(){
+
+  $(document).on( 'scroll', function(){
+
+    if ($(window).scrollTop() > 100) {
+    $('.scroll-top-wrapper').addClass('show');
+  } else {
+    $('.scroll-top-wrapper').removeClass('show');
+  }
+});
+
+$('.scroll-top-wrapper').on('click', scrollToTop);
+});
+
+function scrollToTop() {
+verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+element = $('body');
+offset = element.offset();
+offsetTop = offset.top;
+$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
+
+});
   </script>
 </body>
 
