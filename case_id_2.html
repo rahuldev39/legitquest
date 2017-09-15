@@ -589,9 +589,12 @@
       $('.sidebar-container .slide-sidebar').removeClass('open');
       $('.referred-sidebar').addClass('open');
     });
-
+    $('.action-link').on('click', function(){
+      $('body').addClass('fixed-sidebar-right');
+    });
     $('.sidebar-header .close').on('click', function(){
       $('.slide-sidebar').removeClass('open');
+      $('body').removeClass('fixed-sidebar-right');
     });
   </script>
 

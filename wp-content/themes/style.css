@@ -3392,11 +3392,13 @@ select.form-control
     padding: 0px;
     border-bottom: 1px solid #e2e2e2;
     margin-bottom: 0px;
+    padding-bottom: 12px;
 }
 .filter-list li {
-    padding: 9px 17px;
+    padding: 4px 17px;
     padding-left: 44px;
     padding-right: 35px;
+    padding-bottom: 0px;
 }
 .filter-list li h4 {
     font-weight: 600;
@@ -5398,32 +5400,35 @@ body.overlay-open {
 }
 .filter-heading a {
     display: block;
-    padding: 16px 0px;
+    padding: 10px 0px;
     padding-left: 44px;
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #e2e2e2;
+    background-color: #ffffff;
+    border-bottom: 0px;
     position: relative;
+    margin-top: 10px;
 }
-.filter-heading a:after{
-      content: "\f068";
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: absolute;
-  right: 21px;
-  top: 17px;
+.filter-heading a h4:after {
+    content: "\f0d7";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 21px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
-.filter-heading a.collapsed::after {
-    content: "\f067" !important;
+.filter-heading a.collapsed h4::after {
+    content: "\f0da" !important;
 
 }
 .filter-heading a h4 {
     margin: 0px;
     font-weight: 600;
     font-size: 16px;
+    position: relative;
+    padding-left: 19px;
 }
 .fixed-sidebar-right .text-slider.affix {
     padding-right: 341px;
@@ -5900,19 +5905,23 @@ line-height: 34px;
 .slide-sidebar{
     position: fixed;
     top: 0;
-    right: -290px;
-    width: 275px;
+    right: -340px;
+    width: 310px;
     background-color: #FFFFFF;
     color: #414141;
-    height: 100vh;
+    height: calc(100vh - 63px);
     z-index: 10000;
-    box-shadow: -1px 0 1px rgba(0, 0, 0, 0.05);
-    transition: right 0.2s;
+    border-left: 1px solid #e4e5e7;
+    transition: right 300ms;
     -webkit-transition: right 0.2s;
     font-size: 11px;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 0px 20px 2px rgba(8, 8, 8, 0.88);
+
+    top: 63px;
+}
+.search-main{
+  transition: all 300ms;
 }
 .slide-sidebar.open{
   right: 0px;
@@ -5920,6 +5929,29 @@ line-height: 34px;
 .slide-sidebar .sidebar-header {
     color: #ffffff;
     background-color: #4a7ba5;
+}
+.filter-list label {
+    color: #454040;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 6px !important;
+    line-height: 15px !important;
+}
+.filter-list .checkbox span::before {
+
+    width: 15px;
+    height: 15px;
+
+}
+.filter-list .checkbox span::after {
+
+    width: 15px;
+    height: 15px;
+    top: 0px;
+    margin-left: -20px;
+}
+.filter-list .checkbox{
+  margin-left: 20px
 }
 /*############-------Responsive Changes---------###############*/
 
