@@ -5953,6 +5953,44 @@ line-height: 34px;
 .filter-list .checkbox{
   margin-left: 20px
 }
+.block-body .cititaton-text span {
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 0px;
+    text-align: center;
+    padding: 0px 6px;
+    background-color: whitesmoke;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+}
+.block-body .title h4 {
+	margin-top:0px;
+    color: #4a7ba5;
+    margin-bottom: 17px;
+}
+.block-body .arrow-list  p{
+	font-size:14px
+	}
+.block-body  .arrow-list {
+    font-size: 14px;
+}
+.block-body .arrow-list strong {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4a7ba5;
+}
+.block-body .arrow-list li {
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.block-body .arrow-list li::before {
+
+    left: 8px;
+    top: 6px;
+}
+
 /*############-------Responsive Changes---------###############*/
 
 
