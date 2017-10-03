@@ -66,55 +66,8 @@
               <div class="search-btn">
                 <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
               </div>
-
-              <div class="court-dropdown-box">
-                <select id="test-select-3" class="tree-multiselect-box" multiple="multiple">
-                                          <option value="baz1" >Supreme Court Of India</option>
-                                          <option value="quux1" data-section="High Court">HCTNMDU</option>
-                                          <option value="quux2" data-section="High Court">HCAP</option>
-                                          <option value="quux3" data-section="High Court">HCA</option>
-                                          <option value="quux4" data-section="High Court"> HCWBCAL-APP</option>
-                                          <option value="quux1" data-section="High Court"> HCCG</option>
-                                          <option value="quux2" data-section="High Court">HCDL</option>
-                                          <option value="quux3" data-section="High Court">HCGJ</option>
-                                          <option value="quux4" data-section="High Court"> HCHP</option>
-                                          <option value="quux4" data-section="High Court">  HCJK</option>
-                                          <option value="quux4" data-section="High Court">  HCJH</option>
-                                          <option value="quux4" data-section="High Court">   HCUPAB</option>
-                                          <option value="quux4" data-section="High Court">  HCMH</option>
-                                           <option value="quux4" data-section="High Court">  HCWB</option>
-
-                                           <option value="quux4" data-section="High Court">  HCTN</option>
-                                          <option value="quux4" data-section="High Court">    HCBR</option>
-                                          <option value="quux4" data-section="High Court">  HCKA</option>
-                                           <option value="quux4" data-section="High Court">  HCKADH</option>
-
-                                           <option value="quux4" data-section="High Court">  HCKAGU</option>
-                                          <option value="quux4" data-section="High Court">    HCKAKB</option>
-                                          <option value="quux4" data-section="High Court">  HCKL</option>
-                                           <option value="quux4" data-section="High Court">  HCMP</option>
-
-                                           <option value="quux4" data-section="High Court">  HCMPGW</option>
-                                          <option value="quux4" data-section="High Court">    HCMPIND</option>
-                                          <option value="quux4" data-section="High Court">  HCMN</option>
-                                           <option value="quux4" data-section="High Court">  HCML</option>
-
-                                           <option value="quux4" data-section="High Court">  HCOR</option>
-                                          <option value="quux4" data-section="High Court">    HCPBHR</option>
-                                          <option value="quux4" data-section="High Court">  HCRJ</option>
-                                           <option value="quux4" data-section="High Court">   HCRJJP</option>
-
-               							   <option value="quux4" data-section="Other">    HCPBHR</option>
-                                          <option value="quux4" data-section="Other">  HCRJ</option>
-                                           <option value="quux4" data-section="Other">   HCRJJP</option>
-
-                                        </select>
-              </div>
             </div>
-            <div class="cort-btn">
 
-              <button class="btn btn-dark-blue">All Courts</button>
-            </div>
           </div>
         </div>
         <div id="main-menu" class="collapse navbar-collapse ">
@@ -148,7 +101,7 @@
 
     <div class="search-result-section">
       <div class="search-sidebar">
-        <aside id="menu">
+        <aside id="menu" class="slimScroll">
           <div id="navigation">
 
             <div class="menu-title">
@@ -162,52 +115,80 @@
             </div>
 
             <div class="university-rank-link text-center" data-toggle="modal" data-target="#myModal">
-              <a href="#">University</a>
+              <a href="#">University Rank</a>
             </div>
 
-            <ul class="filter-list">
-              <li><h4>Law Students : Win on Your First Try !</h4></li>
-              <li><div class="radio radio-primary">
-                            <label><input type="radio" name="radio1" checked=""><span>Positive</span></label>
-                          </div></li>
+            <div class="filter-list">
+              <h4>Law Students : Win on Your First Try !</h4>
+              <div class="flex-element ">
 
-            <li><div class="radio radio-primary">
-                          <label><input type="radio" name="radio1" ><span>Referencing</span></label>
-                        </div></li>
+                <div class="flex-grow">
+                  <ul class="">
+                    <li></li>
+                    <li><div class="radio radio-primary">
+                                  <label><input type="radio" name="radio1" checked=""><span>Referred</span></label>
+                                </div></li>
 
-              <li><div class="radio radio-primary">
-                            <label><input type="radio" name="radio1" ><span>Distinguishing</span></label>
-                          </div></li>
-              <li><div class="radio radio-primary">
-                            <label><input type="radio" name="radio1" ><span>Negative</span></label>
-                          </div></li>
-            </ul>
+                  <li><div class="radio radio-primary">
+                                <label><input type="radio" name="radio1" ><span>Distinguished</span></label>
+                              </div></li>
 
-            <hr>
+                    <li><div class="radio radio-primary">
+                                  <label><input type="radio" name="radio1" ><span>Cited</span></label>
+                                </div></li>
 
-            <ul class="filter-list">
-              <li><h4>Add Explanation <small> (Bonus Points)</small></h4></li>
-              <li><div class="form-group">
-							  <textarea name="name" rows="5" cols="80" class="form-control" placeholder="Enter Discription Here"></textarea>
-							</div>
-              <div class="sidebar-action-btn">
-								<button class="btn btn-default" name="button">Skip</button>
-								<button class="btn btn-warning" name="button">Save We Site</button>
-							</div>
-            </li>
+                  </ul>
+                </div>
+                <div class="flex-grow">
+                  <ul class="">
 
 
-            </ul>
+                    <li><div class="radio radio-primary">
+                                  <label><input type="radio" name="radio1" ><span>Followed</span></label>
+                                </div></li>
+                    <li><div class="radio radio-primary">
+                                  <label><input type="radio" name="radio1" ><span>Overruled</span></label>
+                                </div></li>
+                    <li><div class="radio radio-primary">
+                                  <label><input type="radio" name="radio1" ><span>Mentioned</span></label>
+                                </div></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="filter-list">
+              <ul >
+                <li><h4>Add Explanation <small> (Bonus Points)</small></h4></li>
+                <li><div class="form-group">
+  							  <textarea name="name" rows="5" cols="80" class="form-control" placeholder="Enter Discription Here"></textarea>
+  							</div>
+                <div class="sidebar-action-btn">
+  								<button class="btn btn-default btn-sm" name="button">Skip</button>
+  								<button class="btn btn-primary  btn-sm" name="button">Submit</button>
+  							</div>
+              </li>
+
+
+              </ul>
+            </div>
+
           </div>
         </aside>
       </div>
-      <div class="search-main">
+      <div class="search-main university-rank">
         <div class="tab-action-box">
           <div class="tab-action-links">
             <div class="row">
               <div class="col-sm-4">
                 <a href="#" class="action-link sidebar-toggle">
-                <i class="fa fa-indent" aria-hidden="true"></i> Filters
+                <i class="fa fa-indent" aria-hidden="true"></i> University Rank
                 </a>
                 <a href="#" class="action-link">
                   <i class="fa fa-bookmark-o" aria-hidden="true"></i> Bookmarks
@@ -428,7 +409,7 @@
   <script type='text/javascript' src='wp-content/themes/js/map.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/SmoothScroll.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/scripts.js'></script>
-
+  <script type='text/javascript' src='wp-content/themes/js/jquery.slimscroll.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery-ui.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.tree-multiselect.js'></script>
   <script type='text/javascript'>
@@ -480,6 +461,28 @@
       allowBatchSelection: true,
       searchable: true,
       startCollapsed: true,
+    });
+  </script>
+  <script type="text/javascript">
+  $(function(){
+
+  $('.slimScroll').slimScroll({
+
+        height: 'calc(100vh - 63px)',
+  });
+});
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $(window).resize(function resize(){
+        if ($(window).width() < 960) {
+      $('body').removeClass('fixed-sidebar');
+      } else {
+        $('body').addClass('fixed-sidebar');
+
+      }
+      }).trigger('resize');;
+
     });
   </script>
 </body>
