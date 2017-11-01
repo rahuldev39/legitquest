@@ -7,7 +7,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s linear, visibility 0.5s linear, left 0.1s linear, right 0.1s linear, text-shadow 0.1s linear;
-    top: 4px;
+    top: -1px;
     font-size: 15px;
     min-width: 14px;
     -webkit-touch-callout: none;
@@ -54,16 +54,19 @@
 
 }
 
-ul.listslider{
+ul.listslider {
     white-space: nowrap;
     clear: both;
     padding-left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul.listslider li {
     list-style: none;
     display: inline-block;
     float: left;
-    padding: 2px 15px;
-    padding-left: 0px;
+    padding: 2px 10px;
+    display: inline-flex;
+    align-items: center;
 }

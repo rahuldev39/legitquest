@@ -51,7 +51,7 @@ code,
 .separator,
 #header
 {
-background: #1080f2;
+background: #437aa2;
 }
 
 ::selection {background: #1080f2;}
@@ -75,7 +75,7 @@ background: #1080f2;
 .team-member:hover .triangle,
 .searchform #s:focus,
 .secondary-button-inverse  {
-    border-color: #1080f2;
+        border-color: #437aa2;
 }
 
 
