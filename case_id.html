@@ -80,6 +80,26 @@
 
 
           <ul id="menu-main-menu" class="nav navbar-nav">
+            <li class="menu-item menu-item-has-children  dropdown">
+              <a href="#" class="action-link"><i class="fa fa-share-alt"></i>Share</a>
+              <ul class="dropdown-menu list-inline social-list">
+                <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" id="sidebar" class="action-link notes-link right-sidebar-toggle">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Notes
+              </a>
+            </li>
+            <li>
+              <a href="#" class="action-link">
+                <i class="fa fa-print" aria-hidden="true"></i> print
+              </a>
+            </li>
+
 
             <li class="menu-item menu-item-has-children  dropdown">
               <a href="#">More</a>
@@ -160,33 +180,7 @@
           <div class="case-box">
             <div class="case-box-header">
               <h3>MCDONNELL DOUGLAS CORP. V. GREEN</h3>
-              <div class="action-link-tab">
 
-                                    <!--<a href="#" class="action-link">
-                                      <i class="fa fa-bookmark-o" aria-hidden="true"></i> Bookmark
-                                    </a> -->
-                                    <span class="dropdown">
-                                      <a href="#" class="action-link"
-                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
-                                        <i class="fa fa-share-alt" data-toggle="tooltip" data-placement="top" title="Download PDF" aria-hidden="true"></i> Share
-                                      </a>
-                                      <ul class="dropdown-menu list-inline" >
-                                      <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                      <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
-                                      </ul>
-                                    </span>
-                                    <a href="#" id="sidebar" class="action-link notes-link right-sidebar-toggle"
-                                    data-toggle="tooltip" data-placement="top" title="Crate a note">
-                                      <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Notes
-                                    </a>
-
-                                    <a href="#" class="action-link"
-                                    data-toggle="tooltip" data-placement="top" title="Download PDF">
-                                      <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
-                                    </a>
-            </div>
             </div>
             <p>Civil Appeal Nos.7763 of 2004 - 7764 of 2004 in C.M.A. Nos. 2124 &amp;
             2366 of 2001 | Supreme Court Of India | 02-12-2004
@@ -221,88 +215,83 @@
 
             <div class="hpanel">
 
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
+              <div class="panel-group accordion-box" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="panel-title expand">
+           <div class="right-arrow pull-right"></div>
+          <a href="#">Bench</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body"><div class="bench-list">
+            <ul class="arrow-list list-inline">
+              <li>HON'BLE Mrs. Justice Ruma Pal</li>
+              <li>HON'BLE Mr. Justice Arijit Pasayat</li>
+              <li>HON'BLE Mr. Justice C.K. Thakker</li>
+            </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-title expand collapsed">
+            <div class="right-arrow pull-right"></div>
+          <a href="#">Citation</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="cititaton-text">
+              <p>
+                <p>
+                  <span>2005 (2) SCC 22</span>
+                  <span>2004 (10) Scale 153</span>
+                  <span>2005 AIR(SC) 534</span>
+                  <span>2004 (10) JT 235</span>
+                  <span>2004 (1) Supreme 626</span>
+                  <span>2005 (1) CTC 215 (SC)</span>
+                  <span>2005 (1) KLT 26</span>
+                  <span>2005 (2) LW 149</span>
 
-          <li role="presentation" class="active">
-          <a href="#2" aria-controls="profile" role="tab" data-toggle="tab">Bench</a></li>
-          <li role="presentation">
-          <a href="#3" aria-controls="messages" role="tab" data-toggle="tab">Citation</a></li>
-          <li role="presentation">
-          <a href="#4" aria-controls="settings" role="tab" data-toggle="tab">Advocates</a></li>
+                </p>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="panel-title expand collapsed">
+            <div class="right-arrow pull-right"></div>
+          <a href="#">Advocates</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="advocate-detail">
+            <div class="">
+              For the Appellant <strong>Shekhar Naphade</strong>,
+            </div>
+            <div class="">
+              Senior Advocate with <strong>Mahesh Agrawal</strong>,
+               <strong>Tarun Dua, Momota Devi Oinam, E.C. Agrawala,</strong> Advocates.
+            </div>
+            <div class="">
+              For the Respondent
+                <strong>S. Vani, B. Sunita Rao, Sushil Kumar Pathak,</strong> Advocates.
+            </div>
 
-
-          </ul>
-
-              <div class="flex-element tab-main-content">
-                <!-- Tab panes -->
-                <div class="tab-content">
-
-                <div role="tabpanel" class="tab-pane active" id="2">
-                  <div class="print-tablepanel-header">
-                    <h3>Bench</h3>
-                  </div>
-                  <div class="panel-body">
-                    <div class="bench-list">
-                        <ul class="arrow-list list-inline">
-                          <li>HON'BLE Mrs. Justice Ruma Pal</li>
-                          <li>HON'BLE Mr. Justice Arijit Pasayat</li>
-                          <li>HON'BLE Mr. Justice C.K. Thakker</li>
-                        </ul>
-                    </div>
-                  </div>
-
-                </div>
-                <div role="tabpanel" class="tab-pane" id="3">
-                  <div class="print-tablepanel-header">
-                    <h3>Citation</h3>
-                  </div>
-                  <div class="panel-body">
-                    <div class="cititaton-text">
-                        <p>
-                          <p>
-                            <span>2005 (2) SCC 22</span>
-                            <span>2004 (10) Scale 153</span>
-                            <span>2005 AIR(SC) 534</span>
-                            <span>2004 (10) JT 235</span>
-                            <span>2004 (1) Supreme 626</span>
-                            <span>2005 (1) CTC 215 (SC)</span>
-                            <span>2005 (1) KLT 26</span>
-                            <span>2005 (2) LW 149</span>
-
-                          </p>
-                        </p>
-                    </div>
-                  </div>
-
-                </div>
-                <div role="tabpanel" class="tab-pane" id="4">
-                  <div class="print-tablepanel-header">
-                    <h3>Advocates</h3>
-                  </div>
-                  <div class="panel-body">
-                    <div class="advocate-detail">
-                      <div class="">
-                        For the Appellant <strong>Shekhar Naphade</strong>,
-                      </div>
-                      <div class="">
-                        Senior Advocate with <strong>Mahesh Agrawal</strong>,
-                         <strong>Tarun Dua, Momota Devi Oinam, E.C. Agrawala,</strong> Advocates.
-                      </div>
-                      <div class="">
-                        For the Respondent
-                          <strong>S. Vani, B. Sunita Rao, Sushil Kumar Pathak,</strong> Advocates.
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-              </div>
+
+
 
 
           </div>
@@ -406,7 +395,7 @@
             <div class="notes-main">
               <div class="popup-header">
                 <div class="popup-header-inner">
-                    <img src="./wp-content/themes/images/thumbtack-pushpin-2-hi.png" class="pin-icon" alt=""><span class="text-white">Create A Note</span>
+<span class="text-white">Create A Note</span>
                     <a href="#" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
                 </div>
               </div>
@@ -459,7 +448,7 @@
 
           <div class="aside-toggle">
             <a href="#">
-              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              <i class="fa fa-indent" aria-hidden="true"></i>
             </a>
           </div>
 
@@ -723,12 +712,12 @@
 
   $('#night-toggle').on('click', function(){
 
-    if($('.search-result-listing').hasClass("night-mode"))
+    if($('.search-result-section').hasClass("night-mode"))
     {
-      $('.search-result-listing').attr('class', 'search-result-listing');
+      $('.search-result-section').attr('class', 'search-result-section case-id-main');
     }
     else {
-      $('.search-result-listing').attr('class', 'search-result-listing night-mode');
+      $('.search-result-section').attr('class', 'search-result-section case-id-main night-mode');
     }
 
 
@@ -826,7 +815,7 @@
 <script type="text/javascript">
 $(function(){
 $('.slimScroll').slimScroll({
-    height: 'calc(100vh - 63px)',
+    height: 'calc(100vh - 85px)',
 
 });
 });
@@ -862,6 +851,8 @@ $('.slimScroll').slimScroll({
     $('.sidebar-inner').removeClass('blurred-bg');
   });
 </script>
+
+
 
 </body>
 
