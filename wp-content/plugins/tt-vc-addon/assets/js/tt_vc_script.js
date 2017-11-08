@@ -131,6 +131,20 @@ if ( $( ".slider.testimonials" ).length ) {
     $( ".tt-image" ).appendTo( ".tt-images" );
 }
 
+/* ------------------------------------------------------------------------
+  TABS ELEMENT
+ ------------------------------------------------------------------------*/
+
+$('.features-tabs li.tab').appendTo('.features-tabs .tabs');
+var tabsnumber = $('.tabs > li.tab').length;
+$('.tabs li.tab').css('width',100/tabsnumber + '%');
+
+if ( $( ".features-tabs" ).length ) {
+  $('.features-tabs').easytabs({
+    animationSpeed: 'normal',
+    updateHash: false
+  });
+}
 
 
 /* ------------------------------------------------------------------------

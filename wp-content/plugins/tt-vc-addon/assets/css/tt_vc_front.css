@@ -225,20 +225,24 @@
   4.  TESTIMONIALS ELEMENT
 
  ------------------------------------------------------------------------*/
+ .testimonials.owl-theme .owl-controls {
+     margin-top: 0px !important;
 
- .testimonials.slider {
-     margin-bottom: 0px;
  }
+ .testimonials.slider {
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
 .testimonials.slider .tt-content h3 {
     font-size: 30px;
     letter-spacing: -1px;
     line-height: 1.65;
     text-align: center;
     margin: auto;
-    max-width: 850px;
+    max-width: 900px;
 }
 .testimonials.slider .tt-content h4 {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
@@ -281,14 +285,18 @@
     display: block;
     margin-bottom: 40px;
     margin-left: 2px;
+    position: absolute;
+    left: 0px;
 }
 .testimonials.slider .tt-quote-right {
     float: right;
     margin-right: 0;
-    position: relative;
-    margin-left: 20px;
-    bottom: 0;
+    position: absolute;
+    margin-left: 0px;
+    top: 0;
     margin-bottom: 0;
+    right: 0px;
+    left: auto;
 }
 .testimonials.slider .owl-pagination {
 
@@ -460,14 +468,14 @@
  ------------------------------------------------------------------------*/
 
  .features-tabs {
-     margin: 0 -15px;
+
      position: relative;
  }
 .features-tabs .container {
     position: relative;
 }
 .features-tabs .tab-image-container {
-    position: absolute;
+
     top: 0;
     right: 0
 }
@@ -488,12 +496,12 @@
 .features-tabs .tabs {
     margin: 0;
     padding: 0;
-    width: 1170px;
-    height: 60px;
     background-color: transparent;
     border: 0px;
-    margin-bottom: 72px;
     text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 .features-tabs .tab {
     -webkit-transition: 0.3s;
@@ -507,29 +515,26 @@
     border-bottom: none;
     text-align: center;
     font-size: 18px;
-    font-weight: 700;
-    height: 58px;
-    line-height: 60px;
+    font-weight: 600;
     max-width: 560px !important;
     margin: 0 auto;
     float: none;
 }
 .features-tabs .tab a, .features-tabs .tab a:hover {
-    color: #3b6b94 !important;
-    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.77) !important;
     display: block;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    background-color: #e6e6e6;
-    border-radius: 44px;
-    margin: 0px 11px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 5px;
 }
 .features-tabs .tab.active a {
-    background: #3b6b94;
+    background: #ffffff;
 }
-.features-tabs .tab.active a{
-  color: #fff !important;
+.features-tabs .tab.active a {
+    color: #156598 !important;
 }
 .features-tabs .panel-container {
     background: #fff;
@@ -555,21 +560,27 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #4a7ba5;
+    border-top: 10px solid #ffffff;
     opacity: 1;
     position: absolute;
     left: 50%;
     margin-left: -5px;
     bottom: -10px;
 }
+.features-tabs .tab:first-child a{
+  border-radius: 30px 0px 0px 30px
+}
+.features-tabs .tab:last-child a{
+  border-radius: 0px 30px 30px 0px
+}
 .features-tabs .tab .triangle .inner-triangle {
-    display: block;
+
     -webkit-transition: 0s;
     -o-transition: 0s;
     transition: 0s;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid #3b6b94;
+    border-top: 8px solid #ffffff;
     position: absolute;
     top: -10px;
     left: -8px;
@@ -588,7 +599,6 @@ ul.featured-list {
     padding-left: 32px;
     list-style: none;
     margin: 0;
-    color: #666;
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
