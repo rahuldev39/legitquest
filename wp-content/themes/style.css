@@ -751,7 +751,8 @@ header .header-dashboard .dashboard {
 header .container {
     position: relative;
     z-index: 10;
-
+    flex: 1;
+    align-items: center;
 }
 #headerbackground,
 #particles-js {
@@ -2608,7 +2609,7 @@ header {
     z-index: 1;
 }
 .subscribe-form .intro-text {
-    padding-top: 62px;
+    padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 30px;
 }
@@ -3263,9 +3264,11 @@ select.form-control
 }
 .search-header {
     overflow: visible !important;
-    min-height: 578px;
+    min-height: 100vh;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .cort-btn .btn:focus
 {
@@ -5771,7 +5774,7 @@ padding: 0px
 }
 .right {
     margin-left: 100px;
-    margin-right: -200px !important;
+    margin-right: -20% !important;
 }
 .left {
     margin-right: 100px;
@@ -6253,6 +6256,7 @@ line-height: 34px;
     padding: 80px 0px;
     padding-bottom: 0px;
     min-height: 100vh;
+    overflow: hidden;
 }
 .feature-box .feature-content {
     padding-bottom: 50px;
@@ -7166,7 +7170,7 @@ font-size: 16px;
     font-size: 27px;
     line-height: 45px;
     font-weight: 600;
-    color: #383838;
+    color: #908d8d;
     position: relative;
     padding: 30px;
     max-width: 80%;
@@ -7195,8 +7199,8 @@ h3.section-lead {
     font-weight: 700;
     margin-bottom: 26px;
     margin-top: 0px;
-    font-size: 38px;
-    color: #2b789a;
+    font-size: 34px;
+    color: #296485;
 }
 #testimonials h3.section-lead{
   color: white
@@ -7211,12 +7215,15 @@ h3.section-lead {
 }
 .featured-img img {
     width: 100%;
-    max-width: 160px;
+    max-width: 136px;
     margin: 0px 21px;
     border: 3px solid #dedede;
 }
 .featured-in {
     padding: 30px 0px;
+    background-color: white;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .text-white{
   color: white
@@ -7511,6 +7518,10 @@ font-family: 'Merriweather', serif !important;
 }
 @media (max-width: 518px)
 {
+  .featured-img img {
+    max-width: 81px;
+    margin: 0px 8px;
+}
   .post-main-content .col-xs-6{
     width: 100% !important
   }
