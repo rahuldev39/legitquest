@@ -1,4 +1,8 @@
+
+
 @media print {
+
+
 	*
 	{
 		font-family:Verdana, Geneva, sans-serif;
@@ -7,6 +11,7 @@
 	body {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
+	color: #7d7d7d !important;
 }
 #footer{
   display: none;
@@ -85,5 +90,20 @@ p.judgement-head strong {
 .point-text {
     font-weight: 800;
     font-size: 34px !important;
+}
+.print-detail {
+
+    border: 0px solid gainsboro;
+    box-shadow: none;
+}
+.print-main {
+    padding-top: 0px;
+
+}
+.print-header {
+		margin-top: 20px
+}
+.watermark {
+    display: block;
 }
 }

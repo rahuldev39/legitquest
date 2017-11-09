@@ -5362,6 +5362,8 @@ body.overlay-open {
     padding-left: 0px;
     border-left: none;
     flex-basis: 260px;
+    display: flex;
+    align-items: center;
 }
 .block-title h4 {
     font-weight: 600;
@@ -6731,12 +6733,13 @@ margin: 0 auto;
 }
 .register-section h3 {
     margin-top: 0px;
-    color: white;
+    color: #314b5f;
     font-size: 32px;
     margin-bottom: 26px;
+    font-weight: 700;
 }
 .register-section p {
-    color: white;
+    color: #191919;
     opacity: .7;
 }
 #our-pricing{
@@ -6844,8 +6847,7 @@ margin: 0 auto;
   width: 100% !important
 }
 .trail-btn-container{
-  margin-bottom: 70px;
-  margin-top: 30px
+
 }
 .bottom-img img{
   margin: 0 auto;
@@ -7243,14 +7245,105 @@ font-family: 'Merriweather', serif !important;
 .university_info_top{
   margin-top: 30px
 }
-
+.print-main {
+    padding-top: 100px;
+    background-color: #e6e6e6;
+}
 
 .f-pricing-text p {
     font-size: 20px;
     line-height: 30px;
 }
+.print-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid gainsboro;
+    box-shadow: 0px 0px 5px #d0d0d0;
+}
 
+.print-detail small {
+    font-size: 12px;
+    line-height: 17px;
+    color: #777777;
+}
+.disclaimer-box {
+    margin-bottom: 60px;
+}
+.judgement-header{
+  margin: 60px auto;
+}
+.print-detail .table-content{
+margin-bottom: 60px
+}
+.print-detail .judgement-main-text h4{
 
+}
+.print-detail .judgement-main-text p {
+    font-size: 13px;
+    margin: 40px 0px;
+}
+.judgement-main-text ol li ol {
+    list-style-type: lower-latin;
+    font-size: 13px;
+}
+.print-header h5 {
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+.print-header {
+    margin-bottom: 35px;
+
+}
+.print-heder-inner {
+    max-width: 840px;
+    margin: 0 auto;
+    border: 1px dashed #c1bbbb;
+    padding: 9px 11px;
+    background-color: white;
+    padding-bottom: 1px;
+}
+.watermark {
+    position: fixed;
+    opacity: .5;
+    top: 235px;
+    height: 400px;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    top: 30%;
+    display: none;
+}
+.free-trail-box {
+    background-color: rgb(255, 255, 255);
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    border: 3px dashed #c1c1c1;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+.free-trail-box h3
+{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0px;
+    color: #1b4a63;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.pricing-block-header {
+    margin-bottom: -30px !important;
+}
+.pricing-block-header .block {
+    padding: 5px 20px;
+    background-color: #f9f9f9;
+}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
@@ -7258,7 +7351,7 @@ font-family: 'Merriweather', serif !important;
     top: 10px;
 }
 }
-{
+
 @media (min-width: 960px)
 {
   .big-navbar .navbar.navbar-default {
@@ -7528,6 +7621,14 @@ font-family: 'Merriweather', serif !important;
 }
 @media (max-width: 518px)
 {
+  .free-trail-box{
+    flex-direction: column;
+  }
+  .free-trail-box h3 {
+    
+    text-align: center;
+    margin-bottom: 13px;
+}
   .featured-img img {
     max-width: 81px;
     margin: 0px 8px;
