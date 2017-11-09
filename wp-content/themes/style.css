@@ -752,7 +752,12 @@ header .container {
     position: relative;
     z-index: 10;
     flex: 1;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home header{
+  padding-top: 0px
 }
 #headerbackground,
 #particles-js {
@@ -7625,7 +7630,7 @@ margin-bottom: 60px
     flex-direction: column;
   }
   .free-trail-box h3 {
-    
+
     text-align: center;
     margin-bottom: 13px;
 }
