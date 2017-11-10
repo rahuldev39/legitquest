@@ -308,6 +308,7 @@ section {
 }
 body.modal-open {
     overflow: hidden;
+    height: 100vh;
 }
 
 .parallax {position: relative;}
@@ -7356,7 +7357,7 @@ margin-bottom: 60px
     background-color: #f9f9f9;
 }
 #launching-popup .modal-dialog{
-  margin-top: 100px
+  margin-top: 0px
 }
 #launching-popup .close {
     position: absolute;
@@ -7370,6 +7371,11 @@ margin-bottom: 60px
     font-size: 16px;
     color: #f7f7f7;
     border: 3px solid white;
+}
+#launching-popup{
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
@@ -7648,6 +7654,32 @@ margin-bottom: 60px
 }
 @media (max-width: 518px)
 {
+  .btn-social-icon.btn-lg :first-child {
+    line-height: 30px !important;
+    width: 30px !important;
+    font-size: 14px !important;
+}
+.btn-social-icon.btn-lg {
+    height: 30px !important;
+    width: 30px !important;
+
+}
+.login-main h4 {
+    margin-bottom: 13px;
+    font-size: 14px;
+}
+  .login-modal .modal-body{
+    padding: 0px
+  }
+  .login-main {
+    border: 6px solid rgba(74, 123, 165, 0.42);
+}
+.login-modal .close {
+
+    right: -10px;
+    top: -10px;
+
+}
   .free-trail-box{
     flex-direction: column;
   }
