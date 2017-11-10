@@ -16,7 +16,7 @@
   <link rel='stylesheet' href='./wp-content/themes/owl.theme.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/style.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/dynamic.css' type='text/css' media='all' />
-
+  <link rel='stylesheet' href='./wp-content/themes/social-btn.css' type='text/css' media='all' />
   <link rel='stylesheet' href='wp-content/themes/themetek/colors.css' type='text/css' media='all' />
 <link rel='stylesheet' href='./wp-content/themes/aos.css' type='text/css' media='all' />
   <link rel='stylesheet' id='redux-google-fonts-css' href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic%7CWork+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1474625187' type='text/css' media='all'
@@ -209,9 +209,6 @@
       </div>
 
     </header>
-
-
-
 
 
     <section class="info-text-container" style=" background-color:#e1edfb;   background-image: url(./wp-content/themes/images/pricing-pattrens.png)">
@@ -524,7 +521,134 @@
     </div>
   </footer>
 
+  <!-- Modal -->
+  <div class="modal fade launching-popup" id="launching-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
 
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <a href="#" data-toggle="modal" data-target="#register-popup" data-dismiss="modal">
+            <img src="./wp-content/themes/images/launching-popup.jpg" class="img-responsive" alt="">
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade  login-modal register-popup" id="register-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+
+        <div class="login-main">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+      <div class="row">
+        <div class="col-md-12">
+            <div class="social-signup text-center">
+
+        <h4>Join Legiquest using your social account:</h4>
+
+      <a class="btn  btn-social-icon btn-facebook btn-lg">
+        <i class="fa fa-facebook"></i>
+      </a>
+
+
+      <a class="btn  btn-social-icon btn-google-plus btn-lg">
+        <i class="fa fa-google-plus"></i>
+      </a>
+
+      <a class="btn  btn-social-icon btn-linkedin btn-lg">
+        <i class="fa fa-linkedin"></i>
+      </a>
+
+
+      <a class="btn  btn-social-icon btn-twitter btn-lg">
+        <i class="fa fa-twitter"></i>
+      </a>
+
+            </div>
+        </div>
+        <div class="col-md-12">
+          <div class="login-form-box">
+            <form role="form">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="inputUsernameEmail">Full Name</label>
+                    <input type="text" class="form-control" id="inputUsernameEmail">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputUsernameEmail">Phone No.</label>
+                    <input type="text" class="form-control" id="inputUsernameEmail">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputPassword">Email Id</label>
+                    <input type="password" class="form-control" id="inputPassword">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputUsernameEmail">Professional or Student</label>
+                    <select class="form-control" name="">
+                      <option>Professional</option>
+                      <option>Student</option>
+                    </select>
+
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputPassword">Company / Institute</label>
+                    <input type="text" class="form-control" id="inputPassword">
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">
+                  I agree Terms &amp; Conditions. </label>
+              </div>
+              <button type="submit" class="btn btn btn-primary">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
   <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type='text/css' media='all' />
@@ -541,6 +665,15 @@
   <script type='text/javascript' src='wp-content/themes/js/jquery.tree-multiselect.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/bootstrap-select.min.js'></script>
 
+<script type="text/javascript">
+$('#launching-popup').on('hidden.bs.modal', function() {
+      $('#myModal').on('shown.bs.modal', function() {
+          $('body').addClass('modal-open');
+      });
+  });
+
+
+</script>
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -574,6 +707,12 @@
      AOS.init({
        easing: 'ease-in-out-sine'
      });
+   </script>
+
+   <script type="text/javascript">
+       $(window).load(function(){
+         $('#launching-popup').modal('show');
+          });
    </script>
 </body>
 

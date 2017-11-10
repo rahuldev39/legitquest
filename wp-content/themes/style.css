@@ -5279,9 +5279,15 @@ body.overlay-open {
     position: relative;
     max-width: 450px;
 }
-.login-modal
-{
-  padding-top: 65px
+.login-modal {
+    padding-top: 30px;
+}
+.home {
+  padding-right: 0px !important
+}
+#register-popup .login-main {
+
+    max-width: 560px;
 }
 .login-modal .close {
     height: 30px;
@@ -7348,6 +7354,22 @@ margin-bottom: 60px
 .pricing-block-header .block {
     padding: 5px 20px;
     background-color: #f9f9f9;
+}
+#launching-popup .modal-dialog{
+  margin-top: 100px
+}
+#launching-popup .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: #ff5757;
+    opacity: 1;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #f7f7f7;
+    border: 3px solid white;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
