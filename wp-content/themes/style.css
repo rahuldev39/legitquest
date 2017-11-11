@@ -7280,10 +7280,18 @@ font-family: 'Merriweather', serif !important;
     color: #777777;
 }
 .disclaimer-box {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
-.judgement-header{
-  margin: 60px auto;
+.judgement-header {
+    margin: 1px auto;
+    max-width: 475px;
+    margin-bottom: 0px;
+}
+.judgement-header h1 {
+    margin-bottom: 19px;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 0px;
 }
 .print-detail .table-content{
 margin-bottom: 60px
@@ -7305,13 +7313,12 @@ margin-bottom: 60px
     font-size: 11px;
 }
 .print-header {
-    margin-bottom: 35px;
-
+    margin-bottom: 20px;
 }
 .print-heder-inner {
     max-width: 840px;
     margin: 0 auto;
-    border: 1px dashed #c1bbbb;
+    border-bottom: 1px solid #252525;
     padding: 9px 11px;
     background-color: white;
     padding-bottom: 1px;
@@ -7376,6 +7383,28 @@ margin-bottom: 60px
   display: flex;
     align-items: center;
     justify-content: center;
+}
+.judgment-heading h3 {
+    padding: 0px 28px;
+    font-size: 19px;
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.judgment-heading {
+    margin-top: 26px;
+}
+.judgment-heading .divder {
+    border-top-color: #292727;
+}
+.jh-block{
+  margin-bottom: 20px
+}
+.meduim-text {
+    font-size: 12px;
+    color: #3c3c3c;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
