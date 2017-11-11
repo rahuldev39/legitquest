@@ -7372,12 +7372,23 @@ margin-bottom: 60px
     top: 10px;
     height: 30px;
     width: 30px;
-    background-color: #ff5757;
+    background-color: #ffffff;
     opacity: 1;
     border-radius: 50%;
     font-size: 16px;
-    color: #f7f7f7;
-    border: 3px solid white;
+    color: #004e6e;
+    border: 3px solid #004e6e;
+    text-shadow: 0 1px 0 #004e6e;
+    filter: alpha(opacity=20);
+}
+.launch-popup-img{
+  border-radius: 20px
+}
+#launching-popup .modal-content{
+    background-color: transparent;
+    border: 0px;
+    outline: 0;
+    box-shadow: none;
 }
 #launching-popup{
   display: flex;
@@ -7418,7 +7429,9 @@ margin-bottom: 60px
 {
   .big-navbar .navbar.navbar-default {
     padding: 20px 20px;
-
+}
+#launching-popup .modal-dialog {
+    width: 800px;
 }
 }
 @media (max-width: 1200px)
