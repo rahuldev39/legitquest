@@ -7381,8 +7381,8 @@ margin-bottom: 60px
     text-shadow: 0 1px 0 #004e6e;
     filter: alpha(opacity=20);
 }
-.launch-popup-img{
-  border-radius: 20px
+.launch-popup-img {
+    border-radius: 8px;
 }
 #launching-popup .modal-content{
     background-color: transparent;
@@ -7431,7 +7431,7 @@ margin-bottom: 60px
     padding: 20px 20px;
 }
 #launching-popup .modal-dialog {
-    width: 800px;
+    width: 900px;
 }
 }
 @media (max-width: 1200px)
@@ -7621,12 +7621,11 @@ margin-bottom: 60px
 
 }
 .info-text-container h3 {
-
     max-width: 100%;
     line-height: 28px;
     font-weight: 600;
     padding: 10px;
-
+    font-size: 17px;
 }
 .featured-img img {
     max-width: 100px;
@@ -7639,7 +7638,37 @@ margin-bottom: 60px
 }
 @media (max-width: 626px)
 {
+  .home .header-form-section {
+    padding-top: 30px;
+}
+.home .search-filed-box {
+    flex-direction: column;
+}
+.home .search-filed-box .bootstrap-select .btn {
+    border-radius: 55px;
+    margin-bottom: 0px;
+    height: 45px;
+    padding: 0px 27px;
+}
+.home .select-search .bootstrap-select {
+    width: 100% !important;
+    margin-bottom: 15px;
+}
 
+
+.home .search-bar .select-search + .search-field input.form-control {
+    border-radius: 55px;
+    height: 45px;
+    font-size: 14px;
+}
+.home .search-btn {
+    right: 17px;
+    top: 9px;
+}
+.home .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+
+    text-align: center;
+}
   .pricing-plan {
 
     max-width: 400px;
