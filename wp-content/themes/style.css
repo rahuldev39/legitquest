@@ -2410,7 +2410,7 @@ footer {
 
 #customizer {
     position: fixed;
-    top: 221px;
+    top: 284px;
     padding: 20px;
     background: #f0f3f5;
     width: 190px;
@@ -2469,7 +2469,7 @@ footer {
     width: 25px;
     height: 25px;
     margin-right: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     margin-top: 0px;
     border: none;
     border-radius: 2px;
@@ -2900,7 +2900,7 @@ footer {
 .member-container img {
     max-width: 100%;
     transition: all 300ms ease-in-out;
-    max-width: 170px;
+    max-width: 140px;
 }
 .team-member-container .caption strong {
     color: #4a7ba5;
@@ -3270,7 +3270,7 @@ select.form-control
 }
 .search-header {
     overflow: visible !important;
-    min-height: 100vh;
+    min-height: calc(100vh - 30px);
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -4278,7 +4278,7 @@ span.bullet {
     margin-right: 1px;
 }
 .aside-toggle a {
-    padding: 10px 14px;
+    padding: 15px 14px;
     display: block;
     font-size: 20px;
     color: #333333;
@@ -4363,13 +4363,16 @@ p.judgement-head {
     font-size: 23px;
 }
 .text-slider {
-    padding: 10px 43px;
+    padding: 5px 43px;
     margin-bottom: 13px;
     position: relative;
     border-bottom: 1px solid #cdd4da;
     background-color: #edf2f5;
     padding-left: 20px;
-    width: 100%
+    width: calc(100vw - 453px);
+}
+.close-sidebar .text-slider{
+      width: 100vw;
 }
 .case-topbar {
     display: flex;
@@ -4609,7 +4612,6 @@ body.overlay-open {
     top: 85px;
     z-index: 10;
     left: 0px;
-    width: 100%;
     border-radius: 0px;
 }
 .select22::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -5374,8 +5376,7 @@ body.overlay-open {
     padding-left: 0px;
     border-left: none;
     flex-basis: 260px;
-    display: flex;
-    align-items: center;
+
 }
 .block-title h4 {
     font-weight: 600;
@@ -5916,12 +5917,10 @@ padding: 0px
     position: relative;
     padding-left: 19px;
 }
-.fixed-sidebar-right .text-slider.affix {
-    padding-right: 508px;
-}
+
 .fixed-sidebar-right .close-sidebar .text-slider.affix {
-    padding-right: 0px;
-    padding-left: 0px
+    padding-right: 44px;
+    padding-left: 0px;
 }
 
 .fixed-sidebar-right footer {
@@ -6949,8 +6948,10 @@ header.header-bluebg .search-bar .select-search + .search-field input.form-contr
     margin: 0px;
 }
 .text-slider-main {
-    padding-right: 45px;
-    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .logo-small {
@@ -6997,7 +6998,7 @@ header.header-bluebg .search-bar .select-search + .search-field input.form-contr
     transition: all ease-in-out 200ms;
 }
 .updown-links a {
-    font-size: 10px !important;
+    font-size: 15px !important;
     line-height: 10px !important;
 }
 .text-slider ul li:hover  .updown-links{
@@ -7416,6 +7417,156 @@ margin-bottom: 60px
 .meduim-text {
     font-size: 12px;
     color: #3c3c3c;
+}
+.profile-info-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0px;
+    background: #3d7199f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    display: none;
+}
+.profile-info-popup.show{
+display: block;
+}
+.profile-info-popup .popup-body {
+    background-color: white;
+    max-height: initial;
+    border: 4px solid #e8e8e8;
+    box-shadow: 0px 0px 16px #656565;
+}
+.profile-info{
+  display: none;
+}
+.action-panel {
+    position: fixed;
+    left: 0px;
+    top: 164px;
+}
+.action-panel-body a {
+    display: block;
+    background: #f0f3f5;
+    cursor: pointer;
+    border-left: none;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: 1px solid #d4dfe8;
+    border-left: 0px;
+    text-align: center;
+    padding: 7px 5px;
+    line-height: normal;
+    font-size: 12px;
+    color: #313131;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1000;
+    background-color: #f0f3f5;
+}
+.action-panel-body a i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.share-option{
+  position: relative;
+}
+.share-option .social-links {
+    position: absolute;
+    width: 164px;
+    top: 9px;
+    background-color: #e7e9ea;
+    left: -164px;
+    opacity: 0
+ border-radius: 0px 5px 5px 0px;
+    border: 1px solid #c9d2da;
+    box-shadow: 0px 0px 8px #c5c5c59e;
+    transition: all ease-in-out 400ms;
+    z-index: 1;
+}
+.share-option .social-links.open{
+  left: 56px;
+  opacity: 1
+}
+.share-option .social-links::after {
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    left: -8px;
+    top: 12px;
+    background-color: #e7e9ea;
+    transform: rotate(45deg);
+    border-left: 1px solid #c9d2db;
+    border-bottom: 1px solid #c9d2db;
+}
+.share-option .social-links ul {
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.share-option .social-links ul li {
+    padding: 0px;
+}
+.share-option .social-links ul a {
+    margin-bottom: 0px;
+    padding: 6px 8px !important;
+    background-color: transparent;
+    border: none;
+    color: #313131 !important;
+}
+.share-option .social-links ul a i {
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+.terms-privacy{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 0px
+}
+.terms-privacy ol li{
+  margin: 40px 0px;
+  list-style-type: none;
+  counter-increment: li
+}
+.terms-privacy ol li p{
+  margin-top: 0px
+}
+.terms-privacy ol li::before {
+    content: counter(li);
+    color: #232222;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 29px;
+    font-weight: 700;
+    position: absolute;
+}
+.tc_header{
+  margin-bottom: 40px
+}
+.faq-accordion{
+  margin-top: 40px
+}
+.faq-accordion .panel-heading {
+    padding: 15px 20px;
+}
+.faq-accordion .panel-title > a {
+    font-size: 17px;
+}
+.faq-accordion .panel-body {
+    padding: 25px;
+}
+.faq-accordion .panel-body p {
+    font-size: 15px;
+    color: #6b6b6b;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)

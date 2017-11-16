@@ -1,8 +1,11 @@
-.listslider-container{
+.listslider-container {
     overflow: hidden;
+    margin-right: 18px;
+    margin-left: 18px;
+    flex: 1;
 }
 .listslider-arrow {
-    position: absolute;
+
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
@@ -42,6 +45,7 @@
 
 .listslider-arrow.listslider-left {
     left: -1px;
+    order: -1;
 }
 
 
@@ -65,7 +69,8 @@ ul.listslider {
 ul.listslider li {
     list-style: none;
     float: left;
-    padding: 2px 10px;
+    padding-right: 25px;
     display: inline-flex;
     align-items: center;
+    flex-direction: column;
 }
