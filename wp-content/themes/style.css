@@ -2908,7 +2908,7 @@ footer {
 .team-member-container .caption p {
     font-size: 13px;
     margin-bottom: 0px;
-    color: #ed7e1f;
+    color: #929292;
 }
 .sior {
     margin-bottom: 10px !important;
@@ -2922,8 +2922,9 @@ footer {
 }
 
 .team-member-container .thumbnail .primary-button {
-    line-height: 30px;
+    line-height: 25px;
     padding: 0px 24px;
+    font-weight: 500;
 }
 .linkedinbtn .primary-button {
     min-width: inherit;
@@ -3202,9 +3203,11 @@ select.form-control
 .linkedin-btn {
     border-radius: 20px;
     border: 2px solid #0077b5;
-    padding: 2px 16px;
+    padding: 0px 16px;
     background-color: #0077b5;
     color: white;
+    line-height: 25px;
+    display: inline-block;
 }
 .contact-btn {
     border-radius: 20px;
@@ -7567,6 +7570,10 @@ display: block;
 .faq-accordion .panel-body p {
     font-size: 15px;
     color: #6b6b6b;
+}
+.noborder-thumb .member-container {
+    border: 0px;
+    box-shadow: none;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
