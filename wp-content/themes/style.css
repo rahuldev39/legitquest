@@ -2871,13 +2871,11 @@ footer {
 .member-container {
     display: inline-block;
     border-radius: 50%;
-    overflow: hidden;
     border: 4px solid rgb(74, 123, 165);
     box-shadow: 0px 0px 0px 5px rgba(74, 123, 165, 0.36);
     position: relative;
     z-index: 100;
     transition: all 300ms ease-in-out;
-
 }
 .team-member-container .thumbnail:hover .member-container{
 
@@ -2900,7 +2898,8 @@ footer {
 .member-container img {
     max-width: 100%;
     transition: all 300ms ease-in-out;
-    max-width: 140px;
+    max-width: 140px !important;
+    border-radius: 50%;
 }
 .team-member-container .caption strong {
     color: #4a7ba5;
@@ -2909,16 +2908,40 @@ footer {
     font-size: 13px;
     margin-bottom: 0px;
     color: #929292;
+    padding-top: 13px;
 }
+.flex-row > div{
+  padding: 0px
+}
+
 .sior {
-    margin-bottom: 10px !important;
+
 }
 .team-member-container .thumbnail {
-
-    padding: 20px;
+    padding-top: 20px;
     overflow: hidden;
     margin: 0 auto;
-    margin-bottom: 30px;
+    background-color: white;
+    height: 100%;
+    border: 1px solid whitesmoke !important;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+
+
+.thumbnail > a {
+    flex: 1;
+    display: block;
+}
+.thumbnail  .caption {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.caption > a{
+      flex: 1;
 }
 
 .team-member-container .thumbnail .primary-button {
@@ -3201,13 +3224,13 @@ select.form-control
   display: flex;
 }
 .linkedin-btn {
-    border-radius: 20px;
-    border: 2px solid #0077b5;
-    padding: 0px 16px;
-    background-color: #0077b5;
     color: white;
-    line-height: 25px;
     display: inline-block;
+    vertical-align: bottom;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
 }
 .contact-btn {
     border-radius: 20px;
@@ -7574,6 +7597,11 @@ display: block;
 .noborder-thumb .member-container {
     border: 0px;
     box-shadow: none;
+}
+.linkedin-btn img {
+    width: 34px;
+    border: 2px solid white;
+    border-radius: 8px;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
