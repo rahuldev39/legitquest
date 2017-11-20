@@ -60,6 +60,15 @@
       <div class="search-nav-main">
         <div class="search-bar">
           <div class="search-filed-box">
+            <div class="select-search">
+              <select class="selectpicker">
+                <option>All</option>
+                <option>Citation</option>
+                <option>Party</option>
+                <option>Party</option>
+                <option>Bench</option>
+              </select>
+            </div>
             <div class="search-field">
 
               <input type="text" class="form-control" placeholder="Search Cases, Statutes and Regulations">
@@ -92,6 +101,9 @@
             <li class="menu-item ">
               <a href="#" class="signin-btn">Sign In</a>
             </li>
+            <li class="menu-item ">
+              <a href="#" class="homeregister-btn" data-toggle="modal" data-target="#register-modal">Sign Up for Free</a>
+            </li>
 
           </ul>
         </div>
@@ -114,7 +126,7 @@
 <div class="filter-panel">
 	<div class="filter-heading">
     	<a data-toggle="collapse" href="#collaps1" aria-expanded="false" aria-controls="collaps1">
-    		<h4>By Court</h4>
+    		<h4>By Bench</h4>
         </a>
     </div>
     <div class="filter-content collapse in" id="collaps1">
@@ -137,7 +149,7 @@
 <div class="filter-panel">
 	<div class="filter-heading">
     	<a data-toggle="collapse" href="#collaps2" class="collapsed">
-    		<h4>Distinguished Acts</h4>
+    		<h4>By Year</h4>
         </a>
     </div>
     <div class="filter-content collapse in" id="collaps2">
@@ -160,56 +172,16 @@
     </div>
 </div>
 
-<div class="filter-panel">
-	<div class="filter-heading">
-    	<a data-toggle="collapse" href="#collaps3" class="collapsed">
-    		<h4>Bench Size</h4>
-        </a>
-    </div>
-    <div class="filter-content collapse in" id="collaps3">
-    	<ul class="filter-list">
-              <li><div class="checkbox checkbox-default">
-                          <label><input class="styled" type="checkbox" checked=""><span> Value 1
-</span></label>
-                        </div></li>
 
-                        <li><div class="checkbox checkbox-default">
-                                    <label><input class="styled" type="checkbox" checked=""><span> Value 2
-</span></label>
-                                  </div></li>
-
-                                  <li><div class="checkbox checkbox-default">
-                                              <label><input class="styled" type="checkbox"><span> Value 3
-</span></label>
-                                            </div></li>
-            </ul>
-    </div>
+<div class="filter-action">
+  <button type="button" class="btn btn-primary btn-sm">Search</button>
+  <button type="button" class="btn btn-default btn-sm">Reset</button>
 </div>
 
 
 
-<div class="filter-panel">
-	<div class="filter-heading">
-    	<a data-toggle="collapse" href="#collaps4" class="collapsed">
-    		<h4>Other</h4>
-        </a>
-    </div>
-    <div class="filter-content collapse" id="collaps4">
-      <ul class="filter-list">
 
-                          <li><div class="checkbox checkbox-default">
-                                      <label><input class="styled" type="checkbox"><span> Procedural
-            </span></label>
-                                    </div></li>
 
-                                    <li><div class="checkbox checkbox-default">
-                                                <label><input class="styled" type="checkbox"><span> Substantial
-                      </span></label>
-                                              </div></li>
-
-                        </ul>
-    </div>
-</div>
 
 
 
@@ -219,7 +191,7 @@
           </div>
         </aside>
       </div>
-      <div class="search-main search-padder">
+      <div class="search-main ">
 
         <div class="tab-action-box">
           <div class="tab-action-links">
@@ -231,6 +203,19 @@
                 <a href="#" class="action-link">
                   <i class="fa fa-bell" aria-hidden="true"></i> Track Search
                 </a>
+              </div>
+
+              <div class="result-filter">
+                <div class="party-filter">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="filter by party">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      </div>
+                  </div>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-rounded">Reset</button>
               </div>
 
             </div>
@@ -258,10 +243,10 @@
                   <td>
                     <div class="search-left">
                       <h2 class="result_title"><a href="#">
-                        A. Jayachandra .Vs Aneel Kaur</a></h2>
+                        Ramesh Kumar .Vs Union of India & Others</a></h2>
                       <div class="info_line">
-                        <span> LQ 2004 SC 0216 - Cited 1 time. | Civil Appeal Nos.7763 of 2004 - 7764 of 2004 in C.M.A. Nos. 2124 &amp; 2366 of 2001 | Supreme Court Of India | 02-12-2004</span>
-                           <p>… granting summary judgment against him in his age-discrimination action against the McDonnell Douglas Corporation (McDonnell Douglas). We affirm …</p>
+                        <span> Supreme Court Of India | 31-07-2015</span>
+                           <p>Judgment : ;no work no pay”..of “no work no pay” and no injustice has been done to the appellant since he has not actually.Bhaskaran Pillai, (2007) 6 SCC 524, this Court held that the principle of “no work no pay & rdquo.The principle “no work no pay” cannot be accepted as a rule of thumb..We are conscious that even in the absence of statutory provision, normal rule is “no work no pay.</p>
                        </div>
 
 
@@ -321,11 +306,13 @@
                       </div>
                     </div>
                   </td>
+                  <!--
                   <td style="vertical-align: text-top;">
                     <div class="search-chart">
                       <canvas id="doughnutChart2"></canvas>
                     </div>
                   </td>
+                -->
                 </tr>
               </table>
 
@@ -345,10 +332,10 @@
                   <td>
                     <div class="search-left">
                       <h2 class="result_title"><a href="#">
-                        A. Jayachandra .Vs Aneel Kaur</a></h2>
+                      Food Corporation of India Workers Union .Vs Food Corporation of India & Another</a></h2>
                       <div class="info_line">
-                        <span> LQ 2004 SC 0216 - Cited 1 time. | Civil Appeal Nos.7763 of 2004 - 7764 of 2004 in C.M.A. Nos. 2124 &amp; 2366 of 2001 | Supreme Court Of India | 02-12-2004</span>
-                           <p>… granting summary judgment against him in his age-discrimination action against the McDonnell Douglas Corporation (McDonnell Douglas). We affirm …</p>
+                        <span> Supreme Court Of India | 05-04-2002</span>
+                           <p>Judgment : alternative but to agree for abolition of contract labour system and introducing DPS or 'no work no.State are actually functioning under no work no pay system..work no pay..for equal work has no application here..In order to give effect to the principle of equal pay for equal work, which is no doubt a constitutional.</p>
                        </div>
 
 
@@ -408,11 +395,99 @@
                       </div>
                     </div>
                   </td>
+                  <!--
                   <td style="vertical-align: text-top;">
                     <div class="search-chart">
                       <canvas id="doughnutChart"></canvas>
                     </div>
                   </td>
+                -->
+                </tr>
+              </table>
+
+
+            </div>
+
+          </div>
+
+
+          <div class="result-box">
+            <div class="result-box-inner">
+              <table>
+                <tr>
+                  <td>
+                    <div class="search-left">
+                      <h2 class="result_title"><a href="#">
+                      Union of India .Vs B.M. Jha</a></h2>
+                      <div class="info_line">
+                        <span>Supreme Court Of India | 24-10-2007</span>
+                           <p>Judgment : respondent herein has been granted retrospective promotion from 27.8.1984 he must be paid arrears of pay.These decisions relied on the principle of no work no pay..abovementioned cases, arrears of salary cannot be granted to the respondent in view of the principle of no.work no pay in case of retrospective promotion..No order as to costs..</p>
+                       </div>
+
+
+
+                        <div class="search-action">
+                          <a href="#"><i class="fa fa-gavel" aria-hidden="true"></i> Order</a>
+
+                            <a href="#" class="popup-open analyze-link"><i class="fa fa-search" aria-hidden="true"></i> Analyze</a>
+
+
+
+
+                            <a href="#" class="popup-open citation-link"> <i class="fa fa-search" aria-hidden="true"></i>  Alternative Citation</a>
+
+
+
+                          <div class="popup-container">
+                            <div class="case-popup analyze-popup">
+                                <div class="header-popup">
+                                  <span>Analyze</span>
+                                  <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="case-search">
+                                    <input type="text" class="form-control input-sm">
+                                    <button class="btn btn-default btn-sm">Search</button>
+                                    <button class="btn btn-default  btn-sm ">Previous</button>
+                                    <button class="btn btn-default  btn-sm">Next</button>
+                                </div>
+                                <div class="popup-result popup-body slimScroll2">
+                                    <span>Found in 164 places</span>
+                                <ul>
+                                  <li><a href="#">re supposed to bring </a></li>
+                                  <li><a href="#">bout the union of souls It cre </a></li>
+                                  <li><a href="#">laoreet nisl sit amet </a></li>
+                                  <li><a href="#">consectetur at risus sit amet</a></li>
+                                  <li><a href="#">Donec ullamcorper sapien</a></li>
+                                  <li><a href="#">Pellentesque eleifend purus</a></li>
+                                </ul>
+                                </div>
+                            </div>
+
+                            <div class="case-popup citation-popup">
+                                <div class="header-popup">
+                                  <span>Alternative Citation</span>
+                                  <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="popup-body">
+                                    <h4>A. Jayachandra .Vs Aneel Kaur</h4>
+                                    <p class="txt110"> Civil Appeal Nos.7763 of 2004 - 7764 of 2004 in C.M.A. Nos. 2124 &amp; 2366 of 2001 | Supreme Court Of India | 02-12-2004</p>
+                                    <h4>Alternative Citation</h4>
+                                    <p class="txt110">2005 (2) SCC 22 ; 2004 (10) SCALE 153 ; AIR 2005 SC 534 ; JT (2004) 10 SC 235 ; 2004 (1) Supreme 626 ; 2005 (1) CTC 215 (SC) ; 2005 (1) KLT 26 ; 2005 (2) LW 149 ; 2004 (7) SLT 581 ; 2005 MAH.L.R 106 ; 2005 (1) RCR(Civil) 309 ; 2005 (1) CivCC 402 ; 2005 (1) DMC 111 ; </p>
+                                </div>
+                            </div>
+                          </div>
+
+                      </div>
+                    </div>
+                  </td>
+                  <!--
+                  <td style="vertical-align: text-top;">
+                    <div class="search-chart">
+                      <canvas id="doughnutChart"></canvas>
+                    </div>
+                  </td>
+                -->
                 </tr>
               </table>
 
@@ -434,17 +509,19 @@
             <ul class="pagination">
               <li>
                 <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
+                  <span aria-hidden="true">First</span>
                 </a>
               </li>
-              <li><a href="#">1</a></li>
+              <li><a href="#">Previous</a></li>
+              <li class="active"><a href="#" class="active">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
               <li><a href="#">4</a></li>
               <li><a href="#">5</a></li>
+              <li><a href="#">Next</a></li>
               <li>
                 <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
+                  <span aria-hidden="true">Last</span>
                 </a>
               </li>
             </ul>
