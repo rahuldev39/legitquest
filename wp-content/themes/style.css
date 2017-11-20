@@ -6547,14 +6547,16 @@ line-height: 34px;
 }
 .container-404 {
     padding: 0px;
-    min-height: 500px;
+}
+.container-404 .img-404 img {
+    margin-bottom: 27px;
+    max-width: 500px
+}
+#section-404 {
+    background-color: #f7f7f7;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.container-404 .img-404 img{
-
-width: 100%
 }
 .text-404 {
     border-left: 1px solid #e0dcdc;
@@ -6573,8 +6575,10 @@ width: 100%
     margin-left: -18px;
     color: #0c121b;
 }
-.text-404 p{
-  font-size: 15px !important
+.text-404 p {
+    font-size: 16px !important;
+    line-height: 28px;
+    font-weight: 600;
 }
 .page-heading h3 {
     margin-bottom: 10px;
