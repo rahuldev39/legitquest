@@ -5786,15 +5786,13 @@ padding: 0px
 }
 .feature-box {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 .feature-content {
     flex: 1;
 }
 .feature-content h4 {
     margin-top: 0px;
-    font-size: 38px;
+    font-size: 32px;
     color: #407098;
     margin-bottom: 22px;
     display: flex;
@@ -5803,8 +5801,8 @@ padding: 0px
 }
 .feature-content p {
     margin-bottom: 14px;
-    font-size: 19px;
-    line-height: 29px;
+    font-size: 17px;
+    line-height: 27px;
 }
 .feature-content p strong {
     font-size: 20px;
@@ -6300,8 +6298,19 @@ line-height: 34px;
     min-height: 100vh;
     overflow: hidden;
 }
-.feature-box .feature-content {
-    padding-bottom: 50px;
+.f-icon i {
+    font-size: 100px;
+    margin-bottom: 32px;
+    opacity: .5;
+    text-shadow: 0px 0px 17px #122b3e;
+}
+.bg-icon {
+    position: absolute;
+    right: -52px;
+    top: -30px;
+    text-shadow: none !important;
+    color: #00000012;
+    font-size: 300px !important;
 }
 .i-img {
     margin-right: 5px;
@@ -7702,6 +7711,54 @@ display: block;
     border-bottom: 1px solid #e4e5e7;
     margin-bottom: 15px;
     text-align: right;
+}
+.features-h {
+    display: flex;
+}
+.features-h section {
+    flex: 1;
+    padding: 30px !important;
+    min-height: auto !important;
+}
+.features-h .feature-content p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.read-more {
+    display: inline-block;
+    padding: 2px 15px;
+    border: 1px solid white;
+    margin-top: 20px;
+    color: #f9f9f9;
+    background-color: #366990;
+    font-size: 13px;
+    border-radius: 20px;
+}
+.read-more:hover {
+    background-color: white;
+}
+.s-heading {
+    margin-bottom: 50px;
+}
+.s-heading h3 {
+    margin-top: 0px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.f-list ul {
+    padding: 0px;
+    list-style-type: none;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.f-list ul li {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ced9e6;
+    margin-bottom: 20px;
+    background-color: #ffffffad;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
