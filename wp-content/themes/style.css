@@ -7907,6 +7907,10 @@ display: block;
 }
 @media (max-width: 848px)
 {
+  .features-h {
+    display: flex;
+    flex-direction: column;
+}
   .plan-box {
 
     margin: 10px;
