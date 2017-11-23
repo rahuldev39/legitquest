@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <link href="../wp-content/themes/images/favicon.png" rel="icon">
 
+        <style type="text/css"></style>
         <title>Welcome</title>
+
+
+
         <link rel='stylesheet'  href='wp-content/plugins/tt-vc-addon/assets/css/tt_vc_front.css' type='text/css' media='all'/>
         <link rel='stylesheet'  href='wp-content/plugins/tt-vc-addon/assets/css/font-awesome.min.css' type='text/css' media='all'/>
         <link rel='stylesheet'  href='wp-content/themes/themetek/assets/css/bootstrap.min.css' type='text/css' media='all'/>
@@ -57,13 +61,14 @@
           <li class="menu-item  ">
             <a href="index.html">Home</a>
           </li>
-          <li class="menu-item menu-item-has-children  dropdown" data-toggle="dropdown">
+          <li class="menu-item menu-item-has-children  dropdown  active">
             <a href="#">About</a>
             <ul role="menu" class=" dropdown-menu">
               <li class=""><a href="about_us.html">About LegitQuest</a></li>
               <li class=""><a href="team.html">Our Team</a></li>
             </ul>
           </li>
+
 
           <li class="menu-item menu-item-has-children  dropdown">
             <a href="#">Products</a>
@@ -103,8 +108,8 @@
              </h1>
              <ol class="breadcrumb hidden-xs">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li class="active">Features</li>
+                <li><a href="#">About Us</a></li>
+                <li class="active">About LegiQuest</li>
               </ol>
             </div>
 
@@ -115,272 +120,259 @@
 
     </header>
 
-    <div class="features-container">
-      <section id="isearch" class="section " style="
-      background-color:#f8f8f8;       ">
-          <div class="container">
+    <div class="tab-featured">
+      <!-- Nav tabs -->
+      <div class="tab-featured-pill">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">iSerach</a>
+          </li>
+          <li role="presentation">
+            <a href="#tab2" aria-controls="tab3" role="tab" data-toggle="tab">iDRAF</a>
+          </li>
+          <li role="presentation">
+            <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">iGraphics</a>
+          </li>
+        </ul>
+      </div>
 
-              <div class="feature-box">
-                <div class="feature-content">
-                  <h4><img src="./wp-content/themes/images/i.png" class="i-img"> Search</h4>
-                  <div class="">
-                    <p>We provide you with a first of its kind revolutionary search feature powered by Artificial Intelligence to help you improve your work processes, reduce costs and ultimately generate favourable results for your clients.</p>
-  <p>Autocomplete feature shows suggestions as you type, based on legal taxonomy and
-  common search terms helping you further make your search more efficient.</p>
-  <p>rrelevant and vast data is the thing of the past with iSearch. The system is designer in a manner that keeps learning based on user behaviour, their needs and particular practice area. The auto complete feature suggests the most relevant document from the Statutes, Case Laws, Regulations and Templates based on legal taxonomy searching more efficient, relevant and accurate results.</p>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="tab1">
+          <section class="section " >
+
+              <div class="container">
+
+                <div class="feature-box">
+                    <div class="feature-content">
+
+                      <div class="">
+                        <p><strong>Not all search engines are created equal - Information retrieval made easy</strong></p>
+                        <p>Legal Research is the “process of identifying and retrieving information necessary to support legal decision making”. It is the analysis of the issue which is then concluded with the interpretation and application of the relevant information.</p>
+      <p>In this era of digitization, India has been struggling with an effective and efficient legal research portal. Except the conventional ones, the majority of judges, attorneys, researchers, scholars, law students and librarians have moved online for legal research. 33.9% of the attorneys frequently initiate their research by using Google, which is the most generic search engine. Legal stakeholders are wasting their precious time in scouting for relevant case laws online.</p>
+      <p>Considering these practical issues and aiming to reduce the time involved in legal research, LegitQuest has come out with iSearch, a legal research tool which is powered by Artificial Intelligence. It has a database of more than one million records.</p>
+                      </div>
+                    </div>
+                    <div class="feature-img right">
+                      <img src="./wp-content/themes/images/tab-search.png" alt="">
+                    </div>
                   </div>
-                </div>
-                <div class="feature-img right">
-                  <img src="./wp-content/themes/images/tab-search.png" alt="">
-                </div>
-              </div>
-
-          </div>
-      </section>
-
-      <section id="igraphics" class="section " >
-          <div class="container">
-
-              <div class="feature-box">
-                <div class="feature-img left">
-                  <img src="./wp-content/themes/images/tab-graphics.png" alt="">
-                </div>
-                <div class="feature-content">
-                  <h4><img src="./wp-content/themes/images/i.png" class="i-img"> Graphics</h4>
-                  <div class="">
-                    <p>Our brain has a hard time processing unstructured and complex data. Experts have proven that visuals have a positive impact on the human mind for learning and memorising. iGraphics condenses the treatment of overruled, distinguished, followed and relied case laws in important tables, charts and data into a single canvas for easy reference and understanding.</p>
-                  </div>
-                </div>
-
-              </div>
-
-          </div>
-      </section>
-
-      <section id="icitation" class="section "  style="
-      background-color:#f8f8f8;       ">
-          <div class="container">
-
-              <div class="feature-box">
-
-                <div class="feature-content">
-                  <h4><img src="./wp-content/themes/images/i.png" class="i-img"> Citation</h4>
-                  <div class="">
-                    <p class="font-large">A unique citation format for each judgment used for referencing. More on this will be shared with the Pre-Launch registered users.
-
-</p>
-
-                  </div>
-                </div>
-                <div class="feature-img right">
-                  <img src="./wp-content/themes/images/tab-citation.png" alt="">
-                </div>
-              </div>
-
-          </div>
-      </section>
-
-
-      <section id="ialert" class="section " >
-          <div class="container">
-
-              <div class="feature-box">
-                <div class="feature-img left">
-                  <img src="./wp-content/themes/images/tab-alert.png" alt="">
-                </div>
-                <div class="feature-content">
-                  <h4><img src="./wp-content/themes/images/i.png" class="i-img"> Alert</h4>
-                  <div class="">
-                    <p>We bring you the case alert feature that will notify you about the case hearing of a pending matter in various High Courts & Supreme Court of India.
-                          </p>
-                          <p>
-                            Once registered with the case alert feature subscribers/users will receive Alerts, Status and Orders of selected cases through email and SMS.
-                          </p>
-
-                          <ul class="featured-list">
-                          <li>Real Time Alert </li>
-                          <li> Case alerts via email &amp; SMS.</li>
-                        </ul>
-                  </div>
-                </div>
 
               </div>
+          </section>
 
-          </div>
-      </section>
 
-      <section id="icite" class="section " style="
-      background-color:#f8f8f8;       ">
-          <div class="container">
-
-              <div class="feature-box">
-
-                <div class="feature-content">
-                  <h4><img src="./wp-content/themes/images/i.png" class="i-img"> Cite</h4>
-                  <div class="">
-                    <p class="font-large">Cite will help students in learning how to read and understand cases and earn more professional opportunities. This will be fun as well as students will contribute critical information to make the law easy to access and understand.</p>
-                    <ul class="featured-list">
-                          <li>
-                            Earn mentorship opportunities from experienced lawyers and law entrepreneurs
-                          </li>
-                          <li>
-                            Win prizes and contribute to law research
-                          </li>
-                          <li>
-                            Improve &amp; perfect your flair for reading and interpreting cases
-                          </li>
-                          <li>
-                            Compete with other schools to bring fame to yours
-                          </li>
-                          <li>
-                            Shows that you are involved and interested in the practice of law and adds to your Resume
-                          </li>
-                        </ul>
-                  </div>
+          <section id="" style=" background-color:#e1edfb;   background-image: url(./wp-content/themes/images/pricing-pattrens.png)" class="section ">
+              <div class="container">
+                <div class="s-heading text-center">
+                  <h3 class="">iSearch provides you with</h3>
                 </div>
-                <div class="feature-img right">
-                  <img src="./wp-content/themes/images/tab-cite.png" alt="">
+                <div class="f-list">
+                    <ul>
+                      <li>The most relevant case law, statute or regulation in the minimum time.</li>
+                      <li>Customized search options by Case Name, Citation and Judge’s name.</li>
+                      <li>Relevant filter options which assist the user by narrowing to the most relevant result.</li>
+                    </ul>
                 </div>
-              </div>
 
-          </div>
-      </section>
-
-
-      <section id="ialert" class="section " >
-          <div class="container">
-
-              <div class="feature-box">
-                <div class="feature-img left">
-                  <img src="./wp-content/themes/images/tab1-1-1.png" alt="">
-                </div>
-                <div class="feature-content">
-                  <h4><img src="./wp-content/themes/images/i.png" class="i-img"> DRAF</h4>
-                  <div class="">
-                    <p>
-                              iDRAF stands for “Decision Reasoning Arguments Findings” of a Case Law. Using Artificial Intelligence, a team of highly experienced Attorneys and Engineers at LegitQuest has developed a specialised feature that enables you to find the iDRAF of a case within seconds.
-                          </p>
-                          <p>
-                              Every time you open a Case Law, the algorithm culls out the iDRAF of that case. This search tool contains tabs that take you to specific portions of the judgment within a few seconds.
-                          </p>
-                          <p>
-                              DRAF is a great tool to begin a research project, giving you a sense of what kind of material can be found on your topic. It has been thoroughly checked for quality, reliability and utility to legal researchers.
-                          </p>
-
-                  </div>
-                </div>
 
               </div>
+          </section>
 
-          </div>
-      </section>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab2">
+          <section class="section " >
+              <div class="container">
+
+                <div class="feature-box">
+                    <div class="feature-content">
+
+                      <div class="">
+                        <p><strong>World’s Only 1 Click judgment insight system</strong></p>
+                        <p>Across the globe, legal information and case laws are available in raw form and constitute the most complex and unstructured data. This data is collated by publishers and online legal portals to provide inputs for better analyses. </p>
+      <p>One-third of the attorneys’ time is spent in collecting primary and secondary sources of data and then reading and analyzing the ever-growing case law precedents.</p>
+      <p>With the use of Artificial Intelligence and Machine Learning, LegitQuest has come out with a revolutionary feature called iDRAF. It is the world’s only segregation system which provides the user with Decision, Reasoning, Arguments and the Facts of the case law at a click. This tool contains tabs that take the user to specific portions of the judgment within seconds, making the job of analyzing the case more effective, efficient and faster.</p>
+                      </div>
+                    </div>
+                    <div class="feature-img right">
+                      <img src="./wp-content/themes/images/tab-citation.png" alt="">
+                    </div>
+                  </div>
+
+              </div>
+          </section>
 
 
-
-      <section id="upper-footer" class="section " style="
-          background-color:#f5f5f5;    padding-top:50px;    padding-bottom:50px; ">
-            <div class="container">
-
-              <div class="row block-content">
-
-                <div class="col-sm-4 ad_res">
-                  <a class="logo" href="index.html">
-                            <img class="fixed-logo" src="wp-content/themes/images/lq-logo.png" alt="">
-                        </a>
-                        <div class="about-info">
-                          <p>
-                            Legit Quest is a Legal-Tech venture run by a versatile team of tech-savvy attorneys, engineers and designers who aim to make the practice of law simpler for its end users. We have eminent jurist Mr. Ram Jethmalani as our patron...
-                          </p>
-                          <a href="#" class="">Read More..</a>
-                        </div>
+          <section id="" style=" background-color:#e1edfb;   background-image: url(./wp-content/themes/images/pricing-pattrens.png)" class="section ">
+              <div class="container">
+                <div class="s-heading text-center">
+                  <h3 class="">Features of iDRAF</h3>
+                </div>
+                <div class="f-list">
+                    <ul>
+                      <li>It will help you reduce the time in analysing the case laws;</li>
+                      <li>It culls out the issues, arguments, reasoning, statutes, case cited and the decision of case laws of the Supreme Court of India since 1950.</li>
+                      <li>iDRAF has been thoroughly checked for quality, reliability and utility by a team of expert legal researchers.</li>
+                    </ul>
                 </div>
 
-                                    <div class="col-sm-2 border_right">
 
-                                        <h4>Sitemap</h4>
+              </div>
+          </section>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab3">
+          <section class="section " >
+              <div class="container">
 
-                                        <ul class="footer-list">
-                                            <li>
-                                                <a href="#">About Legiquest</a>
-                                            </li>
+                <div class="feature-box">
+                    <div class="feature-content">
 
-                                            <li>
-                                                <a href="#">About Us</a>
-                                            </li>
+                      <div class="">
+                        <p><strong>Intelligence through Visuals</strong></p>
+                        <p>Attorneys always want to find out the latest cases which work in their favour, as the most recent cases will have the settled law. This product feature has the power to help you find those latest cases that can make your research robust.</p>
+      <p>Knowing the treatment of a case can provide you with ample understanding about the relevance of the case you may decide to research. But right now, it is hard to extract how many times a case has been followed, relied upon, distinguished, overruled, etc. in the several judgements where it has been cited. </p>
+      <p>With our revolutionary feature called iGraphics, you would be able to see the treatment of case laws condensed in the form of figures and charts. iGraphics summarises the treatment as overruled, distinguished, followed and relied upon case laws. The complex data is presented on a single canvas for easy reference and understanding. iGraphics is trained to understand the treatment parameters which are checked for quality and reliability by a team of experts. So, now you do not have to waste your precious time in reading the entire judgment only to find that it has been overruled.
 
-                                            <li>
-                                                <a href="#">Pricing</a>
-                                            </li>
+      </p>
+                      </div>
+                    </div>
+                    <div class="feature-img right">
+                      <img src="./wp-content/themes/images/tab-graphics.png" alt="">
+                    </div>
+                  </div>
 
-                                            <li>
-                                                <a href="#">Contact Us</a>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-
-                                    <div class="col-sm-3 border_right">
-
-                                        <h4>Quick Links</h4>
-
-                                        <ul class="footer-list">
-                                            <li>
-                                                <a href="#">FAQ</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">Careers</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">Sign In</a>
-                                            </li>
+              </div>
+          </section>
 
 
-                                            <li>
-                                                <a href="#">We value your Privacy</a>
-                                            </li>
+          <section id="" style=" background-color:#e1edfb;   background-image: url(./wp-content/themes/images/pricing-pattrens.png)" class="section ">
+              <div class="container">
+                <div class="s-heading text-center">
+                  <h3 class="">Features of iGraphics</h3>
+                </div>
+                <div class="f-list">
+                    <ul>
+                      <li>It presents the treatment in easily identifiable colours which helps you understand the most unstructured data in a convenient way.</li>
+                      <li>The treatment parameters are presented under the following buckets - overruled, approved, cited, referred and distinguished.</li>
+                      <li>Clicking on the treatment parameters will take you to those cases where it has been cited.</li>
+                      <li>This also helps you refine the case judgements for your research.</li>
+                    </ul>
+                </div>
 
 
-                                        </ul>
-
-                                    </div>
-
-                                    <div class="col-sm-3 footer_cont">
-
-                                        <h4>Contact Information</h4>
-
-                                        <div class="address_box">
-                                          <div>
-                                            <span><img src="./wp-content/themes/images/singapore.png" class="flag"></span>
-                                            <p class="contact-info"> 519 Balestier Road, #02-03 Le Shantier, Singapore 329852</p>
-                                          </div>
-                                          <div>
-                                            <span><img src="./wp-content/themes/images/india.png" class="flag"></span>
-                                            <p class="contact-info">   A-149,Block A, LGF, Defence Colony, New Delhi, India - 110024.</p>
-                                          </div>
-
-                                          <div>
-                                            <span><i class="fa fa-envelope"></i></span>
-                                            <a class="contact-info" href="#">info@legitquest.com</a>
-                                          </div>
-                                          <div>
-                                            <span><i class="fa fa-globe"></i></span>
-                                            <a class="contact-info" href="#">legitquest.com</a>
-                                          </div>
-
-                                    </div>
-
-                                    </div>
+              </div>
+          </section>
+        </div>
+      </div>
+  </div>
 
 
 
-                                </div>
+    <section id="upper-footer" class="section " style="
+        background-color:#f5f5f5;    padding-top:50px;    padding-bottom:50px; ">
+          <div class="container">
 
-         </div>
-      </section>
+            <div class="row block-content">
 
-    </div>
+              <div class="col-sm-4 ad_res">
+                <a class="logo" href="index.html">
+                          <img class="fixed-logo" src="wp-content/themes/images/lq-logo.png" alt="">
+                      </a>
+                      <div class="about-info">
+                        <p>
+                          Legit Quest is a Legal-Tech venture run by a versatile team of tech-savvy attorneys, engineers and designers who aim to make the practice of law simpler for its end users. We have eminent jurist Mr. Ram Jethmalani as our patron...
+                        </p>
+                        <a href="#" class="">Read More..</a>
+                      </div>
+              </div>
+
+                                  <div class="col-sm-2 border_right">
+
+                                      <h4>Sitemap</h4>
+
+                                      <ul class="footer-list">
+                                          <li>
+                                              <a href="#">About Legiquest</a>
+                                          </li>
+
+                                          <li>
+                                              <a href="#">About Us</a>
+                                          </li>
+
+                                          <li>
+                                              <a href="#">Pricing</a>
+                                          </li>
+
+                                          <li>
+                                              <a href="#">Contact Us</a>
+                                          </li>
+                                      </ul>
+
+                                  </div>
+
+                                  <div class="col-sm-3 border_right">
+
+                                      <h4>Quick Links</h4>
+
+                                      <ul class="footer-list">
+                                          <li>
+                                              <a href="#">FAQ</a>
+                                          </li>
+
+                                          <li>
+                                              <a href="#">Careers</a>
+                                          </li>
+
+                                          <li>
+                                              <a href="#">Sign In</a>
+                                          </li>
+
+                                          <li>
+                                              <a href="#">Terms &amp; Conditions</a>
+                                          </li>
+
+                                          <li>
+                                              <a href="#">We value your Privacy</a>
+                                          </li>
+
+
+                                      </ul>
+
+                                  </div>
+
+                                  <div class="col-sm-3 footer_cont">
+
+                                      <h4>Contact Information</h4>
+
+                                      <div class="address_box">
+                                        <div>
+                                          <span><i class="fa fa-map-marker"></i></span>
+                                          <p class="contact-info">   A-149,Block A, LGF, Defence Colony, New Delhi, India - 110024.</p>
+                                        </div>
+                                        <div>
+                                          <span><i class="fa fa-map-marker"></i></span>
+                                          <p class="contact-info"> 519 Balestier Road, #02-03 Le Shantier, Singapore 329852</p>
+                                        </div>
+                                        <div>
+                                          <span><i class="fa fa-envelope"></i></span>
+                                          <a class="contact-info" href="#">info@legitquest.com</a>
+                                        </div>
+                                        <div>
+                                          <span><i class="fa fa-globe"></i></span>
+                                          <a class="contact-info" href="#">legitquest.com</a>
+                                        </div>
+
+                                  </div>
+
+                                  </div>
+
+
+
+                              </div>
+
+       </div>
+    </section>
 
 
 </div>
