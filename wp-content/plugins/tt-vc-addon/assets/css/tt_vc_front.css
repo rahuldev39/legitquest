@@ -781,10 +781,10 @@ ul.featured-list {
 
  ------------------------------------------------------------------------*/
 
-.video-container {
-    position: relative;
-    margin-top: -40px;
-}
+ .video-container {
+     position: relative;
+     margin-top: 40px;
+ }
 .video-container a {
     display: block;
     cursor: pointer;
