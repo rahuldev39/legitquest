@@ -7886,7 +7886,12 @@ position: relative;
 
 }
 .into-video-head{
-  
+
+}
+.about-section .feature-content p {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 34px;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
