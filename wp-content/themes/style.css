@@ -7893,6 +7893,13 @@ position: relative;
     font-size: 17px;
     line-height: 34px;
 }
+.about-header{
+  padding-top: 120px
+}
+.into-video-head .section-heading {
+    margin-bottom: 8px;
+    font-size: 46px;
+}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
