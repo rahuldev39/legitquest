@@ -756,8 +756,9 @@ ul.featured-list {
     position: absolute;
     display: block;
     width: 100%;
-    top: 0;
+    top: 50%;
     z-index: 1;
+    margin-top: -34px !important;
 }
 .clients.slider {
     max-width: 1024px;

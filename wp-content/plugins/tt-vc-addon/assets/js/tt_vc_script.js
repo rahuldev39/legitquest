@@ -157,8 +157,17 @@ if ( $( ".slider.clients" ).length ) {
       navigation: true,
       pagination: false,
       autoPlay: 5000,
-      items: 5,
+      items: 3,
     });
 }
 
+});
+
+
+
+//FANCYBOX
+//https://github.com/fancyapps/fancyBox
+$(".fancybox").fancybox({
+    openEffect: "none",
+    closeEffect: "none"
 });

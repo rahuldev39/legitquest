@@ -479,8 +479,8 @@ body.modal-open {
 }
 
 .owl-controls .owl-buttons div {
-    background: url(images/arrow.png);
-    display: inline-block;
+    background: url(images/arrow.png) !important;
+    display: inline-block !important;
     zoom: 1;
     margin: 0;
     width: 10px;
@@ -489,8 +489,8 @@ body.modal-open {
     font-size: 0;
     position: absolute;
     right: 0;
-    margin-top: 8px;
-    margin-right: -72px;
+    margin-top: 8px !important;
+    margin-right: -72px !important;
     top: 50%;
     padding: 0;
     filter: Alpha(Opacity=30);
@@ -498,6 +498,7 @@ body.modal-open {
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
+    padding: 0px !important;
 }
 .owl-controls .owl-buttons div.owl-prev {
     -webkit-transform: rotate(180deg);
@@ -7900,6 +7901,42 @@ position: relative;
     margin-bottom: 8px;
     font-size: 46px;
 }
+.clients-content {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4PX;
+}
+.clients-content img {
+    opacity: 1 !important;
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 19px !important;
+}
+.clients-content h4 {
+    margin-bottom: 6px;
+    font-size: 16px !important;
+    font-weight: 600;
+    color: #292929;
+}
+.clients-content span {
+    font-size: 13px !important;
+    color: #ababab;
+}
+.clients-content {
+  margin-left: 10px;
+  margin-right: 10px
+}
+#clients {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
@@ -8287,4 +8324,13 @@ header .intro-text .intro-lead-in {
     width: 50%;
     margin-bottom: 4px;
 }
+}
+
+
+
+.vc_column_container>.vc_column-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
 }
