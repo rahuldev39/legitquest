@@ -161,6 +161,16 @@ if ( $( ".slider.clients" ).length ) {
     });
 }
 
+
+if ( $( ".slider.publisher" ).length ) {
+    $(".slider.publisher").owlCarousel({
+      navigation: true,
+      pagination: false,
+      autoPlay: 5000,
+      items: 6,
+    });
+}
+
 });
 
 
