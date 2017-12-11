@@ -4281,7 +4281,7 @@ span.bullet {
     margin-top: 0px;
     font-size: 38px;
     line-height: 42px;
-    max-width: 486px;
+    max-width: 100%;
     letter-spacing: .11rem;
 }
 .case-box span {
@@ -4295,9 +4295,9 @@ span.bullet {
     font-weight: lighter;
 }
 .case-box-header {
-    display: flex;
     justify-content: space-between;
     margin-top: 43px;
+    margin-bottom: 16px;
 }
 .action-link-tab {
     display: flex;
@@ -4913,6 +4913,12 @@ body.overlay-open {
 .night-mode hr {
 
     border-top: 1px solid #3a3838;
+}
+.night-mode blockquote {
+    border-left: 5px solid #3c3c3c;
+}
+.night-mode blockquote font {
+    color: #9a9a9a !important;
 }
 /*############--------Color Mode---------####################*/
 
@@ -7930,7 +7936,7 @@ position: relative;
   margin-right: 10px
 }
 #clients {
-    
+
 }
 .gallery
 {
@@ -7956,7 +7962,21 @@ position: relative;
 }
 .publisher .owl-controls .owl-buttons div {
     margin-right: -20px !important;
+}
+.petitioner-box{
 
+}
+.petitioner-box p {
+    font-size: 15px;
+}
+.petitioner-box span {
+    display: block;
+    margin: 2px 0px;
+}
+.j_date {
+    margin-bottom: 16px;
+    margin-top: 6px;
+    color: #ed7e1f;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
