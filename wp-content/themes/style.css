@@ -7992,7 +7992,19 @@ position: relative;
   line-height: 28px;
   line-height: 2.4em;
 }
-
+.masonry.list-group > div{
+  margin-bottom: 5px
+}
+.fancybox{
+  padding: 10px
+}
+.fancybox small {
+    color: #313131;
+    margin-top: 15px;
+    display: block;
+    line-height: 22px;
+    font-size: 13px;
+}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
