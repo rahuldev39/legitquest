@@ -2971,10 +2971,9 @@ margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.flex-row
-{
-  display: flex;
-  flex-wrap: wrap;
+.flex-row {
+    display: flex !important;
+    flex-wrap: wrap;
 }
 .flex-row.center
 {
@@ -7978,6 +7977,22 @@ position: relative;
     margin-top: 6px;
     color: #ed7e1f;
 }
+.judgement-html-content  div{
+  padding: 0px !important
+}
+.judgement-html-content h1 {
+    margin-bottom: 20px;
+    margin-top: 57px;
+}
+
+.judgement-html-content , .judgement-html-content p{
+  font-family: 'Merriweather', serif !important;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  line-height: 2.4em;
+}
+
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
