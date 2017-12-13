@@ -8006,6 +8006,32 @@ position: relative;
     line-height: 22px;
     font-size: 13px;
 }
+.reg-msg{
+
+}
+.reg-msg h4{
+  color: #4d4d4f;
+      font-weight: normal;
+      font-size: 10pt;
+      text-align: center;
+}
+.reg-msg h3 {
+    color: #3066b0;
+    font-size: 13pt;
+    line-height: 1.3em;
+    margin-top: 0px;
+    font-weight: 600;
+}
+.login-modal .modal-body{
+  padding: 0px
+}
+.login-modal .modal-dialog{
+  margin-top: 0px
+}
+.register-form{
+  max-width: 400px;
+  margin: 0 auto;
+}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
