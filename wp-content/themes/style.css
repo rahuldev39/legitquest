@@ -5053,6 +5053,7 @@ body.overlay-open {
     background-color: rgba(255, 255, 255, 0.96);
     border: 12px solid rgba(74, 123, 165, 0.42);
     box-shadow: 0px 17px 24px -9px rgba(54, 71, 93, 0.18);
+    margin-top: 50px;
 }
 .login-main h4 {
     margin-top: 0px;
@@ -5121,7 +5122,8 @@ body.overlay-open {
     border: 1px solid #b8c2d0;
 }
 .register-block .login-main {
-    max-width: 700px !important;
+    max-width: 570px !important;
+    margin-top: 20px;
 }
 .otp-box
 {
