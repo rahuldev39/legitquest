@@ -6319,13 +6319,14 @@ line-height: 34px;
     opacity: .5;
     text-shadow: 0px 0px 17px #122b3e;
 }
-.bg-icon {
+.f-icon i.bg-icon {
     position: absolute;
     right: -52px;
     top: -30px;
-    text-shadow: none !important;
-    color: #00000012;
-    font-size: 300px !important;
+    text-shadow: none!important;
+    color: black;
+    font-size: 300px!important;
+    opacity: .06;
 }
 .i-img {
     margin-right: 5px;
