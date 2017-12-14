@@ -8011,11 +8011,12 @@ position: relative;
 .reg-msg{
 
 }
-.reg-msg h4{
-  color: #4d4d4f;
-      font-weight: normal;
-      font-size: 10pt;
-      text-align: center;
+.reg-msg h4 {
+    color: #4d4d4f;
+    font-weight: 400;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 22px;
 }
 .reg-msg h3 {
     color: #3066b0;

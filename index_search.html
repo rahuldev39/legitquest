@@ -21,6 +21,7 @@
   <link rel=stylesheet id=redux-google-fonts-css href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic%7CWork+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1474625187' type=text/css media=all />
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900" rel=stylesheet>
   <link rel=stylesheet href=wp-content/themes/jquery.tree-multiselect.min.css type=text/css media=all />
+  <link rel='stylesheet' href='wp-content/themes/bootstrap-select.min.css' type='text/css' media='all' />
   <script type=text/javascript src=wp-content/themes/js/jquery.min.js></script>
   <script type=text/javascript src=wp-content/plugins/tt-vc-addon/assets/js/jquery.easing.min.js></script>
   <script type=text/javascript src=./wp-content/themes/js/owl.carousel.min.js></script>
@@ -28,6 +29,7 @@
   <script type=text/javascript src=wp-content/plugins/tt-vc-addon/assets/js/map.min.js></script>
   <script type=text/javascript src=wp-content/plugins/tt-vc-addon/assets/js/tt_vc_script.min.js></script>
   <script type=text/javascript src=./wp-content/themes/js/aos.min.js></script>
+  <script type='text/javascript' src='wp-content/themes/js/bootstrap-select.min.js'></script>
   <!--[if lte IE 9]><link rel=stylesheet type=text/css href=http://keysoft-wp.keydesign-themes.com/demo3/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css media=screen><![endif]-->
   <!--[if IE 8]><link rel=stylesheet type=text/css href=http://keysoft-wp.keydesign-themes.com/demo3/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css media=screen><![endif]-->
 </head>
@@ -70,10 +72,10 @@
             <a href=contact-us.html>Contact Us</a>
           </li>
           <li class=menu-item>
-            <a href="login.html" class="signin-btn">Login</a>
+            <a href="#" class="signin-btn" data-toggle="modal" data-target="#login-modal">Login</a>
           </li>
           <li class=menu-item>
-            <a href="sign_up.html" class=homeregister-btn>Sign Up for Free</a>
+            <a href="#" class=homeregister-btn   data-toggle="modal" data-target="#register-modal">Sign Up for Free</a>
           </li>
         </ul>
       </div>
@@ -505,75 +507,94 @@ LegitQuest is sure to transform and revolutionise the way professors, judges, at
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="login-form-box">
               <div class="reg-msg">
-                  <h3>Thousands of your peers are saving time by logging into the Legitquest system and taking full advantage of the iDRAF feature.</h3>
-                  <h4>Register now and get access to the full feature site now.</h4>
+                <h3>Register now and get access to the full feature site now.</h3>
+                  <h4>Thousands of your peers are saving time by logging into the Legitquest system and taking full advantage of the iDRAF feature.</h4>
+
               </div>
               <form role="form">
 
-                <div class="register-form">
+                <div class="register-form-box">
                   <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="First and Last Name">
-                      </div>
-                    </div>
-                  </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="signup-firstname1">First Name<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="signup-firstname1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="signup-lastname1">Last Name</label>
+                                    <input type="text" class="form-control" id="signup-lastname1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="signup-contactno1">Mobile No<span class="required">*</span> (ex.9090909090)</label>
+                                            <input type="text" class="form-control" id="signup-contactno1">
+                                            <span id="contactnoerror1" class="required"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group1">
+                                            <label for="signup-email1">Email Id<span class="required">*</span></label>
+                                            <input type="text" class="form-control" id="signup-email1"><span id="emailaddresserror1" class="required"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label><span class="required"> *</span>I am a&nbsp;</label>
+                                                    <br>
+                                                    <select id="accounttype1" class="selectpicker" tabindex="-98">
+                                                        <option value="1">Litigator</option>
+                                                        <option value="2">Law Firm</option>
+                                                        <option value="3">Corporate lawyer</option>
+                                                        <option value="4">Law professor</option>
+                                                        <option value="5">Student</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                                                    <input type="checkbox" id="IsLicencedAttorney1">
+                                                                    <label>
+                                                                        I agree the <a href="javaScript:{openPopUp();}">Terms &amp; Conditions</a>&nbsp;&nbsp;<span id="termserror1" class="required"></span>
+                                                                    </label>
+                                                                </div>
+
+
+<hr>
+
 
                   <div class="row">
                     <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Email Address">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Password (min. 7 characters)">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Retype Password">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <button type="submit" class="btn btn btn-primary btn-block">
-                          Next
+                      <div class="form-group text-center">
+                        <button type="submit" class="btn btn btn-primary ">
+                          Register
+                        </button>
+                        <button type="submit" class="btn btn btn-default ">
+                          No, I do not want to make
+my research efficient
                         </button>
                       </div>
                     </div>
                   </div>
 
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label for="inputUsernameEmail">Professional or Student</label>
-                        <select class="form-control" name="">
-                          <option>Professional</option>
-                          <option>Student</option>
-                        </select>
 
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="checkbox">
-            <label>
-              <input type="checkbox">
-              Register or No, I do not want to make my research efficient</label>
-          </div>
 
-          <hr>
+
+        <!--  <hr>
 
                 <div class="new_user_right text-center">Already have an account? <a href="#login-modal" class="signin" data-toggle="modal"  data-dismiss="modal">Login here</a>.</div>
+
+
+          -->
 
                 </div>
 
@@ -768,6 +789,12 @@ LegitQuest is sure to transform and revolutionise the way professors, judges, at
       })
 
     });
+  </script>
+
+  <script type="text/javascript">
+      $('.selectpicker').selectpicker({
+    });
+
   </script>
 </body>
 
