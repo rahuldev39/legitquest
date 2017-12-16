@@ -7339,6 +7339,7 @@ h3.section-lead {
     background-color: white;
     margin-left: -15px;
     margin-right: -15px;
+    overflow: hidden;
 }
 .text-white{
   color: white
