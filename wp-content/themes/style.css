@@ -254,6 +254,7 @@ section h2.section-heading {
 section {
     padding: 80px 0;
     position: relative;
+    overflow: hidden;
 }
 
 .container {
@@ -312,14 +313,15 @@ body.modal-open {
 }
 
 .parallax {position: relative;}
-.parallax .parallax-overlay {
-    position:  absolute;
+.parallax-overlay {
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     background-size: 100%;
     background-attachment: fixed;
     opacity: 0.12;
+    overflow: hidden;
 }
 
 .parallax h2.section-heading,
@@ -5803,6 +5805,7 @@ padding: 0px
 }
 .feature-box {
     display: flex;
+
 }
 .feature-content {
     flex: 1;
