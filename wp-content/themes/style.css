@@ -4106,6 +4106,7 @@ span.bullet {
 .block-body ul {
     padding: 0px;
     list-style-type: none;
+    margin-bottom: 0px;
 }
 .block-body h4{
   margin-top: 0px
@@ -4115,13 +4116,14 @@ span.bullet {
     margin-bottom: 5px;
 }
 .rank-label {
-    font-size: 34px;
+    font-size: 27px;
     color: #437aa2;
     background-color: #f7f7f7;
     display: inline-block;
     padding: 10px 13px;
     border: 4px solid #e2e2e2;
     margin-bottom: 6px;
+    line-height: 21px;
 }
 .university_page .counter {
     font-size: 20px;
@@ -4200,8 +4202,8 @@ span.bullet {
 }
 
 .university_seat {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     border-radius: 100px;
     display: flex;
     flex-direction: column;
@@ -4219,7 +4221,7 @@ span.bullet {
 }
 .university_seat span {
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
     text-transform: uppercase;
     display: block;
@@ -4233,9 +4235,8 @@ span.bullet {
     font-weight: 600;
     font-size: 14px !important;
 }
-.university-name
-{
-
+.university-name {
+    color: #7d7f82;
 }
 .profilbox {
     margin-bottom: 30px;
@@ -5981,8 +5982,10 @@ padding: 0px
 .notes-Form .form-control{
   margin-bottom: 10px
 }
-.block .block-body{
-  padding: 10px
+.block .block-body {
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .r-case-list a {
     font-size: 13px;
@@ -8105,6 +8108,9 @@ position: relative;
     font-size: 13px;
     padding: 5px 17px;
     border-radius: 0px;
+}
+.rank-label-container{
+  padding-bottom: 20px
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
