@@ -8128,6 +8128,27 @@ position: relative;
     box-shadow: 0px 12px 14px -11px #a79393;
     transform: translateY(-2px);
 }
+.blog-single .blog-single-title {
+    font-size: 24px !important;
+    line-height: 33px !important;
+}
+.blog-single .post p {
+    margin-bottom: 20px !important;
+    font-size: 15px !important;
+    color: #585757 !important;
+    margin-top: 20px !important;
+    text-align: justify;
+}
+.blog-single .navigation{
+  display: none !important;
+}
+.blog-single .tags {
+    float: none !important;
+    margin-bottom: 10px;
+}
+.blog-single .tags a{
+  float:  none !important; 
+}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
