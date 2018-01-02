@@ -1556,6 +1556,8 @@ footer {
     padding: 15px;
     border: 1px solid gainsboro;
     background-color: #fdfdfd;
+    height: 100%;
+    margin-bottom: 0px !important;
 }
 .post-text {
 }
@@ -8117,6 +8119,9 @@ position: relative;
     font-size: 18px !important;
     line-height: 26px !important;
     margin-top: 0px !important;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
 }
 .blog-container .post {
     margin-bottom: 25px !important;
@@ -8139,6 +8144,10 @@ position: relative;
     margin-top: 20px !important;
     text-align: justify;
 }
+.blog-single .post p a {
+    font-weight: 600;
+    color: #307db7;
+}
 .blog-single .navigation{
   display: none !important;
 }
@@ -8147,7 +8156,19 @@ position: relative;
     margin-bottom: 10px;
 }
 .blog-single .tags a{
-  float:  none !important; 
+  float:  none !important;
+}
+.blog-container .post-text{
+  height: 100%;
+      display: flex;
+      flex-direction: column;
+}
+.blog-container .post-text >  a{
+  flex: 1
+
+}
+.blog-single .blog-content img{
+  width: 100%
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
