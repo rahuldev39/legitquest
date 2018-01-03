@@ -1533,6 +1533,7 @@ footer {
     letter-spacing: -1px;
     font-weight: 600;
     color: #3e3e3e;
+    text-transform: uppercase;
 }
 #posts-content .entry-meta {
     font-size: 14px;
@@ -1583,7 +1584,13 @@ footer {
     margin-bottom: 14px;
     position: relative;
 }
-.blog_widget ul li a { color: inherit;  -webkit-transition: 0.25s;-o-transition: 0.25s;transition: 0.25s; }
+.blog_widget ul li a {
+    color: inherit;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    text-transform: uppercase;
+}
 .blog_widget select { width: 100%; padding: 0 15px; border: 1px solid #ccc; outline: none; font-size: 14px; line-height: 50px; height: 50px; }
 
 #comments #respond #reply-title {
@@ -8173,6 +8180,18 @@ position: relative;
 .tagcloud a {
     font-size: 12px !important;
     padding: 4px 13px;
+}
+.comment-count{
+  display: none;
+}
+.comment-list{
+  display: none;
+}
+.reply-title{
+  display: none;
+}
+.comment-respond{
+  margin-top: 20px
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
