@@ -8170,6 +8170,10 @@ position: relative;
 .blog-single .blog-content img{
   width: 100%
 }
+.tagcloud a {
+    font-size: 12px !important;
+    padding: 4px 13px;
+}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
