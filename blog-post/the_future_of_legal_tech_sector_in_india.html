@@ -103,7 +103,30 @@
 
     <div id="posts-content" class="container blog-single">
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-               <div class="post-1821 post type-post status-publish format-standard has-post-thumbnail hentry category-bussiness category-future tag-experiments tag-food tag-technology" id="post-1821">
+               <div class="post type-post status-publish format-standard has-post-thumbnail">
+                 <ul class="share-buttons">
+
+                                     <li class="">
+                                         <a href="#" class="social-icon-sm si-dark si-colored-facebook si-gray-round">
+
+                                             <i class="fa fa-facebook"></i>
+                                             <span>115</span>
+                                         </a>
+                                     </li>
+                                     <li class="">
+                                         <a href="#" class="social-icon-sm si-dark si-colored-twitter si-gray-round">
+
+                                             <i class="fa fa-twitter"></i>
+                                             <span>56</span>
+                                         </a>
+                                     </li>
+                                     <li class="">
+                                         <a href="#" class="social-icon-sm si-dark si-colored-linkedin si-gray-round">
+                                             <i class="fa fa-linkedin"></i>
+                                             <span>3</span>
+                                         </a>
+                                     </li>
+                                 </ul>
          <div class="blog-single-content">
             <img width="770" height="430" src="https://thefutureoflegaltechsectorinindia.files.wordpress.com/2017/12/482080-the-best-human-resources-management-systems-of-2015.jpg?w=810&#038;h=456&#038;crop=1" class="attachment-large size-large wp-post-image" alt="" />
              <h1 class="blog-single-title">THE FUTURE OF LEGAL-TECH SECTOR IN INDIA</h1>
@@ -138,27 +161,6 @@
 
 <hr>
 
-<ul class="list-inline share-buttons">
-                    <li class="list-inline-item">Share Post:</li>
-                    <li class="list-inline-item">
-                        <a href="#" class="social-icon-sm si-dark si-colored-facebook si-gray-round">
-                            <i class="fa fa-facebook"></i>
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="social-icon-sm si-dark si-colored-twitter si-gray-round">
-                            <i class="fa fa-twitter"></i>
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="social-icon-sm si-dark si-colored-linkedin si-gray-round">
-                            <i class="fa fa-linkedin"></i>
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
 
             <div class="meta-content">
                <div class="tags">
@@ -461,7 +463,25 @@
   <script type='text/javascript' src='../wp-content/themes/js/map.js'></script>
   <script type='text/javascript' src='../wp-content/themes/js/SmoothScroll.js'></script>
   <script type='text/javascript' src='../wp-content/themes/js/scripts.js'></script>
+  <script>
+  			$(window).scroll(function()
+  			{
+  					var scroll_count = $(this).scrollTop();
+  					console.log(scroll_count);
 
+  								if(scroll_count > 200)
+  								{
+  									$('.share-buttons').addClass('show-option');
+  								}
+  								else
+  								{
+  									$('.share-buttons').removeClass('show-option');
+  								}
+
+
+  				})
+
+          </script>
 </body>
 
 </html>

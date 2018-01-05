@@ -8194,29 +8194,41 @@ position: relative;
   margin-top: 20px
 }
 .list-inline-item:not(:last-child) {
-    margin-right: 5px;
+
+}
+.share-buttons{
+
+opacity: 0;
+transition: all ease-in-out 800ms;
+height: 0;
+overflow: hidden;
+}
+.share-buttons.show-option{
+  height: auto;
+display: block;
+opacity: 1
 }
 .share-buttons li {
     vertical-align: middle;
+    margin-bottom: 8px;
 }
 .list-inline-item {
     display: inline-block;
 }
 .share-buttons li a {
     margin-right: 0px;
+    padding: 0px 6px;
 }
 .social-icon-sm {
-    margin: 0 5px 5px 0;
-    width: 30px;
-    height: 30px;
+    margin: 0 7px 5px 0;
+    height: 36px;
     font-size: 18px;
-    line-height: 30px !important;
+    line-height: 36px !important;
     color: #555;
     text-shadow: none;
     border-radius: 3px;
     overflow: hidden;
     display: block;
-    float: left;
     text-align: center;
     border: 1px solid #AAA;
 }
@@ -8225,12 +8237,7 @@ position: relative;
     border: 0px !important;
     color: #fff !important;
 }
-.si-gray-round {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-}
+
 
 .si-colored-facebook, .si-facebook:hover {
     background-color: #3B5998 !important;
@@ -8244,23 +8251,42 @@ position: relative;
 .social-icon-sm:hover {
     border-color: transparent;
 }
-.social-icon-sm:hover i:first-child {
-    margin-top: -30px;
-}
+
 .social-icon-sm i {
-    display: block;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     line-height: 30px;
     position: relative;
+    color: white !important;
+}
+.social-icon-sm span {
+    font-size: 11px;
 }
 .social-icon-sm i:last-child {
     color: #FFF !important;
 }
 .post-content .fa {
     color: #ddd;
+}
+.share-buttons {
+    list-style-type: none;
+    padding: 0px;
+    position: fixed;
+    right: 32.6%;
+    z-index: 1000;
+}
+.blog-single .post , .comments-content{
+  margin-right: 30px
+}
+.blog-single .post{
+  padding: 0px !important;
+  border: none !important
+}
+.blog-single-content img {
+    border: 1px solid #e2dfdf;
+    padding: 12px;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
@@ -8272,6 +8298,7 @@ position: relative;
 
 @media (min-width: 960px)
 {
+
   .big-navbar .navbar.navbar-default {
     padding: 20px 20px;
 }
@@ -8292,6 +8319,11 @@ position: relative;
 
 @media (max-width: 992px)
 {
+  .share-buttons {
+
+    right: 29px;
+
+}
   .right {
     margin-left: 0px;
     margin-right: 0px !important;
@@ -8332,6 +8364,9 @@ position: relative;
 }
 @media (max-width: 960px)
 {
+  .blog-single .post, .comments-content {
+    margin-right: 68px;
+}
   .social-signup:after {
 
     left: 50%;

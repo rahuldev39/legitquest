@@ -103,7 +103,30 @@
 
     <div id="posts-content" class="container blog-single">
 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-               <div class="post-1821 post type-post status-publish format-standard has-post-thumbnail hentry category-bussiness category-future tag-experiments tag-food tag-technology" id="post-1821">
+               <div class="post type-post status-publish format-standard has-post-thumbnail">
+                 <ul class="share-buttons">
+
+                                     <li class="">
+                                         <a href="#" class="social-icon-sm si-dark si-colored-facebook si-gray-round">
+
+                                             <i class="fa fa-facebook"></i>
+                                             <span>115</span>
+                                         </a>
+                                     </li>
+                                     <li class="">
+                                         <a href="#" class="social-icon-sm si-dark si-colored-twitter si-gray-round">
+
+                                             <i class="fa fa-twitter"></i>
+                                             <span>56</span>
+                                         </a>
+                                     </li>
+                                     <li class="">
+                                         <a href="#" class="social-icon-sm si-dark si-colored-linkedin si-gray-round">
+                                             <i class="fa fa-linkedin"></i>
+                                             <span>3</span>
+                                         </a>
+                                     </li>
+                                 </ul>
          <div class="blog-single-content">
             <img width="770" height="430" src="https://easiestandfastestsourcesforaccessingsupremecourtjudgments.files.wordpress.com/2017/12/supreme-court_adab0da8-d398-11e7-8802-68a15924f886.jpg" class="attachment-large size-large wp-post-image" alt="" />
              <h1 class="blog-single-title">Easiest and Fastest Sources for Accessing Supreme Court Judgments</h1>
@@ -466,7 +489,25 @@
   <script type='text/javascript' src='../wp-content/themes/js/map.js'></script>
   <script type='text/javascript' src='../wp-content/themes/js/SmoothScroll.js'></script>
   <script type='text/javascript' src='../wp-content/themes/js/scripts.js'></script>
+  <script>
+  			$(window).scroll(function()
+  			{
+  					var scroll_count = $(this).scrollTop();
+  					console.log(scroll_count);
 
+  								if(scroll_count > 200)
+  								{
+  									$('.share-buttons').addClass('show-option');
+  								}
+  								else
+  								{
+  									$('.share-buttons').removeClass('show-option');
+  								}
+
+
+  				})
+
+          </script>
 </body>
 
 </html>
