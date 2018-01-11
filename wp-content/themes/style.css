@@ -8364,6 +8364,10 @@ opacity: 1
 }
 @media (max-width: 960px)
 {
+  .signin-btn {
+    display: block !important;
+    max-width: 100%;
+}
   .blog-single .post, .comments-content {
     margin-right: 68px;
 }
@@ -8435,9 +8439,23 @@ opacity: 1
     width: 47%;
     display: inline-block;
 }
+.navbar-fixed-top {
+  padding: 0px;
+    min-height: 65px;
+}
+.navbar-fixed-top .page-scroll {
+    padding: 3px 4px;
+}
+#menu-main-menu .menu-item-has-children .dropdown-menu::after {
+    top: -8px;
+    left: 50%;
+    margin-left: -8px;
+}
+#main-menu .navbar-nav .menu-item-has-children.mobile-visible .dropdown-menu {
 
-
-
+    margin-left: -15px;
+    margin-right: -15px;
+}
 }
 @media (max-width: 848px)
 {
