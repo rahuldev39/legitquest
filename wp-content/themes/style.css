@@ -3930,7 +3930,7 @@ display: block;
     position: fixed;
     top: 0;
     right: 0px;
-    width: 453px;
+    width: 35%;
     background-color: #FFFFFF;
     height: calc(100vh - 85px);
     z-index: 100;
@@ -3942,7 +3942,7 @@ display: block;
     box-shadow: 0px 0px 11px #e4e4e4;
 }
 .close-sidebar .right-sidebar-wrap {
-    right: -453px;
+    right: -35%;
     z-index: 100000;
 }
 .fixed-sidebar-right .close-sidebar .search-main {
@@ -4326,13 +4326,17 @@ span.bullet {
     margin-right: 1px;
 }
 .aside-toggle a {
-    padding: 15px 14px;
+    padding: 17px 10px;
     display: block;
-    font-size: 20px;
+    font-size: 19px;
     color: #333333;
+    display: flex;
+    align-items: center;
+    background-color: #dfe6ec;
+    border-left: 1px solid #cdd4db;
 }
 .aside-toggle a:hover {
-    background-color: rgba(0, 0, 0, 0.07);
+    background-color: rgb(219, 228, 234);
 }
 .action-link-tab .dropdown-menu a {
     padding: 0px 2px;
@@ -4355,16 +4359,19 @@ span.bullet {
   margin-bottom: 20px
 }
 .bookmark-block a {
-    display: inline-block;
-    padding: 1px 18px;
+    display: flex;
+    padding: 1px 8px;
     border: 1px solid #f67f2e;
     border-radius: 37px;
     background-color: white;
-    font-size: 12px;
+    font-size: 11px;
     color: #f67f2e;
     font-weight: 700;
+    align-items: center;
 }
-
+.bookmark-block a i{
+  margin-right: 4px
+}
 .cititaton-text span {
     font-size: 13px;
     display: inline-block;
@@ -4417,7 +4424,7 @@ p.judgement-head {
     border-bottom: 1px solid #cdd4da;
     background-color: #edf2f5;
     padding-left: 20px;
-    width: calc(100vw - 453px);
+
 }
 .close-sidebar .text-slider{
       width: 100vw;
@@ -4661,6 +4668,8 @@ body.overlay-open {
     z-index: 10;
     left: 0px;
     border-radius: 0px;
+    padding-right: 39% !important;
+    width: 100%;
 }
 .select22::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: rgba(247, 247, 247, 0.56);
@@ -4775,8 +4784,9 @@ body.overlay-open {
 @media (max-width: 960px)
 {
   .text-slider.affix {
-    top: 106px;
-
+    top: 65px;
+    padding-right: 39%;
+    width: 100%;
 }
 }
 .reader-mode-on .text-slider{
@@ -5689,7 +5699,7 @@ padding: 0px
 }
 
 .fixed-sidebar-right .search-main {
-    margin-right: 453px;
+    margin-right: 35%;
     position: relative;
 }
 
@@ -5979,7 +5989,7 @@ padding: 0px
 }
 
 .fixed-sidebar-right footer {
-    margin-right: 453px;
+    margin-right: 35%;
     padding-right: 21px;
 }
 .sidebar-tabs-link .bootstrap-select{
@@ -7453,7 +7463,7 @@ margin-bottom: 60px
     max-width: 750px;
     margin: 0 auto;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 0px;
     border: 3px dashed #c1c1c1;
     margin-bottom: 5px;
     display: flex;
@@ -7706,8 +7716,11 @@ display: block;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 30px;
-    margin-top: 10px;
+    margin-right: 0px;
+}
+.search-info {
+    display: flex;
+    justify-content: space-between;
 }
 .party-filter {
     max-width: 300px;
@@ -8299,6 +8312,7 @@ opacity: 1
 @media (min-width: 960px)
 {
 
+
   .big-navbar .navbar.navbar-default {
     padding: 20px 20px;
 }
@@ -8364,6 +8378,27 @@ opacity: 1
 }
 @media (max-width: 960px)
 {
+  .tab-action-box {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #f7f7f7;
+}
+.search-result-listing {
+    padding: 30px !important;
+    margin-top: 0px;
+    padding-left: 55px !important;
+}
+.case-topbar {
+
+    margin-top: 0px;
+}
+  .search-bar{
+    display: none;
+  }
+  .big-navbar .search-result-section {
+    padding-top: 65px;
+}
   .signin-btn {
     display: block !important;
     max-width: 100%;
@@ -8404,11 +8439,8 @@ opacity: 1
     flex-direction: column;
   }
   .right-sidebar-wrap {
-    position: absolute;
-    right: -340px;
-    transition: all 300ms ease-in-out;
-    background-color: white;
-    z-index: 100;
+    top: 64px;
+    height: calc(100vh - 64px);
 }
 .open-sidebar .right-sidebar-wrap {
     position: fixed;
@@ -8472,8 +8504,29 @@ opacity: 1
   display: none;
 }
 }
+@media (max-width: 836px)
+{
+  .right-sidebar-wrap {
+
+      width: 330px;
+  }
+  .close-sidebar .right-sidebar-wrap {
+    right: -330px;
+}
+.text-slider.affix {
+    padding-right: 23px !important;
+}
+}
+
 @media (max-width: 768px)
 {
+  .search-info {
+    flex-direction: column;
+    align-items: center;
+}
+.num_results {
+    margin-bottom: 15px;
+}
   .pricing-block-inner{
     flex-direction: column;
   }

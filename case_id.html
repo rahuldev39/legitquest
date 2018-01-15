@@ -81,7 +81,7 @@
 
           <ul id="menu-main-menu" class="nav navbar-nav">
 
-          
+
             <li>
               <a href="#" class="action-link">
                 <i class="fa fa-print" aria-hidden="true"></i> print
@@ -643,7 +643,7 @@
 
 
 
-     <div id="customizer" class="hidden-xs">
+     <div id="customizer">
             <div class="options"><i class="pc nc-icon-outline-pc"></i></div>
 
             <div class="reading-option">
@@ -786,11 +786,12 @@
   <script type="text/javascript">
     $(function(){
       $(window).resize(function resize(){
-        if ($(window).width() < 960) {
+        if ($(window).width() < 820) {
       $('body').removeClass('fixed-sidebar-right');
+      $('.search-result-section').addClass('close-sidebar');
       } else {
         $('body').addClass('fixed-sidebar-right');
-
+        $('.search-result-section').removeClass('close-sidebar');
       }
       }).trigger('resize');
 
