@@ -167,7 +167,7 @@ if ( $( ".slider.publisher" ).length ) {
       navigation: true,
       pagination: false,
       autoPlay: 5000,
-      items: 6,
+      items: 4,
     });
 }
 
