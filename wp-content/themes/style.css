@@ -5842,8 +5842,8 @@ padding: 0px
 }
 .feature-content p {
     margin-bottom: 14px;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 19px;
+    line-height: 31px;
 }
 .feature-content p strong {
     font-size: 20px;
@@ -6774,16 +6774,16 @@ line-height: 34px;
 .pricing-plan {
     display: flex;
     justify-content: center;
-    max-width: 800px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 .plan-box {
-    padding: 30px;
+    padding: 20px 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin: 30px;
+    margin: 30px 10px;
 }
 .plan-body {
     flex: 1;
@@ -7307,12 +7307,23 @@ header.header-bluebg .search-bar .select-search + .search-field input.form-contr
 .info-text-container h3 {
     margin: 0px;
     margin: 0 auto;
+    font-size: 31px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #908d8d;
+    position: relative;
+    padding: 10px;
+    max-width: 80%;
+}
+.info-text-container h4{
+    margin: 0px;
+    margin: 0 auto;
     font-size: 27px;
     line-height: 45px;
     font-weight: 600;
     color: #908d8d;
     position: relative;
-    padding: 30px;
+   
     max-width: 80%;
 }
 
@@ -8333,6 +8344,12 @@ opacity: 1
 
 @media (max-width: 992px)
 {
+    .plan-box {
+        
+        flex: auto;
+        margin: 10px 10px;
+        width: 45%;
+    }
   .share-buttons {
 
     right: 29px;
@@ -8520,6 +8537,11 @@ opacity: 1
 
 @media (max-width: 768px)
 {
+    .plan-box {
+        flex: auto;
+        margin: 10px 10px;
+        width: 90%;
+    }
   .search-info {
     flex-direction: column;
     align-items: center;
