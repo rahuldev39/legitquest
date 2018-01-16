@@ -7734,6 +7734,7 @@ display: block;
 .search-info {
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
 }
 .party-filter {
     max-width: 300px;
@@ -8451,13 +8452,16 @@ opacity: 1
 }
 @media (max-width: 960px)
 {
+    .search-result-listing {
+        padding-top: 55px !important;
+    }
   .tab-action-box {
     position: fixed;
     width: 100%;
     z-index: 100;
     background-color: #f7f7f7;
 }
-.search-result-listing {
+.case-id-detail {
     padding: 30px !important;
     margin-top: 0px;
     padding-left: 55px !important;
@@ -8598,10 +8602,11 @@ opacity: 1
         margin: 10px 10px;
         width: 90%;
     }
-  .search-info {
-    flex-direction: column;
-    align-items: center;
-}
+    .search-info {
+        flex-direction: column;
+        align-items: center;
+        
+    }
 .num_results {
     margin-bottom: 15px;
 }
@@ -8666,6 +8671,44 @@ opacity: 1
 }
 @media (max-width: 626px)
 {
+    .right-sidebar-wrap{
+     display: none
+    }
+    .text-slider-main {
+        padding-right: 0px;
+       
+    }
+    .igraph-box{
+        display: none
+    }
+    .igraph-separator{
+        display: none
+    }
+    .case-box h3 {
+        font-size: 27px;
+        line-height: 30px;
+    }
+    .case-box-header {
+        margin-top: 27px;
+    }
+    .case-box p {
+        font-size: 14px;
+       
+    }
+    .judgement-content p {
+        font-size: 14px;
+   
+    }
+    .case-metadata{
+        display: none
+    }
+    .text-slider {
+        margin-bottom: 0px;
+    }
+    .search-action > a, .popup-open {
+        padding: 1px 7px;
+        font-size: 11px;
+    }
   .home .header-form-section {
     padding-top: 30px;
 }
