@@ -6784,6 +6784,11 @@ line-height: 34px;
     flex-direction: column;
     flex: 1;
     margin: 30px 10px;
+    transition: all 300ms ease-in-out;
+}
+.plan-box:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0px 12px 25px -9px #353535;
 }
 .plan-body {
     flex: 1;
@@ -6805,7 +6810,7 @@ line-height: 34px;
     margin-top: 0px;
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 24px;
 }
 .plan-body .price h1 {
     font-weight: 700;
@@ -6821,14 +6826,16 @@ line-height: 34px;
 }
 .price-heading, .price-heading p {
     color: white !important;
-    max-width: 600px;
+    max-width: 1022px;
     margin: 0 auto;
     opacity: .9;
+    font-size: 17px;
+    margin-bottom: 18px;
 }
 .plan-switch .btn.active {
     color: #fff;
-    background-color: #437aa2;
-    border: 1px solid #437aa2;
+    background-color: #27ae5e;
+    border: 1px solid #1e8e4c;
 }
 .yearly-text{
   visibility: hidden;
@@ -8368,6 +8375,38 @@ opacity: 1
 .publisher .publisher-content span small {
     font-size: 17px;
     color: #737373;
+}
+.green h4 {
+    color: #27ae60;
+}
+.green {
+    border-top: 4px solid #27ae5f;
+}
+.blue h4 {
+    color: #2980b9;
+}
+.blue {
+    border-top: 4px solid #297fb9;
+}
+.orange h4 {
+    color: #e67e22;
+}
+.orange {
+    border-top: 4px solid #e77e23;
+}
+.purple h4 {
+    color: #9b59b6;
+}
+.purple {
+    border-top: 4px solid #9b58b6;
+}
+.purple .btn {
+    background-color: #9b57b6;
+    color: white;
+    border: 1px solid #8b4aa5;
+}
+.purple .btn:hover {
+    background-color: #ae6aca;
 }
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
