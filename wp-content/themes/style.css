@@ -6837,16 +6837,14 @@ line-height: 34px;
     background-color: #27ae5e;
     border: 1px solid #1e8e4c;
 }
-.yearly-text{
-  visibility: hidden;
-  opacity: 0
+.yearly-text, .monthly-text{
+  display: none
 }
 .yearly-price{
   display: none;
 }
-.yearly-text.show{
-  visibility: visible;
-  opacity: 1
+.yearly-text.show, .monthly-text.show{
+  display: block
 }
 .trail-btn {
     margin-top: 42px;

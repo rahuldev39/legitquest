@@ -121,14 +121,18 @@
             <div class="plan-body">
               <div class="price">
                 <p class="text-muted">Starting From</p>
-                <h1 class="monthly-price show"><span>₹</span> 500</h1>
-                <h1 class="yearly-price"><span>₹</span> 550</h1>
+                <h1 class="monthly-price show"><span>₹</span> 4550</h1>
+                <h1 class="yearly-price"><span>₹</span> 39000</h1>
                 <div class="price-info">
-                  <p class="text-muted">Per Month</p>
-                  <p class="text-muted yearly-text">when paid annually</p>
+                  <p class="text-muted monthly-text">Per Month</p>
+                  <p class="text-muted yearly-text">Per Year</p>
                   <p class="text-muted">0-day money-back guarantee</p>
                 </div>
-                <p class="yearly-text"><small>Save 16% with an annual subscription</small></p>
+                <!--
+                <p class="yearly-text">
+                  <small>Save 16% with an annual subscription</small>
+                </p>
+              -->
               </div>
             </div>
 
@@ -393,11 +397,13 @@ available search and view of the judgments free of cost. All you need is registe
       if ($('#yearly').hasClass('active')) {
         $('.yearly-text').addClass('show');
         $('.yearly-price').addClass('show');
-        $('.monthly-price').removeClass('show')
+        $('.monthly-price').removeClass('show');
+        $('.monthly-text').removeClass('show')
       } else {
         $('.yearly-text').removeClass('show');
         $('.yearly-price').removeClass('show');
-        $('.monthly-price').addClass('show')
+        $('.monthly-price').addClass('show');
+        $('.monthly-text').addClass('show')
       }
 
     });
