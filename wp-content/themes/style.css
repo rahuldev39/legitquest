@@ -8489,6 +8489,9 @@ opacity: 1
 }
 @media (max-width: 960px)
 {
+    .search-action{
+        display: none
+    }
     .search-result-listing {
         padding-top: 55px !important;
     }
