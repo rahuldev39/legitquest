@@ -5218,7 +5218,7 @@ body.overlay-open {
     border-bottom: 1px solid #e4e4e4;
 }
 .price-detail .pane-content {
-    flex: 1;
+    
 }
 .moving-tab
 {
@@ -5238,7 +5238,7 @@ body.overlay-open {
     background-color: transparent;
     margin-bottom: 10px;
 }
-.pane-header h4 {
+.pane-header  {
     margin-top: 0px;
     background-color: #4a7ba5;
     padding: 9px 16px;
@@ -5247,23 +5247,46 @@ body.overlay-open {
     color: white;
     font-weight: 600;
 }
+.pane-header.h-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pane-header.h-left .plan-switch .btn.active {
+    color: #fff;
+    background-color: #265980;
+    border: 1px solid #254a6b;
+}
+.pane-header.h-left .plan-switch .btn {
+    padding: 5px 17px;
+}
+.pane-header h4 {
+    margin: 0px;
+}
 .pane-content {
-    padding: 15px;
+    padding: 0px;
     max-height: 350px;
     overflow: auto;
 }
 .calc-content {
-    border: 1px solid #e4e4e4;
-    padding: 10px;
-    margin-bottom: 15px;
+    border: 1px solid #c6dcf1;
+    padding: 20px;
+    background-color: #f6fbff;
+    margin: 10px;
 }
-.calc-title h5 {
+.grand-total strong {
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.calc-title .plan-detail {
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #f1f1f1;
-    padding-bottom: 9px;
-    margin-bottom: 10px;
+}
+.select-plan {
+    display: flex;
+    justify-content: space-between;
 }
 .description p{
   margin-bottom: 4px
@@ -5504,10 +5527,18 @@ padding: 0px
 .feature-price .price {
     margin-right: 15px;
     font-weight: 600;
+    display: flex;
 }
 .feature-price .price.new {
-    font-size: 40px;
+    font-size: 28px;
     color: #437aa2;
+}
+.feature-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
 }
 .feature-price .price.old {
     font-size: 14px;
@@ -8406,6 +8437,19 @@ opacity: 1
 .purple .btn:hover {
     background-color: #ae6aca;
 }
+.calc-title .plan-name {
+    font-size: 24px;
+    margin-bottom: 9px;
+    display: block;
+    font-weight: 600;
+}
+.calc-content .description p {
+    font-size: 13px;
+    color: #8a7d7d;
+}
+.price-text{
+
+}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
@@ -8489,6 +8533,15 @@ opacity: 1
 }
 @media (max-width: 960px)
 {
+    .package-calc {
+        display: block;
+    }
+    .calc-title .plan-detail {
+        display: block;
+    }
+    .calc-content .description p {
+        margin-bottom: 24px;
+    }
     .search-action{
         display: none
     }

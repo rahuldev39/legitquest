@@ -13,7 +13,7 @@
         <link rel='stylesheet'  href='wp-content/plugins/tt-vc-addon/assets/css/tt_vc_front.css' type='text/css' media='all'/>
         <link rel='stylesheet'  href='wp-content/plugins/tt-vc-addon/assets/css/font-awesome.min.css' type='text/css' media='all'/>
         <link rel='stylesheet'  href='wp-content/themes/themetek/assets/css/bootstrap.min.css' type='text/css' media='all'/>
-        <link rel='stylesheet'  href='wp-content/themes/material-bootstrap-wizard.css' type='text/css' media='all'/>
+
         <link rel='stylesheet'  href='wp-content/themes/style.css' type='text/css' media='all'/>
         <link rel='stylesheet' href='wp-content/themes/themetek/dynamic.css' type='text/css' media='all' />
         <link rel='stylesheet' href='./wp-content/themes/build.css' type='text/css' media='all' />
@@ -118,291 +118,141 @@
     <section id="our-pricing" class="section " style="">
         <div class="container">
 
-          <div class="wizard-container-main">
-		            <!--      Wizard container        -->
-		            <div class="wizard-container">
-		                <div class="card wizard-card" data-color="purple" id="wizard">
-			                <form action="" method="">
-			                <!--        You can switch " data-color="rose" "  with one of the next bright colors: "blue", "green", "orange", "purple"        -->
-
-
-								<div class="wizard-navigation">
-									<ul>
-			                            <li><a href="#features" data-toggle="tab">1. Features</a></li>
-			                            <li><a href="#users" data-toggle="tab">2. Users</a></li>
-			                            <li><a href="#duration" data-toggle="tab">3. Duration</a></li>
-
-			                        </ul>
-								</div>
-
-
-                <div class="package-calc">
-                  <div class="steps-details">
-                    <div class="tab-content">
-                        <div class="tab-pane" id="features">
-                          <div class="pane-header">
-                            <h4>Select Plan Features</h4>
-                          </div>
-                          <div class="pane-content">
-                            <div class="calc-content selected">
-                              <div class="calc-title">
-                                <h5>
-                                  <span>fundamentals training</span>
-                                  <div class="price"><span class="price currency">1,000</span></div>
-                                </h5>
-                              </div>
-                                <div class="description">
-                                  <p>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                      Phasellus vehicula.
-                                    </span>
-                                    </p>
-                                  </div>
-                                  <div class="add-feature">
-                                     <a href="#"><i class="fa fa-minus" aria-hidden="true"></i> Remove Item</a>
-                                  </div>
-                                </div>
-
-                                <div class="calc-content selected">
-                                  <div class="calc-title">
-                                    <h5>
-                                      <span>fundamentals training</span>
-                                      <div class="price"><span class="price currency">1,000</span></div>
-                                    </h5>
-                                  </div>
-                                    <div class="description">
-                                      <p>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                          Phasellus vehicula.
-                                        </span>
-                                        </p>
-                                      </div>
-                                      <div class="add-feature">
-                                         <a href="#"><i class="fa fa-minus" aria-hidden="true"></i> Remove Item</a>
-                                      </div>
-                                    </div>
-
-                                    <div class="calc-content">
-                                      <div class="calc-title">
-                                        <h5>
-                                          <span>fundamentals training</span>
-                                          <div class="price"><span class="price currency">1,000</span></div>
-                                        </h5>
-                                      </div>
-                                        <div class="description">
-                                          <p>
-                                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                              Phasellus vehicula.
-                                            </span>
-                                            </p>
-                                          </div>
-                                          <div class="add-feature">
-                                             <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Add Item</a>
-                                          </div>
-                                        </div>
-
-                                        <div class="calc-content">
-                                          <div class="calc-title">
-                                            <h5>
-                                              <span>fundamentals training</span>
-                                              <div class="price"><span class="price currency">1,000</span></div>
-                                            </h5>
-                                          </div>
-                                            <div class="description">
-                                              <p>
-                                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                  Phasellus vehicula.
-                                                </span>
-                                                </p>
-                                              </div>
-                                              <div class="add-feature">
-                                                 <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Add Item</a>
-                                              </div>
-                                            </div>
-                          </div>
+          <div class="package-calc">
+            <div class="steps-details">
+              <div class="tab-content">
+                  <div >
+                    <div class="pane-header h-left">
+                      <div><h4>Select Plan Features</h4></div>
+                      
+                      <div class="btn-group plan-switch">
+                          <button id="monthly" class="btn btn-default btn-sm active ">Monthly</button>
+                          <button id="yearly" class="btn btn-default btn-sm ">Annually</button>
                         </div>
-                        <div class="tab-pane" id="users">
-                          <div class="pane-header">
-                            <h4>Select Number of User for Plan</h4>
-                          </div>
-                          <div class="pane-content">
-                            <div class="large-icon text-center">
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                            </div>
-                            <div class="row">
-                              <div class="col-xs-4">
-                                  <div class="wizard-icon">
-                                    <label>
-                                      <input type="radio" name="p_new">
-                                      <span class="icon-box">
-                                          <i class="fa fa-users" aria-hidden="true"></i>
-                                      </span>
-                                    </label>
-                                    <h5>< 5 Users</h5>
-                                  </div>
-                              </div>
-
-                              <div class="col-xs-4">
-                                  <div class="wizard-icon">
-                                    <label>
-                                      <input type="radio" name="p_new">
-                                      <span class="icon-box">
-                                          <i class="fa fa-users" aria-hidden="true"></i>
-                                      </span>
-                                    </label>
-                                    <h5>6 - 15 Users</h5>
-                                  </div>
-                              </div>
-                              <div class="col-xs-4">
-                                  <div class="wizard-icon">
-                                    <label>
-                                      <input type="radio" name="p_new">
-                                      <span class="icon-box">
-                                          <i class="fa fa-users" aria-hidden="true"></i>
-                                      </span>
-                                    </label>
-                                    <h5>15+ Users</h5>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                        <div class="tab-pane" id="duration">
-                          <div class="pane-header">
-                            <h4>Select Duration Of Plan</h4>
-                          </div>
-                          <div class="pane-content">
-                            <div class="large-icon text-center">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                            </div>
-                              <div class="row">
-
-                                <div class="col-xs-3">
-                                    <div class="wizard-icon" rel="tooltip" title="Select this option if you have a house.">
-                                      <label>
-                                        <input type="radio" name="when_start">
-                                        <span class="icon-box">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        </span>
-                                      </label>
-                                      <h5>Monthly</h5>
-                                    </div>
-                                </div>
-                                <div class="col-xs-3">
-                                    <div class="wizard-icon" rel="tooltip" title="Select this option if you have a house.">
-                                      <label>
-                                        <input type="radio" name="when_start">
-                                        <span class="icon-box">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        </span>
-                                      </label>
-                                      <h5>Quarterly</h5>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-3">
-                                    <div class="wizard-icon" rel="tooltip" title="Select this option if you have a house.">
-                                      <label>
-                                        <input type="radio" name="when_start">
-                                        <span class="icon-box">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        </span>
-                                      </label>
-                                      <h5>Six Monthly</h5>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-3">
-                                    <div class="wizard-icon" rel="tooltip" title="Select this option if you have a house.">
-                                      <label>
-                                        <input type="radio" name="when_start">
-                                        <span class="icon-box">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        </span>
-                                      </label>
-                                      <h5>Yearly</h5>
-                                    </div>
-                                </div>
-
-
-
-
-                              </div>
-                          </div>
-
-                        </div>
-
-                        <div class="tab-pane" id="final-step">
-                          <div class="pane-header">
-                            <h4>Your LegitQuest Package</h4>
-                          </div>
-
-                          <div class="get-package text-center">
-
-                            <div class="estimated-price ">
-                              <h4>Estimated cost to get started</h4>
-                              <h3>Rs 34,800</h3>
-                            </div>
-                            <div class="signup-btn">
-                                <button type="button" class="primary-button button-inverse  btn-finish " >
-                                  Contact Sales
-                                </button>
-                            </div>
-                              <div class="well well-sm" style="margin-bottom:0px">
-                                <p>Call <strong class="text-primary">1-888-444-666</strong> to speak  and get started!</p>
-                              </div>
-                          </div>
-
-                        </div>
-
-                    </div>
-                  </div>
-                  <div class="price-detail">
-                    <div class="pane-header">
-                      <h4>Price Detail</h4>
                     </div>
                     <div class="pane-content">
-                      <div class="price-info">
+                      <div class="calc-content selected">
                         <div class="calc-title">
-                                  <h5>
-                                    <span>Enterprise</span>
-                                    <div class="price"><span class="price currency">1,000</span><span>/Mo</span></div>
-                                  </h5>
-                                </div>
-                      </div>
+                          <div class="plan-detail">
+                            <div>
+                                <span class="plan-name">LQ Complete System access</span>
+                                <div class="description">
+                                    <p>
+                                      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus vehicula.
+                                      </span>
+                                      </p>
+                                    </div>
+                            </div>
 
-                        <div class="price-info">
-                          <div class="calc-title">
-                                    <h5>
-                                      <span>Plan Subtotal</span>
-                                      <div class="price"><span class="price currency">1,000</span><span>/Mo</span></div>
-                                    </h5>
+                            <div>
+                                <div class="feature-price">
+                                    <div class="price old">
+                                        <span>₹</span> 6500.00
+                                    </div>
+                                    <div class="price new">
+                                        <span>₹</span> 4550.00
+                                    </div>
+                                </div>
+
+                                <div class="add-feature">
+                                    <div class="checkbox checkbox-primary">
+                                      <label>
+                                        <input class="styled" type="checkbox" checked="">
+                                        <span>Select This Plan</span>
+                                      </label>
+                                    </div>
                                   </div>
+
+                            </div>
+                            
+
+                           
+
+                        </div>
                         </div>
 
-                    </div>
-                    <div class="estimated-price">
-                          <p>Estimated cost to get started:</p>
-                          <strong>34,800</strong>
-                    </div>
-                    <div class="wizard-footer">
-                        <div class="pull-right">
-                              <input type='button' class='primary-button button-inverse  btn-next btn-wd' name='next' value='Next' />
-                              <input type='button' class='primary-button button-inverse  btn-finish btn-wd' name='finish' value='Finish' />
+                        <div class="select-plan">
+                            
+                               
+                        </div>
+                          
                           </div>
 
-                        <div class="clearfix"></div>
+                        
                     </div>
                   </div>
-                </div>
 
 
+                  <div class="tab-pane" id="final-step" style="display:none">
+                    <div class="pane-header">
+                      <h4>Your LegitQuest Package</h4>
+                    </div>
 
-			                </form>
-		                </div>
-		            </div> <!-- wizard container -->
-		        </div>
+                    <div class="get-package text-center">
+
+                      <div class="estimated-price ">
+                        <h4>Estimated cost to get started</h4>
+                        <h3>Rs 34,800</h3>
+                      </div>
+                      <div class="signup-btn">
+                          <button type="button" class="primary-button button-inverse  btn-finish " >
+                            Contact Sales
+                          </button>
+                      </div>
+                        <div class="well well-sm" style="margin-bottom:0px">
+                          <p>Call <strong class="text-primary">1-888-444-666</strong> to speak  and get started!</p>
+                        </div>
+                    </div>
+
+                  </div>
+
+              </div>
+            </div>
+            <div class="price-detail">
+              <div class="pane-header">
+                <h4>Price Detail</h4>
+              </div>
+              <div class="pane-content">
+               
+                  <table class="table">
+                      <tbody>
+                          <tr>
+                              <td width="50%" colspan=""><label>Total Price</label></td>
+                              <td width="50%" align="right" style="color:#333;">
+                                 <span class="price-text">₹ 4550.00</span> 
+                              </td>
+                          </tr>
+                          <tr>
+                              <td><label>Gst</label></td>
+                              <td align="right" style="color:#333;">
+                                 <span class="price-text">₹ 819.00</span> 
+                              </td>
+                          </tr>
+
+                      
+                          <tr class="grand-total">
+
+                              <td align="right" colspan="2">
+                                <strong class="">Amount To Pay </strong>
+                                <span style="color:#2C55A1; font-weight:600;">
+                                  ₹ 5369.00
+                                </span>
+
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="right" class="del-but" colspan="2">
+                                  <a href="javascript://" onclick="checkQuantity1();" class="btn btn-primary btn-lg btn-block">Proceed to Payment</a>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+
+              </div>
+ 
+            </div>
+          </div>
 
 
         </div>
@@ -563,7 +413,7 @@
 <script type='text/javascript' src='wp-content/themes/js/map.js'></script>
 <script type='text/javascript' src='wp-content/themes/js/SmoothScroll.js'></script>
 <script type='text/javascript' src='wp-content/themes/js/scripts.js'></script>
-<script type='text/javascript' src='wp-content/themes/js/material-bootstrap-wizard.js'></script>
+
 
 <script type="text/javascript">
   $('.btn-finish').on('click', function()
@@ -573,6 +423,19 @@
   $('#final-step').addClass('active');
   $(this).css({"display": "none"})
 });ne
+</script>
+<script type="text/javascript">
+  $(".btn-group > .btn").click(function() {
+    $(".btn-group > .btn").removeClass("active");
+    $(this).addClass("active");
+
+
+
+  });
+
+  $(function() {
+
+  });
 </script>
 
 </body>
