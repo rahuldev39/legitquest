@@ -5211,14 +5211,18 @@ body.overlay-open {
     border: 1px solid #e4e4e4;
 }
 .price-detail {
-    flex-basis: 250px;
-    border-right: 1px solid #e4e4e4;
-    display: flex;
-    flex-direction: column;
+    border-right: 1px solid #dddddd;
     border-bottom: 1px solid #e4e4e4;
 }
-.price-detail .pane-content {
-    
+.price-detail td {
+    padding: 23px 20px !important;
+    font-size: 16px;
+}
+.price-detail .pane-header {
+    padding: 15px 10px;
+}
+.price-detail td label {
+    font-size: 16px;
 }
 .moving-tab
 {
@@ -5276,7 +5280,7 @@ body.overlay-open {
 }
 .grand-total strong {
     margin-right: 20px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
 }
 .calc-title .plan-detail {
@@ -8447,9 +8451,7 @@ opacity: 1
     font-size: 13px;
     color: #8a7d7d;
 }
-.price-text{
 
-}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
