@@ -8451,7 +8451,15 @@ opacity: 1
     font-size: 13px;
     color: #8a7d7d;
 }
+.payment .feature-price {
 
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+.payment-table {
+    border: 1px solid #dddddd;
+}
 /*############-------Responsive Changes---------###############*/
 @media (min-width: 1372px)
 {
