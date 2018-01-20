@@ -6019,14 +6019,11 @@ padding: 0px
 }
 
 .fixed-sidebar-right .close-sidebar .text-slider.affix {
-    padding-right: 44px;
+    padding-right: 44px  !important;
     padding-left: 0px;
 }
 
-.fixed-sidebar-right footer {
-    margin-right: 35%;
-    padding-right: 21px;
-}
+
 .sidebar-tabs-link .bootstrap-select{
   width: 100% !important
 
