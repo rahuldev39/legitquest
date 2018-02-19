@@ -400,7 +400,7 @@ body.modal-open {
 
 .logo img {
     height: 44px;
-    width: auto;
+    width: 184px;
 }
 
 /*3.3 PRELOADER*/
@@ -6297,6 +6297,7 @@ text-decoration: underline;
 }
 .flag {
     width: 26px;
+    height: 21px
 }
 .page-internal .intro-text .intro-lead-in img {
     max-width: 319px;
@@ -6391,6 +6392,8 @@ line-height: 34px;
 .i-img {
     margin-right: 5px;
     margin-top: -5px;
+    width: 12px;
+    height: 30px
 }
 .db-heading h4 {
     margin-top: 0px;
@@ -7402,13 +7405,13 @@ h3.section-lead {
     min-height: 100vh;
 }
 .featured-img img {
-    width: 100%;
-    max-width: 136px;
+    width: 105px;
     margin: 0px 21px;
     border: 0px;
     margin: 0 auto;
     border: 1px solid #f9f9f9;
-    max-width: 107px;
+    height: 46px;
+
 }
 .featured-in {
     padding: 30px 0px;
