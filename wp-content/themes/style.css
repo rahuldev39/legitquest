@@ -3503,7 +3503,7 @@ select.form-control
     position: relative;
 }
 .tab-action-links a.action-link i {
-    margin-right: 4px;W
+    margin-right: 4px;
 }
 .tab-action-links a.action-link::after {
     position: absolute;
@@ -3518,15 +3518,7 @@ select.form-control
 .tab-action-links a.action-link:hover {
     color: #e97d23;
 }
-.tab-action-links a.action-link:hover::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: #ff8304;
-    bottom: 0;
-    left: 0;
-}
+
 .search-result-listing
 {
   padding: 30px
@@ -3694,7 +3686,7 @@ display: block;
 }
 .search-result-section
 {
-  position: relative;
+  position: static;
 }
 .search-sidebar {
     position: absolute;
@@ -8619,11 +8611,12 @@ opacity: 1
 
     margin-top: 0px;
 }
-  .search-bar{
-    display: none;
-  }
-  .big-navbar .search-result-section {
-    padding-top: 65px;
+.search-bar {
+    display: block;
+    padding-bottom: 8px;
+}
+.big-navbar .search-result-section {
+    padding-top: 106px;
 }
   .signin-btn {
     display: block !important;
@@ -8758,7 +8751,7 @@ opacity: 1
     }
     .num_results {
         margin-bottom: 0px;
-        margin-top: 16px;
+        margin-top: 17px;
     }
   .pricing-block-inner{
     flex-direction: column;
