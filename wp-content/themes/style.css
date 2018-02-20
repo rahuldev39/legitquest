@@ -8572,6 +8572,9 @@ opacity: 1
 }
 @media (max-width: 960px)
 {
+    .result-filter {
+        display: none
+    }
     .result-box h2 a {
         color: #35698e;
         font-size: 16px;
