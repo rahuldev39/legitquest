@@ -2917,7 +2917,7 @@ margin: 0 auto;
 .member-container img {
     max-width: 100%;
     transition: all 300ms ease-in-out;
-    max-width: 147px !important;
+    max-width: 130px !important;
     border-radius: 50%;
 }
 .team-member-container .caption strong {
