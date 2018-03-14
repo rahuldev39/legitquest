@@ -4123,12 +4123,23 @@ span.bullet {
 .rank-label {
     font-size: 27px;
     color: #437aa2;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.rank-block {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e4e4e4;
+    padding-right: 6px;
+}
+.rank-block h4 {
+    margin: 0px;
+    padding: 10px;
     background-color: #f7f7f7;
-    display: inline-block;
-    padding: 10px 13px;
-    border: 4px solid #e2e2e2;
-    margin-bottom: 6px;
-    line-height: 21px;
+    margin-right: 7px;
+    border-right: 1px solid #e4e4e4;
 }
 .university_page .counter {
     font-size: 20px;
@@ -5435,11 +5446,9 @@ body.overlay-open {
   display: flex;
 }
 .block {
-
     border-top: 1px solid #e4e4e4;
-    padding: 20px;
+    padding: 15px 20px;
     border-left: 1px solid #e4e4e4;
-
 }
 .flex-grow{
   flex-grow: 1
@@ -6051,7 +6060,7 @@ padding: 0px
 }
 .reader-mode-on  #customizer {
 
-   
+
 }
 
 .link-yellow {
@@ -7359,7 +7368,7 @@ header.header-bluebg .search-bar .select-search + .search-field input.form-contr
     font-weight: 600;
     color: #908d8d;
     position: relative;
-   
+
     max-width: 80%;
 }
 
@@ -8182,9 +8191,14 @@ position: relative;
     padding: 5px 17px;
     border-radius: 0px;
 }
-.rank-label-container{
-  padding-bottom: 20px
+.rank-label-container {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
 }
+
 .blog-container .post .blog-single-title {
     font-size: 18px !important;
     line-height: 26px !important;
@@ -8465,7 +8479,7 @@ opacity: 1
     color: #666;
     font-size: 16px;
   }
-  
+
   .section-heading {
     font-family: "Work Sans";
     text-align: center;
@@ -8522,7 +8536,7 @@ opacity: 1
 @media (max-width: 992px)
 {
     .plan-box {
-        
+
         flex: auto;
         margin: 10px 10px;
         width: 45%;
@@ -8572,6 +8586,13 @@ opacity: 1
 }
 @media (max-width: 960px)
 {
+  .university_info_top {
+    margin-top: 0px;
+}
+.university-rank .university_rank_detail {
+
+    padding-top: 0px !important;
+}
     .result-filter {
         display: none
     }
@@ -8648,9 +8669,7 @@ opacity: 1
     margin: 20px;
 }
 
-  .university_title, .university_pts, .university_page{
-    display: none;
-  }
+
   .university_sidebar {
     position: static !important;
     width: 100%;
@@ -8750,7 +8769,7 @@ opacity: 1
     .search-info {
         flex-direction: column;
         align-items: center;
-        
+
     }
     .num_results {
         margin-bottom: 0px;
@@ -8822,7 +8841,7 @@ opacity: 1
     }
     .text-slider-main {
         padding-right: 0px;
-       
+
     }
     .igraph-box{
         display: none
@@ -8839,11 +8858,11 @@ opacity: 1
     }
     .case-box p {
         font-size: 14px;
-       
+
     }
     .judgement-content p {
         font-size: 14px;
-   
+
     }
     .case-metadata{
         display: none
