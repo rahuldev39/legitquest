@@ -137,10 +137,10 @@
         </nav>
   <div id="wrapper">
 
-    <div class="search-result-section">
+    <div class="search-result-section university-rank">
 
-      <div class="search-main university-rank">
-        
+      <div class="search-main ">
+
 
 
         <div class="search-result-listing university_rank_detail">
@@ -196,8 +196,13 @@
 
       </div>
 
-      <aside class="right-sidebar-wrap sidebar-fixed note-sidebar university_sidebar">
+      <aside class="right-sidebar-wrap sidebar-fixed">
 
+        <div class="aside-toggle">
+            <a href="#">
+              <i class="fa fa-indent" aria-hidden="true"></i>
+            </a>
+          </div>
 
             <div class="sidebar-inner slimScroll">
               <div id="navigation">
@@ -494,6 +499,7 @@
 
     });
   </script>
+  
   <script type="text/javascript">
   $(function(){
 
@@ -504,6 +510,32 @@
 });
   </script>
 
+  <script type="text/javascript">
+    $(function(){
+
+      $('.aside-toggle a').on('click', function(){
+        $('.university-rank').toggleClass('close-sidebar');
+        $('#footer').toggleClass('full-footer')
+      })
+
+    });
+  </script>
+
+
+    <script type="text/javascript">
+      $(function(){
+        $(window).resize(function resize(){
+          if ($(window).width() < 820) {
+        $('body').removeClass('fixed-sidebar-right');
+        $('.search-result-section').addClass('close-sidebar');
+        } else {
+          $('body').addClass('fixed-sidebar-right');
+          $('.search-result-section').removeClass('close-sidebar');
+        }
+        }).trigger('resize');
+
+      });
+    </script>
 
 
 
