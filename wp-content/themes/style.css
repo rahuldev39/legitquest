@@ -9983,7 +9983,8 @@ h3.section-lead {
 .share-buttons.show-option {
     height: auto;
     display: block;
-    opacity: 1
+    opacity: 1;
+    display: none;
 }
 
 .share-buttons li {
@@ -10226,7 +10227,10 @@ h3.section-lead {
     border: 1px solid #cecece;
     border-radius: 3px;
 }
-
+.quote-footer {
+    font-size: 15px;
+    color: #585757;
+}
 @media (min-width:1372px) {
     .search-btn {
         top: 10px
