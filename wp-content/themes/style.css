@@ -10231,6 +10231,43 @@ h3.section-lead {
     font-size: 15px;
     color: #585757;
 }
+.f-categories{
+
+}
+
+.cat-checkbox {
+    display: inline-block;
+}
+.cat-checkbox input[type="checkbox"]{
+  display: none
+
+}
+.cat-checkbox input[type="checkbox"] + span {
+    display: inline-block;
+    padding: 3px 8px;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    background-color: white;
+    color: #8a8a8a;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.cat-checkbox input[type="checkbox"]:checked + span {
+    background-color: #40759d;
+    color: #f7f7f7;
+    border: 1px solid #305e82;
+}
+.cat-checkbox input[type="checkbox"]:checked + span:hover{
+  background-color: #40759d;
+  color: #f7f7f7;
+  border: 1px solid #305e82;
+}
+.cat-checkbox input[type="checkbox"] + span:hover{
+  color: #4c4c4c;
+  border: 1px solid #c3c3c3;
+  box-shadow: 0px 5px 8px -5px #afafaf;
+}
 @media (min-width:1372px) {
     .search-btn {
         top: 10px
