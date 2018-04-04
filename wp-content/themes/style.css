@@ -10286,16 +10286,17 @@ border-radius: 15px;
 }
 .notification-counter {
     position: absolute;
-    top: -8px;
-    right: -7px;
-    height: 25px;
-    width: 25px;
+    top: -11px;
+    right: -10px;
+    height: 30px;
+    width: 30px;
     background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     color: white;
+    font-size: 15px;
 }
 .category-list ul li img {
     display: block;
@@ -10376,6 +10377,17 @@ border-radius: 15px;
 }
 .ipad-design .filter-panel .filter-content .filter-list {
     padding-bottom: 0px;
+}
+.ipad-design .result-sort select {
+    padding: 10px 11px;
+    color: #6f6f6f;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.ipad-design .result-sort {
+    color: #565252;
+    padding: 9px 0px;
 }
 @media (min-width:1372px) {
     .search-btn {
