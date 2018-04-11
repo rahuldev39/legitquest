@@ -10389,6 +10389,67 @@ border-radius: 15px;
     color: #565252;
     padding: 9px 0px;
 }
+
+
+
+/*##################------New page css start-------#########################*/
+
+
+.links-tab {
+    border-bottom: 1px solid #e4e5e7;
+    margin-top: 28px;
+}
+.links-tab h4 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    padding-left: 19px;
+    margin-bottom: 8px;
+    padding: 0px 44px;
+}
+.links-tab ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.links-tab ul  li{
+
+}
+.links-tab ul li a {
+    display: block;
+    padding: 6px 45px;
+    font-size: 13px;
+}
+
+.filter-action select {
+    line-height: initial;
+    -webkit-appearance: menulist-button;
+    font-size: 14px;
+}
+.top-bar-links {
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    padding-left: 18px;
+}
+.top-bar-links li{
+
+}
+.top-bar-links li a {
+    display: block;
+    font-weight: 600;
+    color: #ed7e1f;
+    margin-right: 31px;
+    padding: 18px 0px;
+}
+.search-result-listing table{
+  background-color: white
+}
+/*##################------New page css end-------#########################*/
+
+
+
+
 @media (min-width:1372px) {
     .search-btn {
         top: 10px
