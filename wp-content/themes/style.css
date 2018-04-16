@@ -8021,7 +8021,8 @@ body.overlay-open {
 }
 
 .filter-list .checkbox {
-    margin-left: 20px
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .block-body .cititaton-text span {
@@ -10390,75 +10391,131 @@ border-radius: 15px;
     padding: 9px 0px;
 }
 
-
-
-/*##################------New page css start-------#########################*/
-
-
-.links-tab {
-    border-bottom: 1px solid #e4e5e7;
-    margin-top: 28px;
+.filter-list .auxiliary{
+  display: none !important;
 }
-.links-tab h4 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 15px;
-    position: relative;
-    padding-left: 19px;
-    margin-bottom: 8px;
-    padding: 0px 44px;
+.filter-list .tree-multiselect div.title {
+    font-size: 13px !important;
+    padding: 6px 0px !important;
+    border-top: 0px !important;
+    margin-left: 0px;
+    margin-right: 0px;
 }
-.links-tab ul {
-    list-style-type: none;
+.filter-list .selections > .item label {
+    font-size: 13px !important;
+    padding: 0px !important;
+
+}
+.filter-list .selections > .item {
+    padding: 6px 0px!important;
+    padding-left: 20px !important;
+}
+.filter-list div.tree-multiselect > div.selected
+{
+ display: none;
+}
+.filter-list div.tree-multiselect .collapsed div.title {
+    border-bottom: 0px;
+    border-top: 0px;
+
+}
+.filter-list .title input[type=checkbox],
+.filter-list .selections > .item input[type=checkbox]
+{
+  position:relative;
+  margin-right: 12px !important;
+    height: 14px;
+    width: 14px;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+.filter-list .title input[type=checkbox]::after,
+.filter-list .selections > .item input[type=checkbox]::after
+ {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    left: -1px;
+    top: -1px;
+}
+.filter-list .title input[type=checkbox]:checked::after,
+.filter-list .selections > .item input[type=checkbox]:checked::after,
+.filter-list .title input[type=checkbox].indeterminate::after,
+.filter-list .selections > .item input[type=checkbox].indeterminate::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #4c4c4c;
+    border-color: #313131;
+    position: absolute;
+
+}
+.filter-list .title input[type=checkbox]:checked::before,
+.filter-list .selections > .item input[type=checkbox]:checked::before {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    color: #fff;
+    width: 14px;
+    height: 14px;
+    top: 1px;
+    left: 1px;
+    position: absolute;
+    z-index: 1;
+    font-size: 11px;
+}
+.filter-list .title input[type=checkbox].indeterminate::before,
+.filter-list .selections > .item input[type=checkbox].indeterminate::before {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    color: #fff;
+    width: 14px;
+    height: 14px;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    z-index: 1;
+    font-size: 11px;
+}
+.filter-list .selections .section {
     padding: 0px;
+    padding-left: 20px !important;
 }
-.links-tab ul  li{
-
+.filter-list div.tree-multiselect div.title > span.collapse-section {
+    font-size: 17px;
+    color: #6b6b6b;
 }
-.links-tab ul li a {
-    display: block;
-    padding: 6px 45px;
-    font-size: 13px;
+.filter-list div.tree-multiselect > div.selections div.item label {
+    font-size: 11px;
+    padding-left: 0px!important;
 }
-
-.filter-action select {
-    line-height: initial;
-    -webkit-appearance: menulist-button;
-    font-size: 14px;
-}
-.top-bar-links {
+.filter-list div.tree-multiselect > div.selections div.item {
+    margin-left: 10px;
     padding: 0px;
-    list-style-type: none;
-    display: flex;
-    padding-left: 18px;
-}
-.top-bar-links li{
-
-}
-.top-bar-links li a {
     display: block;
-    font-weight: 600;
-    color: #ed7e1f;
-    margin-right: 31px;
-    padding: 18px 0px;
+    border: 0px;
+    padding-right: 0px;
+    background-color: transparent;
+    margin-right: 0px;
 }
-.search-result-listing table{
-  background-color: white
+.filter-list div.tree-multiselect > div.selections div.item:last-child{
+      border-bottom: 1px solid #dceaf7;
+      margin-bottom: 10px;
+      padding-bottom: 10px
 }
-.dark-head.table>thead>tr>th {
-    background-color: rgb(56, 108, 147)!important;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(206, 220, 237)!important;
-    padding: 9px 9px!important;
-    border: 1px solid #6387a2;
-    border-top: 1px solid #6286a2 !important;
-} 
-/*##################------New page css end-------#########################*/
-
-
-
-
+.filter-list .selections .section:last-child div.item:last-child{
+  border-bottom: 0px !important
+}
+.filter-list .selections .section div.item label {
+    color: #8a8a8a;
+}
+.filter-list .section .item input[type=checkbox] + label:before {    
+    font-size: 16px;
+    width: 13.6px;
+}
 @media (min-width:1372px) {
     .search-btn {
         top: 10px

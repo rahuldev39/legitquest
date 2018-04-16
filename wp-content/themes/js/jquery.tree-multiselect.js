@@ -524,12 +524,15 @@ Tree.prototype.redrawSectionCheckboxes = function ($section) {
     if (returnVal & 1) {
       sectionCheckbox.checked = true;
       sectionCheckbox.indeterminate = false;
+        $(sectionCheckbox).removeClass("indeterminate");
     } else if (returnVal & 2) {
       sectionCheckbox.checked = false;
       sectionCheckbox.indeterminate = false;
+      $(sectionCheckbox).removeClass("indeterminate");
     } else {
       sectionCheckbox.checked = false;
       sectionCheckbox.indeterminate = true;
+      $(sectionCheckbox).addClass("indeterminate");
     }
   }
 
