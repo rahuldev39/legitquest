@@ -618,43 +618,7 @@
     });
   </script>
 
-  <script type='text/javascript'>
-    $(function() {
-      $('.cort-btn .btn ').on('click', function(e) {
-        $(this).parent().prev().addClass('open-dropdown');
-        $(this).parent().addClass('btn-expand');
-        e.stopPropagation();
 
-      });
-
-      $('.sidebar-toggle ').on('click', function(e) {
-        $('.search-result-section').toggleClass('open-sidebar');
-      });
-
-      $('.section .title').on('click', function() {
-
-        $(this).parent().siblings(".section").not(".collapsed").addClass("collapsed");
-
-      });
-
-      $(".auxiliary").append("<div class='done_btn'>Done</div>");
-
-      $(".done_btn").on('click', function() {
-        $('.search-field').removeClass('open-dropdown');
-        $('.cort-btn').removeClass('btn-expand');
-      });
-
-    });
-
-    $(".search-field").click(function(e) {
-      e.stopPropagation();
-    });
-
-    $(document).click(function() {
-      $('.search-field').removeClass('open-dropdown');
-      $('.cort-btn').removeClass('btn-expand');
-    });
-  </script>
   <script type="text/javascript">
     var tree3 = $("#test-select-3").treeMultiselect({
       enableSelectAll: true,
@@ -669,73 +633,7 @@
       startCollapsed: true,
     });
   </script>
-  <script type="text/javascript">
-  //doughnut
-var ctxD = document.getElementById("doughnutChart").getContext('2d');
-var ctxD2 = document.getElementById("doughnutChart2").getContext('2d');
-var myLineChart = new Chart(ctxD, {
-  type: 'doughnut',
-  data: {
-      labels: ["Overruled ", "Approved", "Cited", "Distinguished", "Referred"],
 
-      datasets: [
-          {
-              data: [300, 50, 100, 40, 120],
-              backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-              hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-          }
-      ]
-  },
-  options: {
-    rotation: 1 * Math.PI,
-      circumference: 1 * Math.PI,
-      responsive: true,
-      legend: {
-              display: false,
-              position:'bottom',
-
-            labels: {
-                // This more specific font property overrides the global property
-                fontColor: 'black',
-                fontSize:12,
-                boxWidth:10,
-
-            }
-        }
-  }
-});
-var myLineChart2 = new Chart(ctxD2, {
-  type: 'doughnut',
-  data: {
-      labels: ["Overruled ", "Approved", "Cited", "Distinguished", "Referred"],
-
-      datasets: [
-          {
-              data: [300, 50, 100, 40, 120],
-              backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-              hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-          }
-      ]
-  },
-  options: {
-    rotation: 1 * Math.PI,
-      circumference: 1 * Math.PI,
-      responsive: true,
-      legend: {
-              display: false,
-              position:'bottom',
-
-            labels: {
-                // This more specific font property overrides the global property
-                fontColor: 'black',
-                fontSize:12,
-                boxWidth:10,
-
-            }
-        }
-  }
-});
-  </script>
   <script type="text/javascript">
       $('.selectpicker').selectpicker({
     });
