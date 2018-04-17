@@ -223,11 +223,12 @@
   -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
   -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
       transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
-.radio input[type="radio"] {
-  opacity: 0;
-  z-index: 1;
-  cursor: pointer;
-}
+      .radio input[type="radio"] {
+          opacity: 0;
+          z-index: 1;
+          cursor: pointer;
+          display: none;
+      }
 .radio input[type="radio"]:focus + span::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -279,10 +280,7 @@
 .radio-success input[type="radio"]:checked + span::after {
   background-color: #5cb85c; }
 
-input[type="checkbox"].styled:checked + span:after,
-input[type="radio"].styled:checked + span:after {
-  font-family: 'FontAwesome';
-  content: "\f00c"; }
+
 input[type="checkbox"] .styled:checked + span::before,
 input[type="radio"] .styled:checked + span::before {
   color: #fff; }

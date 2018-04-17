@@ -8020,11 +8020,13 @@ body.overlay-open {
     margin-left: -20px
 }
 
-.filter-list .checkbox {
+.filter-list .checkbox, .filter-list .radio{
     margin-left: 20px;
-    margin-bottom: 10px;
-}
 
+}
+.filter-list li{
+  margin-bottom: 12px
+}
 .block-body .cititaton-text span {
     font-size: 12px;
     display: inline-block;
@@ -10400,13 +10402,14 @@ border-radius: 15px;
     margin-bottom: 20px;
     display: none;
     overflow: hidden;
-    transition: all ease-in-out 300ms
+    transition: all ease-in-out 300ms;
+    margin-top: 10px;
 }
 .filter-dropdown.open{
   display: block;
 }
 .filter-dropdown .radio-item {
-    padding-left: 21px;
+    padding-left: 10px;
     padding-bottom: 7px;
 }
 .filter-dropdown .radio-item .label {
@@ -10429,6 +10432,9 @@ border-radius: 15px;
 .radio-item input[type="radio"] {
     outline: none;
     display: none;
+}
+.filter-dropdown li {
+    margin-bottom: 0px;
 }
 @media (min-width:1372px) {
     .search-btn {
