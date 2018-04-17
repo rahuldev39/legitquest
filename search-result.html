@@ -20,7 +20,6 @@
 
   <link rel='stylesheet' href='wp-content/themes/themetek/colors.css' type='text/css' media='all' />
 
-  <link rel='stylesheet' href='wp-content/themes/jquery.tree-multiselect.css' type='text/css' media='all' />
   <link rel='stylesheet' href='./wp-content/themes/build.css' type='text/css' media='all' />
   <link rel='stylesheet' id='redux-google-fonts-css' href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic%7CWork+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1474625187' type='text/css' media='all'
   />
@@ -130,51 +129,62 @@
         </a>
     </div>
     <div class="filter-content collapse in" id="collaps1">
-    	<ul class="filter-list">
-        <li>
-          <select id="test-select-3" class="tree-multiselect-box" multiple="multiple">
-              <option value="baz1" >Supreme Court</option>
-              <option value="quux1" data-section="High Court">HCTNMDU</option>
-              <option value="quux2" data-section="High Court">HCAP</option>
-              <option value="quux3" data-section="High Court">HCA</option>
-              <option value="quux4" data-section="High Court"> HCWBCAL-APP</option>
-              <option value="quux1" data-section="High Court"> HCCG</option>
-              <option value="quux2" data-section="High Court">HCDL</option>
-              <option value="quux3" data-section="High Court">HCGJ</option>
-              <option value="quux4" data-section="High Court"> HCHP</option>
-              <option value="quux4" data-section="High Court">  HCJK</option>
-              <option value="quux4" data-section="High Court">  HCJH</option>
-              <option value="quux4" data-section="High Court">   HCUPAB</option>
-              <option value="quux4" data-section="High Court">  HCMH</option>
-               <option value="quux4" data-section="High Court">  HCWB</option>
+      <ul class="filter-list">
+          <li>
+            <div class="checkbox checkbox-default">
+              <label><input class="styled" type="checkbox" checked=""><span> Supreme Court</span></label>
+            </div>
+          </li>
+          <li>
+            <div class="checkbox checkbox-default">
+              <label><input class="styled" type="checkbox"><span> high Court</span></label>
+            </div>
+            <div class="filter-dropdown">
+              <form id="filter-select" class="" action="#" method="post">
+                <select class="" name="hc-list">
+                  <option>HCTNMDU</option>
+                  <option>HCAP</option>
+                  <option>HCA</option>
+                  <option> HCWBCAL-APP</option>
+                  <option> HCCG</option>
+                  <option>HCDL</option>
+                  <option>HCGJ</option>
+                  <option> HCHP</option>
+                  <option>  HCJK</option>
+                  <option>  HCJH</option>
+                  <option>   HCUPAB</option>
+                  <option>  HCMH</option>
+                  <option>  HCWB</option>
+                  <option>HCTN</option>
+                  <option>HCBR</option>
+                  <option>HCKA</option>
+                  <option>HCKADH</option>
+                  <option>  HCKAGU</option>
+                  <option>    HCKAKB</option>
+                  <option>  HCKL</option>
+                  <option>  HCMP</option>
+                  <option>  HCMPGW</option>
+                  <option>    HCMPIND</option>
+                  <option>  HCMN</option>
+                  <option>  HCML</option>
+                  <option>  HCOR</option>
+                  <option>    HCPBHR</option>
+                  <option>  HCRJ</option>
+                  <option>   HCRJJP</option>
+                </select>
+              </form>
 
-               <option value="quux4" data-section="High Court">  HCTN</option>
-               <option value="quux4" data-section="High Court">    HCBR</option>
-               <option value="quux4" data-section="High Court">  HCKA</option>
-               <option value="quux4" data-section="High Court">  HCKADH</option>
 
-                <option value="quux4" data-section="High Court">  HCKAGU</option>
-                <option value="quux4" data-section="High Court">    HCKAKB</option>
-                <option value="quux4" data-section="High Court">  HCKL</option>
-                <option value="quux4" data-section="High Court">  HCMP</option>
+            </div>
+          </li>
 
-                <option value="quux4" data-section="High Court">  HCMPGW</option>
-                <option value="quux4" data-section="High Court">    HCMPIND</option>
-                <option value="quux4" data-section="High Court">  HCMN</option>
-                <option value="quux4" data-section="High Court">  HCML</option>
-
-               <option value="quux4" data-section="High Court">  HCOR</option>
-               <option value="quux4" data-section="High Court">    HCPBHR</option>
-               <option value="quux4" data-section="High Court">  HCRJ</option>
-               <option value="quux4" data-section="High Court">   HCRJJP</option>
-
-              <option value="quux4" data-section="Other">    HCPBHR</option>
-              <option value="quux4" data-section="Other">  HCRJ</option>
-              <option value="quux4" data-section="Other">   HCRJJP</option>
-
-            </select>
-        </li>
+          <li>
+            <div class="checkbox checkbox-default">
+              <label><input class="styled" type="checkbox"><span> Other Court</span></label>
+            </div>
+          </li>
       </ul>
+
     </div>
 </div>
 
@@ -585,12 +595,55 @@
   <script type='text/javascript' src='wp-content/themes/js/scripts.js'></script>
 
   <script type='text/javascript' src='wp-content/themes/js/jquery-ui.min.js'></script>
-  <script type='text/javascript' src='wp-content/themes/js/jquery.tree-multiselect.js'></script>
-  <script type='text/javascript' src='wp-content/themes/js/mdb.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.slimscroll.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/bootstrap-select.min.js'></script>
 
+<script type="text/javascript">
+//Get Exising Select Options
+$('form#filter-select select').each(function(i, select){
+  var $select = $(select);
+  $select.find('option').each(function(j, option){
+      var $option = $(option);
+      // Create a radio:
+      var $radio = $('<input type="radio" />');
+      // Set name and value:
+      $radio.attr('name', $select.attr('name')).attr('value', $option.val());
+      // Set checked if the option was selected
+      if ($option.attr('selected')) $radio.attr('checked', 'checked');
+      // Insert radio before select box:
+      $select.before($radio);
+      // Insert a label:
 
+      $radio.wrap( "<div class='radio-item radio radio-default'><label class='label'>" );
+
+      $radio.after(
+        $("<span />").text($option.text())
+      );
+
+  });
+  $select.remove();
+});
+</script>
+
+<script type="text/javascript">
+  $(function(){
+
+      $('.filter-list .checkbox label').on('click', function(){
+
+
+
+        if($(this).children('input').is(':checked'))
+        {
+          $(this).parent().siblings('.filter-dropdown').addClass('open');
+        }
+
+        else{
+          $(this).parent().siblings('.filter-dropdown').removeClass('open');
+        }
+
+      });
+  })
+</script>
 
   <script type="text/javascript">
     $(function() {
@@ -619,20 +672,6 @@
   </script>
 
 
-  <script type="text/javascript">
-    var tree3 = $("#test-select-3").treeMultiselect({
-      enableSelectAll: true,
-      allowBatchSelection: true,
-      searchable: true,
-      startCollapsed: true,
-    });
-    var tree4 = $("#test-select-4").treeMultiselect({
-      enableSelectAll: true,
-      allowBatchSelection: true,
-      searchable: true,
-      startCollapsed: true,
-    });
-  </script>
 
   <script type="text/javascript">
       $('.selectpicker').selectpicker({
