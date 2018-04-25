@@ -3699,6 +3699,7 @@ header .intro-text .intro-lead-in {
     font-size: 31px;
     color: #386890;
     text-align: center;
+    font-family: inherit;
 }
 
 .primary-button.button-inverse:hover,
@@ -3913,7 +3914,9 @@ footer {
     border-radius: 50%;
 }
 .team-member-container .caption strong {
-    color: #4a7ba5
+    color: #4a7ba5;
+    font-size: 15px;
+    margin-top: 4px;
 }
 
 .team-member-container .caption p {
@@ -3971,7 +3974,8 @@ footer {
 
 .section-heading-container {
     padding-top: 50px;
-    padding-bottom: 50px
+    padding-bottom: 50px;
+    margin-bottom: 0px !important;
 }
 
 .flex-row {
@@ -4367,14 +4371,10 @@ select.form-control {
 }
 
 .search-btn {
-    /* position: absolute; */
-    /* right: 23px; */
-    /* top: 14px; */
     font-size: 20px;
-    /* transition: all ease-in-out 300ms; */
-    margin-left: -40px;
-    padding: 0px 10px;
-    background-color: white;
+    margin-left: -39px;
+    padding: 0 5px;
+    background-color: #fff;
 }
 
 .search-btn a {
@@ -7254,7 +7254,7 @@ body.overlay-open {
 
 .feature-content p {
     margin-bottom: 14px;
-    font-size: 19px;
+    font-size: 16px;
     line-height: 31px
 }
 
