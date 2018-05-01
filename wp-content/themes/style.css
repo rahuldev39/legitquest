@@ -10436,6 +10436,339 @@ border-radius: 15px;
 .filter-dropdown li {
     margin-bottom: 0px;
 }
+
+/*###############-----Login Page CSS Start------##################*/
+
+.login-section .block {
+    margin: 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+    border-radius: 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px;
+    border: none;
+}
+
+.login-section .block.style-5 {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 15px 20px !important;
+    margin-top: 12px;
+}
+
+.login-section .block:before, .block:after {
+    display: table;
+    content: "";
+}
+.login-section .block:after {
+    clear: both;
+}
+.login-section .block.style-5.v2 .block-icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #1f3a93;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.login-section .block.style-5.v2a .block-icon {
+    border: 1px solid #fff;
+    background-color: rgba(1, 9, 18, 0.3);
+}
+
+.login-section .block.style-5.v2 .block-icon i {
+    font-size: 21px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: normal;
+}
+.login-section .block.style-5.v2a .block-content {
+    color: #e6e6e6;
+    padding-left: 81px;
+}
+.login-section .block.style-5 .block-content .block-title {
+    padding: 0;
+    margin: 0 0 8px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.login-section hr {
+    border-top: 1px solid #ffffff1c;
+    margin-bottom: 16px;
+}
+.content-footer {
+    color: white;
+    text-align: center;
+}
+.content-footer a {
+    display: inline-block;
+    margin: 0px 5px;
+    color: #ee8223;
+}
+.form-user.style-1 {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #34668c;
+    border-radius: 3px !important;
+}
+.form-shadow {
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.form-user.style-1 .form-header {
+    padding: 17px 0;
+    background-color: #34678d;
+    border-bottom: 1px solid #ffffff;
+}
+.form-user.style-1 .form-header .form-header-title {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+.form-user.style-1 .form-body {
+    padding: 35px 25px;
+    background-color: #fff;
+}
+.form-user.style-1 .form-body h4 {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 0px;
+    color: #888787;
+}
+.form-user.style-1 .form-body .btn{
+  margin-top: 20px
+}
+.forgot-link {
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+.social-media {
+    position: relative;
+}
+.social-media.style-4 a {
+    display: inline-block;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: #428bca;
+    color: #fff;
+}
+.social-media a.facebook, .social-media a.facebook:hover {
+    background: #3b5998;
+}
+.social-media a.twitter, .social-media a.twitter:hover {
+    background: #00aced;
+}
+.social-media a.google-plus, .social-media a.google-plus:hover {
+    background: #dd4b39;
+}
+.or {
+    overflow: hidden;
+    text-align: center;
+    padding: 13px 0 0 0;
+}
+.or .or_l, .or .or_r {
+    width: 40%;
+    border-bottom: solid 1px #f1f1f1;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: -4px;
+}
+.has-icon {
+    position: relative;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.has-icon .form-control.input-lg {
+    padding-left: 40px;
+}
+.form-control.input-lg {
+    height: 40px;
+    font-size: 14px;
+}
+.form-control-icon {
+    color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    pointer-events: none;
+}
+.input-lg+.form-control-icon {
+    width: 45px;
+    height: 40px;
+    line-height: 42px;
+}
+.has-icon label.sr-only~.form-control-icon {
+    top: 0;
+}
+.form-user.style-1 .form-footer {
+    padding: 15px 0;
+    background-color: #ecf0f1;
+    border-top: 1px solid #ecf0f1;
+}
+.login-section {
+    background-image: url(./images/bg-header-2.jpg);
+    padding: 80px 0px;
+    padding-top: 125px;
+}
+.login-section.register-block {
+    padding-top: 88px;
+}
+.login-section .form-group {
+    margin-bottom: 25px;
+}
+.login-section.register-block .form-group {
+    margin-bottom: 12px;
+}
+.login-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: red background-color: #354b5f;
+    background-image: linear-gradient(135deg, rgb(48, 80, 113), rgba(60, 92, 122, .75) 55%);
+}
+.login-section .container {
+    z-index: 100;
+}
+
+.login-section .plans-tab .block.style-5 {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px 20px !important;
+    margin-top: 20px;
+}
+
+.login-section .plans-tab .block.style-5.v2 .block-icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 100%;
+    position: absolute;
+    left: 16px;
+    top: 14px;
+}
+.login-section .block.style-5.active .block-icon {
+
+    background-color: rgb(46, 71, 96);
+}
+.login-section .plans-tab .block.style-5.active {
+    border-radius: 101px;
+    background: rgb(252,255,244);
+    background: -moz-linear-gradient(top, rgba(243, 248, 253) 0%, rgba(238, 243, 247) 40%, rgba(184, 192, 202) 100%);
+    background: -webkit-linear-gradient(top, rgba(243, 248, 253) 0%,rgba(238, 243, 247) 40%,rgba(184, 192, 202) 100%);
+    background: linear-gradient(to bottom, rgb(243, 248, 253) 0%,rgb(238, 243, 247) 40%,rgb(184, 192, 202) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+    overflow: visible;
+    cursor: pointer;
+    box-shadow: 0px 0px 7px #20384e;
+}
+.login-section .plans-tab .block.style-5.active::after {
+    content: "";
+    position: absolute;
+    right: -21px;
+    top: 31px;
+    height: 0px;
+    width: 0px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #e8ecf1;
+    z-index: 10000;
+}
+.login-section .plans-tab .block.style-5:hover {
+    background-color: #243b50;
+    cursor: pointer;
+    border-radius: 101px;
+    box-shadow: 0px 0px 0px 1px #3a5875;
+}
+.login-section .block.style-5.active .block-content .block-title {
+    color: #334b61;
+}
+.login-section .block.style-5.active .block-content{
+  color: #334b61;
+}
+@media (max-width:992px) {
+  .plans-tab {
+    display: flex;
+    padding-bottom: 40px;
+    position: relative;
+}
+.login-section .block.style-5.v2a .block-content {
+    padding-left: 0px;
+    display: none;
+}
+.login-section .block.style-5.active .block-content {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    color: #3a526e;
+    width: 100%;
+    left: 0px;
+    background: #e5e7ea;
+    padding: 14px 15px;
+}
+.login-section .block.style-5.active .block-content p{
+  margin-bottom: 0px !important
+}
+.login-section .plans-tab .block.style-5.v2 .block-icon {
+    position: static;
+}
+.login-section .block:first-child {
+    flex-basis: auto;
+}
+.login-section .plans-tab .block.style-5.active::after {
+    display: none;
+}
+.login-section .plans-tab .block.style-5 {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px 10px !important;
+    margin-top: 20px;
+    position: static;
+    border-radius: 0px !important;
+    background-color: #283f54;
+}
+.login-section .plans-tab .block.style-5.v2 .block-icon {
+    width: 45px;
+    height: 45px;
+}
+.login-section .block.style-5.v2 .block-icon i {
+    font-size: 16px;
+    line-height: 45px;
+}
+}
+
+/*###############-----Login Page CSS End------##################*/
+
 @media (min-width:1372px) {
     .search-btn {
         top: 10px
