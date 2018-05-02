@@ -10539,7 +10539,7 @@ border-radius: 15px;
     font-size: 13px;
     line-height: 20px;
     margin-top: 0px;
-    color: #888787;
+    color: #6f6f6f;
 }
 .form-user.style-1 .form-body .btn{
   margin-top: 20px
@@ -10715,6 +10715,25 @@ border-radius: 15px;
 }
 .login-section .block.style-5.active .block-content{
   color: #334b61;
+}
+.login-msg{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-msg-box {
+    max-width: 600px;
+    margin: 0 auto;
+    border-top: 10px solid #3e729a;
+}
+.msg-icon i {
+    font-size: 73px;
+    margin-bottom: 17px;
+    color: #ed7e1f;
+}
+.msg-text p {
+    font-size: 14px;
 }
 @media (max-width:992px) {
   .plans-tab {
