@@ -10735,6 +10735,188 @@ border-radius: 15px;
 .msg-text p {
     font-size: 14px;
 }
+.plan-slection .price-detail {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: 20px;
+    border-left: 1px solid #dddddd;
+}
+.plan-slection .price-detail td {
+    padding: 9px 19px!important;
+    font-size: 14px;
+}
+.plan-slection .steps-details {
+    flex: 1;
+    border: none;
+}
+.plan-slection .steps-details .tab-content {
+    border: 1px solid #e4e4e4;
+    background-color: white;
+}
+.plan-slection .pane-content {
+    padding: 0;
+    max-height: 350px;
+    overflow: auto;
+    background-color: white;
+}
+.plan-slection .price-detail td label {
+    font-size: 14px;
+}
+.plan-slection .price-detail .pane-header {
+    padding: 10px 10px;
+}
+
+.admin-layout .search-result-section{
+  background-color: transparent
+}
+.admin-layout .search-sidebar {
+
+    background-image: url(./images/sidebar-bg.jpg);
+    background-size: cover;
+
+    border-right: 0px;
+}
+.filter-panel {
+    border-bottom: 0px;
+}
+.admin-layout .filter-heading a {
+    padding-left: 31px;
+    border-bottom: 0;
+    position: relative;
+    color: #c2ceda;
+}
+.admin-layout .filter-heading a:hover {
+    background-color: #14212d;
+}
+
+.admin-layout .filter-heading a h4 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    padding-left: 19px;
+}
+.admin-layout .filter-heading a h4:after {
+    font-size: 17px;
+    left: 0;
+    top: -2px;
+}
+.admin-layout .active .filter-heading a {
+    background-color: #4a7aa59c;
+    color: white;
+    position: relative;
+}
+.admin-layout .active .filter-heading a::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-width: 9px;
+    border-color: transparent;
+    border-style: solid;
+    border-right-color: white;
+    right: 0px;
+    top: 11px;
+}
+.admin-layout .menu-title h4 {
+    font-weight: 500;
+    font-size: 11pt;
+    color: #4b6073;
+    padding-left: 26px;
+    border-bottom: 1px solid #182d42;
+    background-color: #04040430;
+}
+.admin-layout .pane-header h4 {
+    font-size: 16px;
+}
+.admin-layout .calc-content {
+    padding: 20px;
+    background-color: #f6fbff;
+    margin: 0px;
+    border-bottom: 0px;
+}
+.admin-layout .calc-content:last-child{
+  border-bottom: 1px solid #c6dcf1;
+}
+.admin-layout .plan-slection .steps-details .tab-content {
+    border: 0px solid #e4e4e4;
+    margin-bottom: 20px;
+}
+.admin-layout .pane-content table{
+  margin-bottom: 0px
+}
+.admin-layout .calc-title .plan-name {
+    font-size: 21px;
+    margin-bottom: 2px;
+}
+.admin-layout .feature-price .price.new {
+    font-size: 24px;
+}
+.admin-layout .package-calc {
+    display: flex;
+    align-items: flex-start;
+}
+.admin-layout .pane-header.h-left .plan-switch .btn {
+    padding: 3px 13px;
+}
+.admin-layout .db-heading h4 {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+}
+.admin-layout .radio-inline .radio{
+  margin-right: 20px
+}
+.admin-layout .tab-action-box{
+  display: none;
+}
+
+.admin-layout .table>thead>tr>th {
+    background-color: rgb(51, 101, 139)!important;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(51, 100, 138)!important;
+    padding: 13px 10px!important;
+    font-weight: 400;
+    font-size: 13px;
+    border: 1px solid #527a98;
+}
+.admin-layout .table {
+    font-size: 13px;
+}
+.admin-layout .table-bordered>tbody>tr>td {
+    border: 1px solid #d8e3ec;
+}
+.page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.page-title h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b3e50;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.page-title .header-tool {
+    max-width: 300px;
+}
+.header-tool{
+  display: flex
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: rgb(51, 101, 139)!important;
+    border-color: #33648a;
+}
+.panel-primary {
+    border-color: #c9d5de;
+}
 @media (max-width:992px) {
   .plans-tab {
     display: flex;
