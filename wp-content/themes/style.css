@@ -10802,7 +10802,7 @@ border-radius: 15px;
     top: -2px;
 }
 .admin-layout .active .filter-heading a {
-    background-color: #4a7aa59c;
+    background-color: rgba(47, 84, 117, 1);
     color: white;
     position: relative;
 }
