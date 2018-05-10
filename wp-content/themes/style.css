@@ -3333,25 +3333,24 @@ footer {
 }
 
 #customizer {
-    position: fixed;
-    top: 344px;
+  position: relative;
     padding: 20px;
     background: #f0f3f5;
-    width: 190px;
-    left: -190px;
+
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-    z-index: 100;
+    z-index: 100000;
     font-weight: 300;
     -webkit-border-bottom-right-radius: 2px;
     -moz-border-radius-bottomright: 2px;
     border-bottom-right-radius: 2px;
-    border: 1px solid #d4dfe8
-}
+    border: 1px solid #d4dfe8;
+    display: none
 
+}
 #customizer.active {
     left: 0
 }
@@ -3361,13 +3360,13 @@ footer {
 }
 
 .options {
-    background: #f0f3f5;
-    width: 44px;
-    height: 44px;
+    background: transparent;
+    width: auto;
+    height: auto;
     position: absolute;
     top: 30px;
     top: -1px;
-    right: -44px;
+    right: -41px;
     cursor: pointer;
     border-left: none;
     -webkit-border-top-left-radius: 2px;
@@ -3376,8 +3375,12 @@ footer {
     -moz-border-radius-bottomleft: 2px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    border: 1px solid #d4dfe8;
-    border-left: 0
+    border: 0px;
+    border-left: 0;
+    padding: 7px 5px;
+    font-size: 20px;
+    line-height: initial;
+    padding-left: 15px !important;
 }
 
 .options .pc {
@@ -5025,7 +5028,7 @@ select.form-control {
     width: 35%;
     background-color: #FFF;
     height: calc(100vh - 85px);
-    z-index: 100;
+    z-index: 10000;
     transition: right 0.2s;
     -webkit-transition: right 0.2s;
     font-size: 11px;
@@ -7420,7 +7423,7 @@ body.overlay-open {
 
 .fixed-sidebar-right .close-sidebar .text-slider.affix {
     padding-right: 44px!important;
-    padding-left: 0
+    padding-left: 115px;
 }
 
 .sidebar-tabs-link .bootstrap-select {
@@ -7632,14 +7635,15 @@ body.overlay-open {
     font-size: 17px
 }
 
-.case-id-detail,
-.university_rank_detail {
+.case-id-detail, .university_rank_detail {
     padding-top: 0;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0;
     padding-bottom: 40px;
-    transition: all ease-in-out 500ms
+    transition: all ease-in-out 500ms;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media (max-width:992px) {
@@ -8761,10 +8765,10 @@ header.header-bluebg .search-bar .select-search + .search-field input.form-contr
     width: 452px;
     top: 120%;
     right: 0;
-    z-index: 1000;
+    z-index: 100000;
     display: flex;
     align-items: flex-end;
-    transition: all ease-in-out 500ms
+    transition: all ease-in-out 500ms;
 }
 
 .sidebar-inner {
@@ -9249,40 +9253,34 @@ h3.section-lead {
     display: none
 }
 
-.action-panel {
-    position: fixed;
-    left: 0;
-    top: 164px
-}
+
 
 .action-panel-body a {
     display: block;
-    background: #f0f3f5;
+    background: transparent;
     cursor: pointer;
     border-left: none;
-    -webkit-border-top-left-radius: 2px;
-    -webkit-border-bottom-left-radius: 2px;
-    -moz-border-radius-topleft: 2px;
-    -moz-border-radius-bottomleft: 2px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border: 1px solid #d4dfe8;
+  border-radius: 0px
+    border: 0px;
     border-left: 0;
     text-align: center;
-    padding: 7px 5px;
+    padding: 7px 4px;
     line-height: normal;
     font-size: 12px;
     color: #313131;
     margin-bottom: 5px;
     position: relative;
     z-index: 1000;
-    background-color: #f0f3f5
+    background-color: transparent;
 }
-
+.action-panel-body a:hover{
+  background-color: #eef2f5;
+    box-shadow: 0px 0px 0px 1px #cdd4db;
+}
 .action-panel-body a i {
     display: block;
     font-size: 20px;
-    margin-bottom: 3px
+    margin-bottom: 0px;
 }
 
 .share-option {
@@ -9992,9 +9990,16 @@ h3.section-lead {
 
 .share-buttons li a {
     margin-right: 0;
-    padding: 0 6px
+    padding: 0 6px;
+    border-radius: 0px;
+    font-size: 21px;
+    margin-bottom: 7px;
+    background-color: #f1f4f7;
 }
-
+.share-buttons li a:hover {
+    background-color: #eef2f5;
+    box-shadow: 0px 0px 0px 1px #cdd4db;
+}
 .social-icon-sm {
     margin: 0 7px 5px 0;
     height: 36px;
@@ -10010,24 +10015,27 @@ h3.section-lead {
 }
 
 .si-dark {
-    background-color: #333;
+
     border: 0px!important;
-    color: #fff!important
+    color:  #ea3600!important;
 }
 
 .si-colored-facebook,
 .si-facebook:hover {
-    background-color: #3B5998!important
+
+    color: #3B5998!important
 }
 
 .si-colored-twitter,
 .si-twitter:hover {
-    background-color: #00ACEE!important
+
+    color: #00ACEE!important
 }
 
 .si-linkedin:hover,
 .si-colored-linkedin {
-    background-color: #0E76A8!important
+
+    color: #0E76A8!important;
 }
 
 .social-icon-sm:hover {
@@ -10041,16 +10049,13 @@ h3.section-lead {
     transition: all 0.3s ease;
     line-height: 30px;
     position: relative;
-    color: white!important
 }
 
 .social-icon-sm span {
     font-size: 11px
 }
 
-.social-icon-sm i:last-child {
-    color: #FFF!important
-}
+
 
 .post-content .fa {
     color: #ddd
@@ -10059,9 +10064,7 @@ h3.section-lead {
 .share-buttons {
     list-style-type: none;
     padding: 0;
-    position: fixed;
-    right: 32.6%;
-    z-index: 1000
+
 }
 
 .blog-single .post,
@@ -10917,6 +10920,84 @@ border-radius: 15px;
 .panel-primary {
     border-color: #c9d5de;
 }
+.social-share{
+
+}
+.social-share ul {
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.social-share ul li {
+    margin-right: 12px;
+    font-weight: 600;
+    color: black;
+}
+.social-share ul li a {
+    padding: 0px !important;
+    line-height: initial;
+    font-size: 27px !important;
+}
+.social-share ul li a.fb-icon{
+  color: #526aa4 !important
+}
+.social-share ul li a.tw-icon{
+  color: #45c3fd !important
+}
+.social-share ul li a.lin-icon{
+  color: #20a6d8 !important
+}
+.social-share ul li a.mail-icon{
+  color: #f34c36 !important
+}
+.premium-icon {
+    border: 1px solid #ef8829 !important;
+    color: #ed7e1f;
+    background-color: #fbfbfb;
+}
+.text-slider .premium-icon {
+    position: absolute;
+    left: 7px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 57px;
+    padding: 2px 12px;
+    line-height: 18px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+}
+.text-slider {
+    padding-left: 115px;
+}
+.case-id-main .share-buttons {
+    right: auto;
+    top: 292px;
+    transition: all ease-in-out 200ms;
+    display: block;
+    left: 0px;
+    overflow: visible;
+}
+
+.case-content {
+    position: relative;
+
+}
+.fixed-toolbar {
+    position: absolute;
+
+}
+.fixed-toolbar.affix {
+
+    top: 152px;
+}
+.case-content-inner{
+    padding-left: 65px;
+}
 @media (max-width:992px) {
   .plans-tab {
     display: flex;
@@ -11046,6 +11127,7 @@ border-radius: 15px;
     .team-section .nav-tabs>li {
         margin-right: 1px
     }
+
 }
 
 @media (max-width:960px) {
@@ -11078,10 +11160,13 @@ border-radius: 15px;
         background-color: #f7f7f7
     }
     .case-id-detail {
-        padding: 30px!important;
-        margin-top: 0;
-        padding-left: 55px!important
-    }
+    margin-top: 0;
+    padding-top: 19px !important;
+    padding-right: 15px;
+}
+.case-content-inner {
+    padding-left: 50px;
+}
     .case-topbar {
         margin-top: 0
     }
@@ -11440,9 +11525,7 @@ border-radius: 15px;
     .case-detail-tab .is-sticky .nav-tabs {
         padding: 4px 14px
     }
-    .search-result-listing {
-        padding: 15px
-    }
+
     .case-detail-tab .panel-body {
         padding: 5px
     }
