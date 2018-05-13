@@ -4479,27 +4479,28 @@ select.form-control {
 }
 
 .search-sidebar {
-    width: 310px;
+    width: 240px;
     border-right: 1px solid #e2e2e2;
     min-height: calc(100vh - 63px);
-    background-color: white
+    background-color: white;
 }
 
 .menu-title h4 {
     margin: 0;
     font-weight: 600;
-    font-size: 13pt;
+    font-size: 11pt;
     color: #1b1b1b;
     letter-spacing: 1px;
     height: 56px;
     padding: 18px 17px;
-    padding-left: 44px;
-    border-bottom: 1px solid #e4e5e7
+    padding-left: 20px;
+    border-bottom: 1px solid #e4e5e7;
+    display: flex;
+    align-items: center;
 }
 
 .menu-title h4 i {
     margin-right: 6px;
-    font-size: 21px
 }
 
 #side-menu li a {
@@ -4700,9 +4701,9 @@ select.form-control {
 
 .filter-list {
     padding: 4px 17px;
-    padding-left: 44px;
+    padding-left: 20px;
     padding-right: 35px;
-    padding-bottom: 0
+    padding-bottom: 0;
 }
 
 .filter-list ul {
@@ -7335,18 +7336,25 @@ body.overlay-open {
     max-height: calc(100vh - 63px);
     position: fixed;
     left: 0;
-    background-color: white
+    background-color: white;
+    box-shadow: 1px 56px 8px rgba(12, 12, 12, 0.12);
 }
 
 .fixed-sidebar .search-main {
-    margin-left: 310px
+    margin-left: 240px;
+        min-height: calc(100vh - 68px);
 }
 
 .fixed-sidebar footer {
-    margin-left: 310px;
-    padding-left: 21px
+    margin-left: 240px;
+    padding-left: 21px;
 }
-
+.checkbox-item label{
+  padding: 0px
+}
+.checkbox.checkbox-item span::before{
+  left: 1px;
+}
 .search-filed-box .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: auto
 }
@@ -7389,36 +7397,42 @@ body.overlay-open {
 
 .filter-heading a {
     display: block;
-    padding: 13px 0;
-    padding-left: 44px;
+    padding: 18px 0;
+    padding-left: 20px;
     border-bottom: 0;
     position: relative;
-    color: #313131
+    color: #313131;
+    border-top: 1px solid #e2e2e2;
 }
-
+.filter-panel:first-child .filter-heading a{
+  border-top: 0px
+}
 .filter-heading a h4:after {
-    content: "\f0d7";
+    content: "\f107";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: 21px;
+    font-size: 17px;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: absolute;
-    left: 0;
-    top: -3px
+    right: 18px;
+    top: -3px;
+    color: #989898;
 }
 
 .filter-heading a.collapsed h4::after {
-    content: "\f0da"!important
+    content: "\f105"!important
 }
-
+#navigation .filter-collapse {
+    border-bottom: 1px solid #e2e2e2;
+}
 .filter-heading a h4 {
     margin: 0;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     position: relative;
-    padding-left: 19px
+    padding-right: 19px;
 }
 
 .fixed-sidebar-right .close-sidebar .text-slider.affix {
@@ -8009,7 +8023,7 @@ body.overlay-open {
     font-weight: 500;
     font-size: 14px;
     padding-left: 6px!important;
-    line-height: 15px!important
+    line-height: 15px!important;
 }
 
 .filter-list .checkbox span::before {
@@ -8025,11 +8039,16 @@ body.overlay-open {
 }
 
 .filter-list .checkbox, .filter-list .radio{
-    margin-left: 20px;
+    margin-left: 0px;
 
 }
-.filter-list li{
-  margin-bottom: 12px
+.filter-list li {
+    margin-bottom: 8px;
+}
+.filter-list li label {
+    font-size: 13px;
+    color: #424242;
+
 }
 .block-body .cititaton-text span {
     font-size: 12px;
@@ -8825,7 +8844,7 @@ header.header-bluebg .search-bar .select-search + .search-field input.form-contr
 }
 
 .filter-panel .filter-content .filter-list {
-    padding-bottom: 15px
+    padding-bottom: 9px;
 }
 
 .pagination>li>a,
@@ -9426,7 +9445,11 @@ h3.section-lead {
 .search-info {
     display: flex;
     justify-content: space-between;
-    padding-top: 15px
+    padding-top: 0px;
+    background-color: white;
+    padding: 11px 13px;
+    margin-bottom: 7px;
+    border: 1px solid #d6d6d6;
 }
 
 .party-filter {
@@ -10397,7 +10420,7 @@ border-radius: 15px;
 }
 
 .filter-dropdown {
-    padding-left: 25px;
+    padding-left: 0px;
     border-top: 1px solid #e4e5e7;
     border-bottom: 1px solid #e4e5e7;
     padding-top: 10px;
@@ -10407,6 +10430,20 @@ border-radius: 15px;
     overflow: hidden;
     transition: all ease-in-out 300ms;
     margin-top: 10px;
+}
+.filter-list b.case-count {
+    height: 19px;
+    width: 19px;
+    background-color: #f7f7f7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 9px;
+    border: 1px solid #e8e8e8;
+    color: #313030;
+    vertical-align: text-bottom;
+    margin-left: 5px;
 }
 .filter-dropdown.open{
   display: block;
@@ -10801,7 +10838,7 @@ border-radius: 15px;
 }
 .admin-layout .filter-heading a h4:after {
     font-size: 17px;
-    left: 0;
+    right: 18px;
     top: -2px;
 }
 .admin-layout .active .filter-heading a {
