@@ -7,7 +7,7 @@
 @font-face {
     font-family: 'Avenir Next';
     font-weight: 400;
-    src: url(/Content/themes/fonts/AvenirNextLTPro-Regular.otf)
+    src: url(./fonts/AvenirNextLTPro-Regular.otf)
 }
 
 @font-face {
@@ -4479,7 +4479,7 @@ select.form-control {
 }
 
 .search-sidebar {
-    width: 240px;
+    width: 310px;
     border-right: 1px solid #e2e2e2;
     min-height: calc(100vh - 63px);
     background-color: white;
@@ -4493,7 +4493,7 @@ select.form-control {
     letter-spacing: 1px;
     height: 56px;
     padding: 18px 17px;
-    padding-left: 20px;
+    padding-left: 42px;
     border-bottom: 1px solid #e4e5e7;
     display: flex;
     align-items: center;
@@ -4591,7 +4591,8 @@ select.form-control {
     margin-top: 0;
     margin-bottom: 4px;
     text-decoration: underline;
-    font-weight: 600
+    font-weight: 600;
+    font-family: "Avenir Next",sans-serif !important;
 }
 
 .result-box h2 a {
@@ -4653,8 +4654,7 @@ select.form-control {
     outline: none
 }
 
-.search-action>a,
-.popup-open {
+.search-action>a, .popup-open {
     display: inline-block;
     padding: 1px 9px;
     background-color: #fff;
@@ -4664,7 +4664,8 @@ select.form-control {
     margin-right: 5px;
     border: 1px solid #cecece;
     box-shadow: 0 0 2px #e8e8e8;
-    font-weight: 600
+    font-weight: 600;
+    line-height: 25px;
 }
 
 .search-action>a i {
@@ -4701,7 +4702,7 @@ select.form-control {
 
 .filter-list {
     padding: 4px 17px;
-    padding-left: 20px;
+    padding-left: 42px;
     padding-right: 35px;
     padding-bottom: 0;
 }
@@ -7341,12 +7342,12 @@ body.overlay-open {
 }
 
 .fixed-sidebar .search-main {
-    margin-left: 240px;
-        min-height: calc(100vh - 68px);
+    margin-left: 310px;
+    min-height: calc(100vh - 68px);
 }
 
 .fixed-sidebar footer {
-    margin-left: 240px;
+    margin-left: 310px;
     padding-left: 21px;
 }
 .checkbox-item label{
@@ -7397,8 +7398,8 @@ body.overlay-open {
 
 .filter-heading a {
     display: block;
-    padding: 18px 0;
-    padding-left: 20px;
+    padding: 16px 0;
+    padding-left: 42px;
     border-bottom: 0;
     position: relative;
     color: #313131;
@@ -8043,7 +8044,7 @@ body.overlay-open {
 
 }
 .filter-list li {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 .filter-list li label {
     font-size: 13px;
@@ -9445,13 +9446,7 @@ h3.section-lead {
 .search-info {
     display: flex;
     justify-content: space-between;
-    padding-top: 0px;
-    background-color: white;
-    padding: 11px 13px;
-    margin-bottom: 7px;
-    border: 1px solid #d6d6d6;
 }
-
 .party-filter {
     max-width: 300px;
     margin-right: 10px
@@ -10432,18 +10427,8 @@ border-radius: 15px;
     margin-top: 10px;
 }
 .filter-list b.case-count {
-    height: 19px;
-    width: 19px;
-    background-color: #f7f7f7;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 9px;
-    border: 1px solid #e8e8e8;
-    color: #313030;
-    vertical-align: text-bottom;
-    margin-left: 5px;
+    color: #ed7e1f;
+    padding-left: 30px;
 }
 .filter-dropdown.open{
   display: block;
