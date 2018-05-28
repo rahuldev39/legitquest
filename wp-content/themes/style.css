@@ -10936,7 +10936,7 @@ border-radius: 15px;
     padding-bottom: 12px;
     border-bottom: 1px solid #cdd4db;
     background-color: #eef2f5;
-    box-shadow: 0px 0px 2px #cbd0d6;
+    box-shadow: 0px 0px 4px #cbd0d6;
 }
 
 .sidebar-tab ul.nav-tabs li {
@@ -10967,18 +10967,31 @@ border-radius: 15px;
 .sidebar-tab ul.nav-tabs li.active a::after {
     content: "";
     position: absolute;
-    height: 12px;
-    width: 12px;
-    background-color: white;
-    border-left: 1px solid #cdd4db;
-    border-top: 1px solid #cdd4db;
-    transform: rotate(45deg);
-    bottom: -19px;
+    height: 0px;
+    width: 0px;
+    border-color: transparent;
+    bottom: -16px;
+    border-style: solid;
+    border-width: 11px;
+    border-bottom-color: white;
     left: 0px;
     right: 0px;
     margin: 0 auto;
 }
-
+.sidebar-tab ul.nav-tabs li.active a::before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-color: transparent;
+    bottom: -14px;
+    border-style: solid;
+    border-width: 11px;
+    border-bottom-color: #cdd4db;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
 .sidebar-tab .nav-tabs>li.active>a,
 .sidebar-tab .nav-tabs>li.active>a:hover,
 .sidebar-tab .nav-tabs>li.active>a:focus,
