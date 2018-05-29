@@ -865,20 +865,26 @@ ul.featured-list {
     border-radius: 3px;
     box-sizing: content-box;
     box-shadow: 0 0px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: calc(100% - 10px);
 }
 .video-modal .modal-content {
     padding: 0;
     border: 0;
-    position: fixed;
-    width: 712px;
-    left: 50%;
-    margin-top: -200px;
-    top: 50%;
-    margin-left: -356px;
+    max-width: 700px;
     border-radius: 0;
     text-align: center;
-    background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: none;
+    background: 0 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.video-container {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 700px;
 }
