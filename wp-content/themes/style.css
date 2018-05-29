@@ -11010,6 +11010,40 @@ border-radius: 15px;
 .video-modal-link:hover .play-video {
     background-color: rgba(32, 61, 82, 0.91);
 }
+.video-modal .modal-header {
+    border-bottom: 0px;
+    padding: 0px;
+}
+.video-modal .modal-header .close span {
+    margin-bottom: 6px;
+    font-size: 20px;
+    text-shadow: none;
+    color: #ffffff;
+    opacity: .8;
+    font-weight: 400;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 2px solid #d3dae4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000008;
+    margin-left: 6px;
+    margin-bottom: 0px;
+}
+.video-modal .modal-header .close {
+    margin-bottom: 11px;
+    font-size: 14px;
+    text-shadow: none;
+    color: #ffffff;
+    opacity: .8;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000008;
+}
 @media (min-width:1372px) {
     .search-btn {
         top: 10px
