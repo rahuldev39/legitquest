@@ -1,613 +1,690 @@
 <!DOCTYPE html>
 <html lang=en-US>
+
 <head>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<link rel=icon href=./wp-content/themes/images/fav_lq.png type=image/png sizes=32x32>
-<style></style>
-<title>Welcome:LQ</title>
-<link rel=stylesheet href=wp-content/plugins/tt-vc-addon/assets/css/tt_vc_front.min.css type=text/css media=all />
-<link rel=stylesheet href=wp-content/plugins/tt-vc-addon/assets/css/font-awesome.min.css type=text/css media=all />
-<link rel=stylesheet href=wp-content/themes/themetek/assets/css/bootstrap.min.css type=text/css media=all />
-<link rel=stylesheet href=wp-content/themes/bootstrap-select.min.css type=text/css media=all />
-<link rel=stylesheet href=./wp-content/themes/owl.carousel.min.css type=text/css media=all />
-<link rel=stylesheet href=./wp-content/themes/owl.theme.min.css type=text/css media=all />
-<link rel=stylesheet href=./wp-content/themes/style.min.css type=text/css media=all />
-<link rel=stylesheet href=./wp-content/themes/social-btn.min.css type=text/css media=all />
-<link rel=stylesheet href=wp-content/themes/themetek/colors.min.css type=text/css media=all />
-<link rel=stylesheet href=./wp-content/themes/aos.min.css type=text/css media=all />
-<link rel=stylesheet id=redux-google-fonts-css href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic%7CWork+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1474625187' type=text/css media=all />
-<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900" rel=stylesheet>
-<link rel=stylesheet href=wp-content/themes/jquery.tree-multiselect.min.css type=text/css media=all />
-<link rel=stylesheet href=wp-content/themes/bootstrap-select.min.css type=text/css media=all />
-<script src=wp-content/themes/js/jquery.min.js></script>
-<script src=./wp-content/themes/js/owl.carousel.min.js defer></script>
-<script src=wp-content/plugins/tt-vc-addon/assets/js/jquery.easytabs.min.js defer></script>
-<script src=wp-content/plugins/tt-vc-addon/assets/js/tt_vc_script.min.js defer></script>
-<script src=./wp-content/themes/js/aos.min.js></script>
-<script src=wp-content/themes/js/bootstrap-select.min.js defer></script>
-<!--[if lte IE 9]><link rel=stylesheet type=text/css href=http://keysoft-wp.keydesign-themes.com/demo3/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css media=screen><![endif]-->
-<!--[if IE 8]><link rel=stylesheet type=text/css href=http://keysoft-wp.keydesign-themes.com/demo3/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css media=screen><![endif]-->
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel=icon href=./wp-content/themes/images/fav_lq.png type=image/png sizes=32x32>
+    <style></style>
+    <title>Welcome:LQ</title>
+    <link rel=stylesheet href=wp-content/plugins/tt-vc-addon/assets/css/tt_vc_front.min.css type=text/css media=all />
+    <link rel=stylesheet href=wp-content/plugins/tt-vc-addon/assets/css/font-awesome.min.css type=text/css media=all />
+    <link rel=stylesheet href=wp-content/themes/themetek/assets/css/bootstrap.min.css type=text/css media=all />
+    <link rel=stylesheet href=wp-content/themes/bootstrap-select.min.css type=text/css media=all />
+    <link rel=stylesheet href=./wp-content/themes/owl.carousel.min.css type=text/css media=all />
+    <link rel=stylesheet href=./wp-content/themes/owl.theme.min.css type=text/css media=all />
+    <link rel=stylesheet href=./wp-content/themes/style.css type=text/css media=all />
+    <link rel=stylesheet href=./wp-content/themes/social-btn.min.css type=text/css media=all />
+    <link rel=stylesheet href=wp-content/themes/themetek/colors.min.css type=text/css media=all />
+    <link rel=stylesheet href=./wp-content/themes/aos.min.css type=text/css media=all />
+    <link rel=stylesheet id=redux-google-fonts-css href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic%7CWork+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1474625187' type=text/css media=all />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900" rel=stylesheet>
+    <link rel=stylesheet href=wp-content/themes/jquery.tree-multiselect.min.css type=text/css media=all />
+    <link rel=stylesheet href=wp-content/themes/bootstrap-select.min.css type=text/css media=all />
+    <script src=wp-content/themes/js/jquery.min.js></script>
+    <script src=./wp-content/themes/js/owl.carousel.min.js></script>
+    <script src=wp-content/plugins/tt-vc-addon/assets/js/tt_vc_script.js></script>
+    <script src=./wp-content/themes/js/aos.min.js></script>
+    <script src=wp-content/themes/js/bootstrap-select.min.js></script>
+    <!--[if lte IE 9]><link rel=stylesheet type=text/css href=http://keysoft-wp.keydesign-themes.com/demo3/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css media=screen><![endif]-->
+    <!--[if IE 8]><link rel=stylesheet type=text/css href=http://keysoft-wp.keydesign-themes.com/demo3/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css media=screen><![endif]-->
 </head>
+
 <body class="home page-template-default page page-parent subscribe-form big-navbar vc_responsive">
-<div id=preloader>
-<div class=spinner></div>
-</div>
-<nav class="navbar navbar-default navbar-fixed-top" role=navigation>
-<div class=container>
-<div id=logo>
-<a class=logo href=index.html>
-<img class=fixed-logo src=wp-content/themes/images/lq-logo.png alt=""/>
-</a>
-</div>
-<div class="navbar-header page-scroll">
-<button type=button class=navbar-toggle data-toggle=collapse data-target=#main-menu>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-</button>
-</div>
-<div id=main-menu class="collapse navbar-collapse navbar-right">
-<ul id=menu-main-menu class="nav navbar-nav">
-<li class="menu-item active">
-<a href=index.html>Home</a>
-</li>
-<li class="menu-item menu-item-has-children dropdown">
-<a href=#>About</a>
-<ul role=menu class=dropdown-menu>
-<li class><a href=about_us.html>About LegitQuest</a></li>
-<li class><a href=team.html>Our Team</a></li>
-<li class><a href=opening.html>Career</a></li>
-</ul>
-</li>
-<li class=menu-item>
-<a href=pricing.html>Pricing</a>
-</li>
-<li class=menu-item>
-<a href=contact-us.html>Contact Us</a>
-</li>
-<li class=menu-item>
-<a href=# class=signin-btn data-toggle=modal data-target=#login-modal>Login</a>
-</li>
-<li class=menu-item>
-<a href=# class=homeregister-btn data-toggle=modal data-target=#register-modal>Sign Up for Free</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<div id=wrapper>
-<header id=header class="search-header header-bluebg">
-<div class=container>
-<div class=banner-main>
-<div data-aos=zoom-in data-aos-duration=200 data-aos-delay=100 class=intro-text>
-<h1 class=intro-lead-in style=color:#336386>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role=navigation>
+        <div class=container>
+            <div id=logo>
+                <a class=logo href=index.html>
+                    <img class=fixed-logo src=wp-content/themes/images/lq-logo.png alt="" />
+                </a>
+            </div>
+            <div class="navbar-header page-scroll">
+                <button type=button class=navbar-toggle data-toggle=collapse data-target=#main-menu>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                </button>
+            </div>
+            <div id=main-menu class="collapse navbar-collapse navbar-right">
+                <ul id=menu-main-menu class="nav navbar-nav">
+                    <li class="menu-item active">
+                        <a href=index.html>Home</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children dropdown">
+                        <a href=#>About</a>
+                        <ul role=menu class=dropdown-menu>
+                            <li class><a href=about_us.html>About LegitQuest</a></li>
+                            <li class><a href=team.html>Our Team</a></li>
+                            <li class><a href=opening.html>Career</a></li>
+                        </ul>
+                    </li>
+                    <li class=menu-item>
+                        <a href=pricing.html>Pricing</a>
+                    </li>
+                    <li class=menu-item>
+                        <a href=contact-us.html>Contact Us</a>
+                    </li>
+                    <li class=menu-item>
+                        <a href=# class=signin-btn data-toggle=modal data-target=#login-modal>Login</a>
+                    </li>
+                    <li class=menu-item>
+                        <a href=# class=homeregister-btn data-toggle=modal data-target=#register-modal>Sign Up for Free</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id=wrapper>
+        <header id=header class="search-header header-bluebg">
+            <div class=container>
+                <div class=banner-main>
+                    <div data-aos=zoom-in data-aos-duration=200 data-aos-delay=100 class=intro-text>
+                        <h1 class=intro-lead-in style=color:#336386>
 Re-Defining Legal Research <span class=sup>TM</span></h1>
-<span class=intro-heading style=color:#336386>It is the authority which makes law, to find it is arduous. A good lawyer is one who knows where to find it.</span>
-</div>
-<div class=header-form-section>
-<div data-aos=fade-up data-aos-duration=500 data-aos-delay=200 class=search-bar>
-<div class=search-filed-box>
-<div class=select-search>
-<select class=selectpicker>
-<option>All</option>
-<option>Citation</option>
-<option>Party names</option>
-<option>Judge Name</option>
-<option>Advocate name</option>
-</select>
-</div>
-<div class=search-field>
-<input class=form-control placeholder="Search Cases, Statutes and Regulations">
-<div class="form-control court-search-input"></div>
-<div class=search-btn>
-<a href=#><i class="fa fa-search" aria-hidden=true></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
-<section class=info-text-container style=background-color:#e1edfb;background-image:url(./wp-content/themes/images/pricing-pattrens.png)>
-<div class="container text-center">
-<div class=corner-border>
-<div class=top-border></div>
-<div class=bottom-border></div>
-<h3 data-aos=fade-up data-aos-duration=900 data-aos-delay=100>
+                        <span class=intro-heading style=color:#336386>It is the authority which makes law, to find it is arduous. A good lawyer is one who knows where to find it.</span>
+                    </div>
+                    <div class=header-form-section>
+                        <div data-aos=fade-up data-aos-duration=500 data-aos-delay=200 class=search-bar>
+                            <div class=search-filed-box>
+                                <div class=select-search>
+                                    <select class=selectpicker>
+                                        <option>All</option>
+                                        <option>Citation</option>
+                                        <option>Party names</option>
+                                        <option>Judge Name</option>
+                                        <option>Advocate name</option>
+                                    </select>
+                                </div>
+                                <div class=search-field>
+                                    <input class=form-control placeholder="Search Cases, Statutes and Regulations">
+                                    <div class="form-control court-search-input"></div>
+                                    <div class=search-btn>
+                                        <a href=#><i class="fa fa-search" aria-hidden=true></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class=info-text-container style=background-color:#e1edfb;background-image:url(./wp-content/themes/images/pricing-pattrens.png)>
+            <div class="container text-center">
+                <div class=corner-border>
+                    <div class=top-border></div>
+                    <div class=bottom-border></div>
+                    <h3 data-aos=fade-up data-aos-duration=900 data-aos-delay=100>
 World’s only 1-click access to DRAF of a case law!
 </h3>
-<h4 data-aos=fade-up data-aos-duration=1000 data-aos-delay=100>
+                    <h4 data-aos=fade-up data-aos-duration=1000 data-aos-delay=100>
 (Decision, Reasoning, Arguments &amp; Facts)
 </h4>
-</div>
-</div>
-</section>
-<div class=features-container>
-<section id=isearch class="section dark-bg" style=background-color:#235c86>
-<div class=container>
-<div class=feature-box>
-<div data-aos=fade-right data-aos-duration=800 data-aos-delay=200 class="feature-content aos-init aos-animate">
-<h4><img src=wp-content\themes\images\i.png alt=ISearch class=i-img> Search</h4>
-<div class>
-<p><strong>Not all search engines are created equal - Information retrieval made easy</strong></p>
-<p>
-For years, lawyers have been stuck with antiquated tools that focus primarily on Boolean search. Better tools are needed to truly understand data.
-</p>
-<p>
-iSearch gives you a refreshing outcome by providing relevant results (results you are actually interested in), uncluttered with a user-friendly interface.
-The auto complete feature suggests the most relevant document from the Statutes, Case Laws, Regulations and Templates based on legal taxonomy for efficient, relevant and accurate results.
-</p>
-</div>
-</div>
-<div data-aos=fade-left data-aos-duration=800 data-aos-delay=200 class="feature-img right aos-init aos-animate">
-<img src=wp-content\themes\images\tab-search.png alt="Legal search engine to find most relevant case law, statute or regulation">
-</div>
-</div>
-</div>
-</section>
-<section id=igraphics class=section style=background-color:#e1edfb>
-<div class=container>
-<div class=feature-box>
-<div data-aos=fade-right data-aos-duration=800 data-aos-delay=200 class="feature-img left aos-init">
-<img src=wp-content\themes\images\tab-graphics.png alt="Find treatment of the sc case judgements for your legal research.">
-</div>
-<div data-aos=fade-left data-aos-duration=800 data-aos-delay=200 class="feature-content aos-init">
-<h4><img src=wp-content\themes\images\i.png class=i-img alt=IGraphics> Graphics</h4>
-<div class>
-<p><strong>A picture is intelligence made visible</strong></p>
-<p>
-Instead of wading through piles of paper, lawyers now deal with terabytes of data and millions of documents.
-</p>
-<p>
-Experts have proven that visuals have a positive impact on the human mind for learning and memorising.
-</p>
-<p>iGraphics saves your time by condensing the treatment of overruled, distinguished, followed and relied case laws into a single canvas for easy reference and understanding.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id=iDRAF class="section dark-bg" style=background-color:#235c86>
-<div class=container>
-<div class=feature-box>
-<div data-aos=fade-right data-aos-duration=800 data-aos-delay=200 class="feature-content aos-init">
-<h4><img src=wp-content\themes\images\i.png class=i-img alt=IDRAF> DRAF</h4>
-<div class>
-<p><strong>Deliver beyond expectations</strong></p>
-<p>
-iDRAF stands for “Decision Reasoning Arguments Facts” of a Case Law. This tool uses our proprietary algorithm to cull out the iDRAF of case laws with 1-click.
-</p>
-<p>
-It’s a unique &amp; reliable tool created to save your valuable time.
-</p>
-</div>
-</div>
-<div data-aos=fade-left data-aos-duration=800 data-aos-delay=200 class="feature-img right aos-init">
-<img src=wp-content\themes\images\tab1-1-1.png alt="How to find supreme court judgements for case law search">
-</div>
-</div>
-</div>
-</section>
-</div>
-<div class=featured-pricing>
-<div class=container>
-<div class=text-center>
-<div class=f-pricing-text>
-<h3 data-aos=fade-up data-aos-duration=600 data-aos-delay=100 class=section-lead>Feature based Pricing</h3>
-<p data-aos=fade-up data-aos-duration=600 data-aos-delay=200>We have created a unique pricing model which is based on features you use. This means access to data is free, for life, yes for life. You only pay for the features you want to subscribe to.</p>
-</div>
-<img data-aos=fade-up data-aos-duration=600 data-aos-delay=300 src=./wp-content/themes/images/f-pricing.png alt>
-</div>
-</div>
-</div>
-<section id=testimonials class=section style=background-color:#f8f8f8>
-<div class=container>
-<div class=row>
-<div class=text-center>
-<h3 data-aos=fade-up data-aos-duration=600 data-aos-delay=100 class="section-lead text-white">Legal researchers love LegitQuest</h3>
-</div>
-</div>
-<div class=row>
-<div data-aos=zoom-in data-aos-duration=600 data-aos-delay=200 class="vc_row wpb_row vc_row-fluid">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class=vc_column-inner>
-<div class=wpb_wrapper>
-<div class='slider testimonials'>
-<div class=tt-content>
-<h3><span class=tt-quote>“</span>
+                </div>
+            </div>
+        </section>
+        <div class=features-container>
+            <section id=isearch class="section dark-bg" style=background-color:#235c86>
+                <div class=container>
+                    <div class=feature-box>
+                        <div data-aos=fade-right data-aos-duration=800 data-aos-delay=200 class="feature-content aos-init aos-animate">
+                            <h4><img src=wp-content\themes\images\i.png alt=ISearch class=i-img> Search</h4>
+                            <div class>
+                                <p><strong>Not all search engines are created equal - Information retrieval made easy</strong></p>
+                                <p>
+                                    For years, lawyers have been stuck with antiquated tools that focus primarily on Boolean search. Better tools are needed to truly understand data.
+                                </p>
+                                <p>
+                                    iSearch gives you a refreshing outcome by providing relevant results (results you are actually interested in), uncluttered with a user-friendly interface. The auto complete feature suggests the most relevant document from the Statutes, Case Laws, Regulations and Templates based on legal taxonomy for efficient, relevant and accurate results.
+                                </p>
+                            </div>
+                        </div>
+                        <div data-aos=fade-left data-aos-duration=800 data-aos-delay=200 class="feature-img right aos-init aos-animate">
+                            <a class="video-modal-link" data-toggle='modal' data-target='#isearch-modal' data-backdrop='true' data-theVideo="https://www.youtube.com/embed/oik6qiQNrXg" >
+                                <img src=wp-content\themes\images\tab-search.png alt="Legal search engine to find most relevant case law, statute or regulation">
+                                <span class="play-video"><span class="fa fa-play"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=igraphics class=section style=background-color:#e1edfb>
+                <div class=container>
+                    <div class=feature-box>
+                        <div data-aos=fade-right data-aos-duration=800 data-aos-delay=200 class="feature-img left aos-init">
+                            <a href="#" class="video-modal-link" data-toggle='modal' data-target='#igraphics-modal' data-backdrop='true' data-theVideo="https://www.youtube.com/embed/WqWaGMT1T0A">
+                                <img src=wp-content\themes\images\tab-graphics.png alt="Find treatment of the sc case judgements for your legal research.">
+                                <span class="play-video"><span class="fa fa-play"></span></span>
+                            </a>
+                        </div>
+                        <div data-aos=fade-left data-aos-duration=800 data-aos-delay=200 class="feature-content aos-init">
+                            <h4><img src=wp-content\themes\images\i.png class=i-img alt=IGraphics> Graphics</h4>
+                            <div class>
+                                <p><strong>A picture is intelligence made visible</strong></p>
+                                <p>
+                                    Instead of wading through piles of paper, lawyers now deal with terabytes of data and millions of documents.
+                                </p>
+                                <p>
+                                    Experts have proven that visuals have a positive impact on the human mind for learning and memorising.
+                                </p>
+                                <p>iGraphics saves your time by condensing the treatment of overruled, distinguished, followed and relied case laws into a single canvas for easy reference and understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=iDRAF class="section dark-bg" style=background-color:#235c86>
+                <div class=container>
+                    <div class=feature-box>
+                        <div data-aos=fade-right data-aos-duration=800 data-aos-delay=200 class="feature-content aos-init">
+                            <h4><img src=wp-content\themes\images\i.png class=i-img alt=IDRAF> DRAF</h4>
+                            <div class>
+                                <p><strong>Deliver beyond expectations</strong></p>
+                                <p>
+                                    iDRAF stands for “Decision Reasoning Arguments Facts” of a Case Law. This tool uses our proprietary algorithm to cull out the iDRAF of case laws with 1-click.
+                                </p>
+                                <p>
+                                    It’s a unique &amp; reliable tool created to save your valuable time.
+                                </p>
+                            </div>
+                        </div>
+                        <div data-aos=fade-left data-aos-duration=800 data-aos-delay=200 class="feature-img right aos-init">
+                            <a href="#" class="video-modal-link" data-toggle='modal' data-target='#idraf-modal' data-backdrop='true' data-theVideo="https://www.youtube.com/embed/KQXOAMTZLqY">
+                                <img src=wp-content\themes\images\tab1-1-1.png alt="How to find supreme court judgements for case law search">
+                                <span class="play-video"><span class="fa fa-play"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class=featured-pricing>
+            <div class=container>
+                <div class=text-center>
+                    <div class=f-pricing-text>
+                        <h3 data-aos=fade-up data-aos-duration=600 data-aos-delay=100 class=section-lead>Feature based Pricing</h3>
+                        <p data-aos=fade-up data-aos-duration=600 data-aos-delay=200>We have created a unique pricing model which is based on features you use. This means access to data is free, for life, yes for life. You only pay for the features you want to subscribe to.</p>
+                    </div>
+                    <img data-aos=fade-up data-aos-duration=600 data-aos-delay=300 src=./wp-content/themes/images/f-pricing.png alt>
+                </div>
+            </div>
+        </div>
+        <section id=testimonials class=section style=background-color:#f8f8f8>
+            <div class=container>
+                <div class=row>
+                    <div class=text-center>
+                        <h3 data-aos=fade-up data-aos-duration=600 data-aos-delay=100 class="section-lead text-white">Legal researchers love LegitQuest</h3>
+                    </div>
+                </div>
+                <div class=row>
+                    <div data-aos=zoom-in data-aos-duration=600 data-aos-delay=200 class="vc_row wpb_row vc_row-fluid">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class=vc_column-inner>
+                                <div class=wpb_wrapper>
+                                    <div class='slider testimonials'>
+                                        <div class=tt-content>
+                                            <h3><span class=tt-quote>“</span>
 <span class='tt-quote tt-quote-right'>”</span>
 LegitQuest seems to be a one of its kind Legal Research engine with features like iDRAF and IGraphics.
 It helped me find out relevant cases with just One Click to reach to the Reasoning and decision of the case.
 A feature like iDraf has helped me save a lot of time while analysing a case.
 </h3>
-<div class=tt-container>
-<h4>Rahul Sinha Roy</h4>
-<span class=content> Assistant Professor, LLoyd law College
+                                            <div class=tt-container>
+                                                <h4>Rahul Sinha Roy</h4>
+                                                <span class=content> Assistant Professor, LLoyd law College
 <br>
 <small>Faculty Member, Commonwealth Institute for Justice, Education and Research</small>
 </span>
-</div>
-</div>
-<div class=tt-content>
-<h3><span class=tt-quote>“</span>
+                                            </div>
+                                        </div>
+                                        <div class=tt-content>
+                                            <h3><span class=tt-quote>“</span>
 <span class='tt-quote tt-quote-right'>”</span>
 LegitQuest is sure to transform and revolutionise the way Judges, Attorneys, law students, professors, researchers and scholars do legal research.
 </h3>
-<div class=tt-container>
-<h4>Pratyush Kumar</h4>
-<span class=content>Research Associate - NLU, Delhi
+                                            <div class=tt-container>
+                                                <h4>Pratyush Kumar</h4>
+                                                <span class=content>Research Associate - NLU, Delhi
 <br>
 <small>LLM, The George Washington University Law School, US</small>
 </span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<div class=featured-in style>
-<div class=text-center>
-<h3 class=section-lead>Featured in</h3>
-<div class=container>
-<div class=featured-img>
-<div class='slider publisher'>
-<div class=publisher-content>
-<a href=# />
-<h4>AI should be used for augmenting lawyers capabilities</h4>
-</a>
-<span><small>Justice Sikri at Legitquest Launch event</small></span>
-</div>
-<div class=publisher-content>
-<a href=# />
-<h4>Legitquest- “Artificial intelligence (AI) enabled search tool allows users to browse through millions of legal case records and provides them the most relevant results in seconds, its makers say.” </h4>
-</a>
-<span> <img src=wp-content\themes\images\featured\business_standard.jpg alt> </span>
-</div>
-<div class=publisher-content>
-<a href=# />
-<h4>AI may help you win your next court case!</h4>
-</a>
-<span> <img src=wp-content\themes\images\featured\theweek.jpg alt> </span>
-</div>
-<div class=publisher-content>
-<a href=# />
-<h4>Indian start-up to provide unique search platform, data bank for Indian legal pros</h4>
-</a>
-<span> <img src=wp-content\themes\images\featured\apn.jpg alt> </span>
-</div>
-<div class=publisher-content>
-<a href=# />
-<h4>AI should be used for augmenting lawyers’ capabilities not automate profession: SC judge</h4>
-</a>
-<span> <img src=wp-content\themes\images\featured\hindustantimes.jpg alt> </span>
-</div>
-<div class=publisher-content>
-<a href=# />
-<h4>Jethmalani supports tech-savvy legal research post-retirement</h4>
-</a>
-<span> <img src=wp-content\themes\images\featured\tehelka.png alt> </span>
-</div>
-<div class=publisher-content>
-<a href=# />
-<h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class=featured-in style>
+            <div class=text-center>
+                <h3 class=section-lead>Featured in</h3>
+                <div class=container>
+                    <div class=featured-img>
+                        <div class='slider publisher'>
+                            <div class=publisher-content>
+                                <a href=# />
+                                <h4>AI should be used for augmenting lawyers capabilities</h4>
+                                </a>
+                                <span><small>Justice Sikri at Legitquest Launch event</small></span>
+                            </div>
+                            <div class=publisher-content>
+                                <a href=# />
+                                <h4>Legitquest- “Artificial intelligence (AI) enabled search tool allows users to browse through millions of legal case records and provides them the most relevant results in seconds, its makers say.” </h4>
+                                </a>
+                                <span> <img src=wp-content\themes\images\featured\business_standard.jpg alt> </span>
+                            </div>
+                            <div class=publisher-content>
+                                <a href=# />
+                                <h4>AI may help you win your next court case!</h4>
+                                </a>
+                                <span> <img src=wp-content\themes\images\featured\theweek.jpg alt> </span>
+                            </div>
+                            <div class=publisher-content>
+                                <a href=# />
+                                <h4>Indian start-up to provide unique search platform, data bank for Indian legal pros</h4>
+                                </a>
+                                <span> <img src=wp-content\themes\images\featured\apn.jpg alt> </span>
+                            </div>
+                            <div class=publisher-content>
+                                <a href=# />
+                                <h4>AI should be used for augmenting lawyers’ capabilities not automate profession: SC judge</h4>
+                                </a>
+                                <span> <img src=wp-content\themes\images\featured\hindustantimes.jpg alt> </span>
+                            </div>
+                            <div class=publisher-content>
+                                <a href=# />
+                                <h4>Jethmalani supports tech-savvy legal research post-retirement</h4>
+                                </a>
+                                <span> <img src=wp-content\themes\images\featured\tehelka.png alt> </span>
+                            </div>
+                            <div class=publisher-content>
+                                <a href=# />
+                                <h4>
 AI powered search tool that allows users to browse through millions of legal case records and find the most relevant results in seconds.</h4>
-</a>
-<span> <img src=wp-content\themes\images\featured\economicstimes.jpg alt> </span>
-</div>
-<div class=publisher-content>
-<a href=# />
-<h4>
+                                </a>
+                                <span> <img src=wp-content\themes\images\featured\economicstimes.jpg alt> </span>
+                            </div>
+                            <div class=publisher-content>
+                                <a href=# />
+                                <h4>
 2017: When artificial intelligence outsmarted humans. An Indian start-up developed a website called LegitQuest with an AI powered search tool that allows users to browse through millions of legal case records and find the most relevant results in seconds.</h4>
-</a>
-<span><img src=wp-content\themes\images\featured\economicstimes.jpg alt> </span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section id=upper-footer class=section style=background-color:#f5f5f5;padding-top:50px;padding-bottom:50px>
-<div class=container>
-<div class="row block-content">
-<div class="col-sm-4 ad_res">
-<a class=logo href=index.html>
-<img class=fixed-logo src=wp-content/themes/images/lq-logo.png alt>
-</a>
-<div class=about-info>
-<p>
-Legit Quest is a Legal-Tech venture run by a versatile team of tech-savvy attorneys, engineers and designers who aim to make the practice of law simpler for its end users. We have eminent jurist Mr. Ram Jethmalani as our patron...
-</p>
-<a href=# class>Read More..</a>
-</div>
-</div>
-<div class="col-sm-2 border_right">
-<h4>Sitemap</h4>
-<ul class=footer-list>
-<li>
-<a href=/AboutUs/OurTeam>Our Team</a>
-</li>
-<li>
-<a href=/features>Features</a>
-</li>
-<li>
-<a href=/Pricing/Index>Pricing</a>
-</li>
-<li>
-<a href=/contactus>Contact Us</a>
-</li>
-<li>
-<a href=/gallery>Gallery</a>
-</li>
-</ul>
-</div>
-<div class="col-sm-3 border_right">
-<h4>Quick Links</h4>
-<ul class=footer-list>
-<li>
-<a href=/faq>FAQ</a>
-</li>
-<li>
-<a href=/career>Careers</a>
-</li>
-<li class=menu-item>
-<a href=/Admin/AdminAccount/Login>Admin Login</a>
-</li>
-<li>
-<a href=# onclick=openPopUp()>Terms &amp; Conditions</a>
-</li>
-<li>
-<a href=#>We value your Privacy</a>
-</li>
-</ul>
-</div>
-<div class="col-sm-3 footer_cont">
-<h4>Contact Information</h4>
-<div class=address_box>
-<div>
-<span><img src=wp-content\themes\images\singapore.png alt="Singapore Flag" class=flag></span>
-<p class=contact-info> 519 Balestier Road, #02-03 Le Shantier, Singapore 329852</p>
-</div>
-<div>
-<span><img src=wp-content\themes\images\india.png alt="India Flag" class=flag></span>
-<p class=contact-info> A-149,Block A, LGF, Defence Colony, New Delhi, India - 110024.</p>
-</div>
-<div>
-<span><i class="fa fa-envelope"></i></span>
-<a class=contact-info href=mailto:info@legitquest.com>info@legitquest.com</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-<footer id=footer>
-<div class=container>
-<div class=lower-footer>
-<div class=pull-left>
-<span>Copyright 2017 by LegitQuest. All rights reserved</span>
-</div>
-<div id=social-icons class=pull-right>
-<a href=http://facebook.com/ target=_blank>
-<span class="fa fa-facebook"></span>
-</a>
-<a href=http://twitter.com/ target=_blank>
-<span class="fa fa-twitter"></span>
-</a>
-<a href=http://plus.google.com/ target=_blank>
-<span class="fa fa-google-plus"></span>
-</a>
-<a href=http://pinterest.com/ target=_blank>
-<span class="fa fa-pinterest"></span>
-</a>
-<a href=http://youtube.com/ target=_blank>
-<span class="fa fa-youtube"></span>
-</a>
-<a href=http://linkedin.com/ target=_blank>
-<span class="fa fa-linkedin"></span>
-</a>
-</div>
-</div>
-</div>
-</footer>
-<div class="modal fade login-modal" id=register-modal tabindex=-1 role=dialog aria-labelledby=myModalLabel>
-<div class=modal-dialog role=document>
-<div class=modal-content>
-<div class=modal-body>
-<div class="login-main register-active">
-<button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button>
-<div class=login-form-box>
-<div class=reg-msg>
-<h3>Register now and get access to the full feature site now.</h3>
-<h4>Thousands of your peers are saving time by logging into the Legitquest system and taking full advantage of the iDRAF feature.</h4>
-</div>
-<form role=form>
-<div class=register-form-box>
-<div class=row>
-<div class=col-md-6>
-<div class=form-group>
-<label for=signup-firstname1>First Name<span class=required>*</span></label>
-<input class=form-control id=signup-firstname1>
-</div>
-</div>
-<div class=col-md-6>
-<div class=form-group>
-<label for=signup-lastname1>Last Name</label>
-<input class=form-control id=signup-lastname1>
-</div>
-</div>
-</div>
-<div class=row>
-<div class=col-md-6>
-<div class=form-group>
-<label for=signup-contactno1>Mobile No<span class=required>*</span> (ex.9090909090)</label>
-<input class=form-control id=signup-contactno1>
-<span id=contactnoerror1 class=required></span>
-</div>
-</div>
-<div class=col-md-6>
-<div class=form-group1>
-<label for=signup-email1>Email Id<span class=required>*</span></label>
-<input class=form-control id=signup-email1><span id=emailaddresserror1 class=required></span>
-</div>
-</div>
-</div>
-<div class=row>
-<div class=col-md-12>
-<div class=form-group>
-<label><span class=required> *</span>I am a&nbsp;</label>
-<br>
-<select id=accounttype1 class=selectpicker tabindex=-98>
-<option value=1>Litigator</option>
-<option value=2>Law Firm</option>
-<option value=3>Corporate lawyer</option>
-<option value=4>Law professor</option>
-<option value=5>Student</option>
-</select>
-</div>
-</div>
-</div>
-<div class=checkbox>
-<label>
-<input type=checkbox> I agree to <a href=javaScript:{openPopUp();}>Terms &amp; Conditions</a>&nbsp;&nbsp;<span id=termserror1 class=required></span>
-</label>
-</div>
-<hr>
-<div class=row>
-<div class=col-md-12>
-<div class="form-group text-center">
-<button type=submit class="btn btn btn-primary">
-Register
-</button>
-<button type=submit class="btn btn btn-light">
-No, I do not want to make
-my research efficient
-</button>
-</div>
-</div>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="modal fade login-modal" id=login-modal tabindex=-1 role=dialog>
-<div class=modal-dialog role=document>
-<div class=modal-content>
-<div class=modal-body>
-<div class=login-main>
-<button type=button class=close data-dismiss=modal aria-label=Close>
-<span aria-hidden=true>&times;</span>
-</button>
-<div class=content-login>
-<h4>Please Log In, or <a href=#register-modal class=register-btn data-toggle=modal data-dismiss=modal>Sign Up</a></h4>
-<div class="row social-login">
-<div class="col-xs-6 col-sm-6 col-md-6">
-<a href=# class="btn btn-lg btn-primary btn-block">Linked In</a>
-</div>
-<div class="col-xs-6 col-sm-6 col-md-6">
-<a href=# class="btn btn-lg btn-danger btn-block">Google</a>
-</div>
-</div>
-<div class=login-or>
-<hr class=hr-or>
-<span class=span-or>or</span>
-</div>
-<div class=login-form-box>
-<form role=form>
-<div class=form-group>
-<label for=inputUsernameEmail>Username or email</label>
-<input class=form-control id=inputUsernameEmail>
-</div>
-<div class=form-group>
-<a class="pull-right forgot-link" href=#>Forgot password?</a>
-<label for=inputPassword>Password</label>
-<input type=password class=form-control id=inputPassword>
-</div>
-<div class="checkbox pull-right">
-<label>
-<input type=checkbox>
-Remember me </label>
-</div>
-<button type=submit class="btn btn btn-primary">
-<i class="fa fa-lock" aria-hidden=true></i> Log In
-</button>
-<button type=submit class="btn btn btn-default otp-login">
-<i class="fa fa-user" aria-hidden=true></i> OTP Login
-</button>
-</form>
-</div>
-</div>
-<div class=content-otp>
-<h4>OTP Login</h4>
-<div class=login-form-box>
-<form role=form>
-<div class=form-group>
-<label for=inputUsernameEmail>Last Name</label>
-<input class=form-control id=inputUsernameEmail>
-</div>
-<div class=form-group>
-<label for=inputUsernameEmail>Phone No.</label>
-<input class=form-control id=inputUsernameEmail>
-</div>
-<button type=submit class="btn btn-block btn-primary otp-btn">
-<i class="fa fa-lock" aria-hidden=true></i> Send OTP
-</button>
-<hr>
-<div class=otp-block>
-<label for=inputUsernameEmail>Enter OTP</label>
-<input class=form-control>
-<button type=submit class="btn btn-warning">
-Login
-</button>
-</div>
-</form>
-</div>
-</div>
-<div class=forgot-pass>
-<h4>Please email, we send <a href=#>New Password</a></h4>
-<div class=login-form-box>
-<form role=form>
-<div class=form-group>
-<label for=inputUsernameEmail>Email Address</label>
-<input class=form-control id=inputUsernameEmail>
-</div>
-<hr>
-<button type=submit class="btn btn btn-primary">
-<i class="fa fa-lock" aria-hidden=true></i> Send Password
-</button>
-<button type=submit class="btn btn btn-default register-btn">
-<i class="fa fa-user" aria-hidden=true></i> Register
-</button>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<link rel=stylesheet id=vc_google_fonts_abril_fatfaceregular-css href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type=text/css media=all />
-<script src=wp-content/themes/themetek/assets/js/bootstrap.min.js></script>
-<script src=wp-content/themes/js/SmoothScroll.min.js defer></script>
-<script src=wp-content/themes/js/scripts.min.js></script>
-<script src=wp-content/themes/js/jquery-ui.min.js defer></script>
-<script src=wp-content/themes/js/jquery.tree-multiselect.min.js defer></script>
-<script src=wp-content/themes/js/bootstrap-select.min.js defer></script>
-<script>$(document).ready(function(){$("#owl-example").owlCarousel({items:2,itemsDesktop:[1199,2],itemsDesktopSmall:[980,2],itemsTablet:[768,2],itemsTabletSmall:false,itemsMobile:[479,1],singleItem:false,itemsScaleUp:false,navigation:true,navigationText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],})});</script>
-<script>$(".modal").on("hidden.bs.modal",function(a){if($(".modal:visible").length){$("body").addClass("modal-open")}});</script>
-<script>$(".selectpicker").selectpicker({});</script>
-<script>AOS.refresh(true);AOS.init({easing:"ease-in-out-sine"});</script>
-<script>$(function(){$(".forgot-link").on("click",function(){$(".login-main").addClass("forgot-active")});$(".otp-login").on("click",function(){$(".login-main").attr("class","login-main otp-active")});$(".otp-btn").on("click",function(){$(".content-otp").addClass("otp-block-active")})});</script>
-<script>$(".selectpicker").selectpicker({});</script>
+                                </a>
+                                <span><img src=wp-content\themes\images\featured\economicstimes.jpg alt> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id=upper-footer class=section style=background-color:#f5f5f5;padding-top:50px;padding-bottom:50px>
+            <div class=container>
+                <div class="row block-content">
+                    <div class="col-sm-4 ad_res">
+                        <a class=logo href=index.html>
+                            <img class=fixed-logo src=wp-content/themes/images/lq-logo.png alt>
+                        </a>
+                        <div class=about-info>
+                            <p>
+                                Legit Quest is a Legal-Tech venture run by a versatile team of tech-savvy attorneys, engineers and designers who aim to make the practice of law simpler for its end users. We have eminent jurist Mr. Ram Jethmalani as our patron...
+                            </p>
+                            <a href=# class>Read More..</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 border_right">
+                        <h4>Sitemap</h4>
+                        <ul class=footer-list>
+                            <li>
+                                <a href=/AboutUs/OurTeam>Our Team</a>
+                            </li>
+                            <li>
+                                <a href=/features>Features</a>
+                            </li>
+                            <li>
+                                <a href=/Pricing/Index>Pricing</a>
+                            </li>
+                            <li>
+                                <a href=/contactus>Contact Us</a>
+                            </li>
+                            <li>
+                                <a href=/gallery>Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 border_right">
+                        <h4>Quick Links</h4>
+                        <ul class=footer-list>
+                            <li>
+                                <a href=/faq>FAQ</a>
+                            </li>
+                            <li>
+                                <a href=/career>Careers</a>
+                            </li>
+                            <li class=menu-item>
+                                <a href=/Admin/AdminAccount/Login>Admin Login</a>
+                            </li>
+                            <li>
+                                <a href=# onclick=openPopUp()>Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href=#>We value your Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 footer_cont">
+                        <h4>Contact Information</h4>
+                        <div class=address_box>
+                            <div>
+                                <span><img src=wp-content\themes\images\singapore.png alt="Singapore Flag" class=flag></span>
+                                <p class=contact-info> 519 Balestier Road, #02-03 Le Shantier, Singapore 329852</p>
+                            </div>
+                            <div>
+                                <span><img src=wp-content\themes\images\india.png alt="India Flag" class=flag></span>
+                                <p class=contact-info> A-149,Block A, LGF, Defence Colony, New Delhi, India - 110024.</p>
+                            </div>
+                            <div>
+                                <span><i class="fa fa-envelope"></i></span>
+                                <a class=contact-info href=mailto:info@legitquest.com>info@legitquest.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id=footer>
+        <div class=container>
+            <div class=lower-footer>
+                <div class=pull-left>
+                    <span>Copyright 2017 by LegitQuest. All rights reserved</span>
+                </div>
+                <div id=social-icons class=pull-right>
+                    <a href=http://facebook.com/ target=_blank>
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a href=http://twitter.com/ target=_blank>
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a href=http://plus.google.com/ target=_blank>
+                        <span class="fa fa-google-plus"></span>
+                    </a>
+                    <a href=http://pinterest.com/ target=_blank>
+                        <span class="fa fa-pinterest"></span>
+                    </a>
+                    <a href=http://youtube.com/ target=_blank>
+                        <span class="fa fa-youtube"></span>
+                    </a>
+                    <a href=http://linkedin.com/ target=_blank>
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade login-modal" id=register-modal tabindex=-1 role=dialog aria-labelledby=myModalLabel>
+        <div class=modal-dialog role=document>
+            <div class=modal-content>
+                <div class=modal-body>
+                    <div class="login-main register-active">
+                        <button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span></button>
+                        <div class=login-form-box>
+                            <div class=reg-msg>
+                                <h3>Register now and get access to the full feature site now.</h3>
+                                <h4>Thousands of your peers are saving time by logging into the Legitquest system and taking full advantage of the iDRAF feature.</h4>
+                            </div>
+                            <form role=form>
+                                <div class=register-form-box>
+                                    <div class=row>
+                                        <div class=col-md-6>
+                                            <div class=form-group>
+                                                <label for=signup-firstname1>First Name<span class=required>*</span></label>
+                                                <input class=form-control id=signup-firstname1>
+                                            </div>
+                                        </div>
+                                        <div class=col-md-6>
+                                            <div class=form-group>
+                                                <label for=signup-lastname1>Last Name</label>
+                                                <input class=form-control id=signup-lastname1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=row>
+                                        <div class=col-md-6>
+                                            <div class=form-group>
+                                                <label for=signup-contactno1>Mobile No<span class=required>*</span> (ex.9090909090)</label>
+                                                <input class=form-control id=signup-contactno1>
+                                                <span id=contactnoerror1 class=required></span>
+                                            </div>
+                                        </div>
+                                        <div class=col-md-6>
+                                            <div class=form-group1>
+                                                <label for=signup-email1>Email Id<span class=required>*</span></label>
+                                                <input class=form-control id=signup-email1><span id=emailaddresserror1 class=required></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=row>
+                                        <div class=col-md-12>
+                                            <div class=form-group>
+                                                <label><span class=required> *</span>I am a&nbsp;</label>
+                                                <br>
+                                                <select id=accounttype1 class=selectpicker tabindex=-98>
+                                                    <option value=1>Litigator</option>
+                                                    <option value=2>Law Firm</option>
+                                                    <option value=3>Corporate lawyer</option>
+                                                    <option value=4>Law professor</option>
+                                                    <option value=5>Student</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=checkbox>
+                                        <label>
+                                            <input type=checkbox> I agree to <a href=javaScript:{openPopUp();}>Terms &amp; Conditions</a>&nbsp;&nbsp;<span id=termserror1 class=required></span>
+                                        </label>
+                                    </div>
+                                    <hr>
+                                    <div class=row>
+                                        <div class=col-md-12>
+                                            <div class="form-group text-center">
+                                                <button type=submit class="btn btn btn-primary">
+                                                    Register
+                                                </button>
+                                                <button type=submit class="btn btn btn-light">
+                                                    No, I do not want to make my research efficient
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade login-modal" id=login-modal tabindex=-1 role=dialog>
+        <div class=modal-dialog role=document>
+            <div class=modal-content>
+                <div class=modal-body>
+                    <div class=login-main>
+                        <button type=button class=close data-dismiss=modal aria-label=Close>
+                            <span aria-hidden=true>&times;</span>
+                        </button>
+                        <div class=content-login>
+                            <h4>Please Log In, or <a href=#register-modal class=register-btn data-toggle=modal data-dismiss=modal>Sign Up</a></h4>
+                            <div class="row social-login">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <a href=# class="btn btn-lg btn-primary btn-block">Linked In</a>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <a href=# class="btn btn-lg btn-danger btn-block">Google</a>
+                                </div>
+                            </div>
+                            <div class=login-or>
+                                <hr class=hr-or>
+                                <span class=span-or>or</span>
+                            </div>
+                            <div class=login-form-box>
+                                <form role=form>
+                                    <div class=form-group>
+                                        <label for=inputUsernameEmail>Username or email</label>
+                                        <input class=form-control id=inputUsernameEmail>
+                                    </div>
+                                    <div class=form-group>
+                                        <a class="pull-right forgot-link" href=#>Forgot password?</a>
+                                        <label for=inputPassword>Password</label>
+                                        <input type=password class=form-control id=inputPassword>
+                                    </div>
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input type=checkbox> Remember me </label>
+                                    </div>
+                                    <button type=submit class="btn btn btn-primary">
+                                        <i class="fa fa-lock" aria-hidden=true></i> Log In
+                                    </button>
+                                    <button type=submit class="btn btn btn-default otp-login">
+                                        <i class="fa fa-user" aria-hidden=true></i> OTP Login
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class=content-otp>
+                            <h4>OTP Login</h4>
+                            <div class=login-form-box>
+                                <form role=form>
+                                    <div class=form-group>
+                                        <label for=inputUsernameEmail>Last Name</label>
+                                        <input class=form-control id=inputUsernameEmail>
+                                    </div>
+                                    <div class=form-group>
+                                        <label for=inputUsernameEmail>Phone No.</label>
+                                        <input class=form-control id=inputUsernameEmail>
+                                    </div>
+                                    <button type=submit class="btn btn-block btn-primary otp-btn">
+                                        <i class="fa fa-lock" aria-hidden=true></i> Send OTP
+                                    </button>
+                                    <hr>
+                                    <div class=otp-block>
+                                        <label for=inputUsernameEmail>Enter OTP</label>
+                                        <input class=form-control>
+                                        <button type=submit class="btn btn-warning">
+                                            Login
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class=forgot-pass>
+                            <h4>Please email, we send <a href=#>New Password</a></h4>
+                            <div class=login-form-box>
+                                <form role=form>
+                                    <div class=form-group>
+                                        <label for=inputUsernameEmail>Email Address</label>
+                                        <input class=form-control id=inputUsernameEmail>
+                                    </div>
+                                    <hr>
+                                    <button type=submit class="btn btn btn-primary">
+                                        <i class="fa fa-lock" aria-hidden=true></i> Send Password
+                                    </button>
+                                    <button type=submit class="btn btn btn-default register-btn">
+                                        <i class="fa fa-user" aria-hidden=true></i> Register
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='modal fade video-modal' id='isearch-modal' role='dialog'>
+        <div class='modal-content'>
+            <div class='row'>
+
+                <iframe width="712" height="400" src="https://www.youtube.com/embed/oik6qiQNrXg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            </div>
+        </div>
+    </div>
+
+    <div class='modal fade video-modal' id='igraphics-modal' role='dialog'>
+        <div class='modal-content'>
+            <div class='row'>
+                <iframe width="712" height="400" src="https://www.youtube.com/embed/WqWaGMT1T0A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            </div>
+        </div>
+    </div>
+
+    <div class='modal fade video-modal' id='idraf-modal' role='dialog'>
+        <div class='modal-content'>
+            <div class='row'>
+                <iframe width="712" height="400" src="https://www.youtube.com/embed/KQXOAMTZLqY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            </div>
+        </div>
+    </div>
+
+    <link rel=stylesheet id=vc_google_fonts_abril_fatfaceregular-css href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.7' type=text/css media=all />
+    <script src=wp-content/themes/themetek/assets/js/bootstrap.min.js></script>
+    <script src=wp-content/themes/js/SmoothScroll.min.js></script>
+    <script src=wp-content/themes/js/scripts.min.js></script>
+    <script src=wp-content/themes/js/jquery-ui.min.js></script>
+    <script src=wp-content/themes/js/jquery.tree-multiselect.min.js></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#owl-example").owlCarousel({
+                items: 2,
+                itemsDesktop: [1199, 2],
+                itemsDesktopSmall: [980, 2],
+                itemsTablet: [768, 2],
+                itemsTabletSmall: false,
+                itemsMobile: [479, 1],
+                singleItem: false,
+                itemsScaleUp: false,
+                navigation: true,
+                navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            })
+        });
+    </script>
+    <script>
+        $(".modal").on("hidden.bs.modal", function(a) {
+            if ($(".modal:visible").length) {
+                $("body").addClass("modal-open")
+            }
+        });
+    </script>
+    <script>
+        $(".selectpicker").selectpicker({});
+    </script>
+    <script>
+        AOS.refresh(true);
+        AOS.init({
+            easing: "ease-in-out-sine"
+        });
+    </script>
+    <script>
+        $(function() {
+            $(".forgot-link").on("click", function() {
+                $(".login-main").addClass("forgot-active")
+            });
+            $(".otp-login").on("click", function() {
+                $(".login-main").attr("class", "login-main otp-active")
+            });
+            $(".otp-btn").on("click", function() {
+                $(".content-otp").addClass("otp-block-active")
+            })
+        });
+    </script>
+    <script>
+        $(".selectpicker").selectpicker({});
+    </script>
 </body>
+
 </html>

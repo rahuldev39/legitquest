@@ -11002,6 +11002,14 @@ border-radius: 15px;
 .sidebar-tab-content{
   padding-top: 20px
 }
+
+.video-modal-link{
+  display: block;
+
+}
+.video-modal-link:hover .play-video {
+    background-color: rgba(32, 61, 82, 0.91);
+}
 @media (min-width:1372px) {
     .search-btn {
         top: 10px
