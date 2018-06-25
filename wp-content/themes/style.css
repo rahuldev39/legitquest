@@ -10814,6 +10814,154 @@ h3.section-lead {
 .act-links .arrow-list li:hover, .act-links .arrow-list li.active{
 background-color: #f1f1f1;
 }
+
+ /*#############-----------New Search Css start-------------##################*/
+ .search-field {
+     position: relative;
+     display: none;
+ }
+ #select-dropdown {
+    position: absolute;
+    top: 104%;
+    width: 100%;
+    max-width: 290px;
+}
+ #select-dropdown .card-body {
+     padding: .8rem;
+ }
+ .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+        color: #3E4B5B;
+    text-align: left;
+}
+.select-block {
+    margin-bottom: 15px;
+}
+.select-block:last-child {
+    margin-bottom: 0px;
+}
+.select-block strong {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 1px;
+    font-weight: 700;
+    color: #8d8d8f;
+}
+.select-block ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+.select-block ul li {
+    margin: 0px;
+    margin-bottom: 3px;
+}
+.select-radio-inner {
+    display: flex;
+    font-size: .84rem;
+}
+.select-radio-inner > span {
+    display: block;
+    min-width: 166px;
+}
+.select-block ul li label {
+    display: block;
+    margin-bottom: 0px;
+}
+.select-block ul li input[type="radio"] {
+    display: none;
+}
+.select-block ul li input[type="radio"] + span {
+    padding: 0px;
+    background-color: transparent;
+    display: block;
+    border-radius: 0px;
+    color: #0963c5;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.select-block ul li input[type="radio"]:checked + span {
+    color: #077af8;
+    font-weight: 600;
+}
+.search-btn {
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    font-size: 19px;
+    opacity: .9;
+    margin-top: -13px;
+}
+.select-btn {
+    height: 42px;
+    min-width: 131px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-field input {
+    font-size: 21px;
+    border-color: #077af83b;
+    padding-right: 35px;
+    margin-right: 2px;
+    webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    box-shadow: 0px 2px 4px rgba(64, 70, 82, 0.13);
+    border-width: 1px;
+    font-weight: 400;
+    border-radius: 4px !important;
+}
+.flex-fill {
+    flex: 1;
+}
+.search-field.show {
+    display: flex !important;
+}
+.search-field .journal-input {
+    flex-basis: 200px;
+}
+.search-field .section-input {
+    flex-basis: 300px;
+}
+.search-filed-box {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.select-btn::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.position-relative{
+  position: relative;
+}
+ /*#############-----------New Search Css end-------------##################*/
+
 @media (max-width:992px) {
     .plans-tab {
         display: flex;
@@ -11335,10 +11483,7 @@ background-color: #f1f1f1;
         height: 45px;
         font-size: 14px
     }
-    .home .search-btn {
-        right: 17px;
-        top: 9px
-    }
+
     .home .bootstrap-select.btn-group .dropdown-toggle .filter-option {
         text-align: center
     }
