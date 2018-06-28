@@ -8481,8 +8481,7 @@ header.header-bluebg .search-bar .select-search+.search-field input.form-control
 .search-bar {
     z-index: 100;
     position: relative;
-    display: flex;
-    justify-content: flex-end;
+
 }
 
 .judgement-block {
@@ -8608,9 +8607,8 @@ header.header-bluebg .search-bar .select-search+.search-field input.form-control
     background-color: transparent;
     margin-top: 3px;
     max-width: 684px;
-    margin-left: 56px;
+    margin-left: 63px !important;
 }
-
 .notes-popup {
     position: fixed;
     height: calc(100vh - 85px);
@@ -10963,6 +10961,11 @@ background-color: #f1f1f1;
  /*#############-----------New Search Css end-------------##################*/
 
 @media (max-width:992px) {
+  .search-nav-main .search-bar .search-filed-box {
+  
+    max-width: 100%;
+    margin-left: 0px !important;
+}
     .plans-tab {
         display: flex;
         padding-bottom: 40px;
@@ -11358,6 +11361,7 @@ background-color: #f1f1f1;
 }
 
 @media (max-width:768px) {
+
     .plan-box {
         flex: auto;
         margin: 10px;
