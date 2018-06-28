@@ -8480,7 +8480,9 @@ header.header-bluebg .search-bar .select-search+.search-field input.form-control
 
 .search-bar {
     z-index: 100;
-    position: relative
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .judgement-block {
@@ -8585,16 +8587,9 @@ header.header-bluebg .search-bar .select-search+.search-field input.form-control
     opacity: 1
 }
 
-.search-nav-main .search-field .form-control {
-    border-radius: 22px;
-    height: 34px;
-    padding: 5px 18px
-}
 
-.search-nav-main .search-btn {
-    top: 10px;
-    font-size: 16px
-}
+
+
 
 .search-nav-main .search-filed-box .bootstrap-select .btn {
     padding: 7px 20px;
@@ -8609,11 +8604,11 @@ header.header-bluebg .search-bar .select-search+.search-field input.form-control
 }
 
 .search-nav-main .search-bar .search-filed-box {
-    padding: 1px;
-    background-color: #e8e8e8;
+    padding: 0px;
+    background-color: transparent;
     margin-top: 3px;
-    max-width: 750px;
-    margin-left: 56px
+    max-width: 684px;
+    margin-left: 56px;
 }
 
 .notes-popup {
@@ -10814,7 +10809,12 @@ h3.section-lead {
 .act-links .arrow-list li:hover, .act-links .arrow-list li.active{
 background-color: #f1f1f1;
 }
-
+.search-nav {
+    flex-grow: 1;
+    padding: 0px !important;
+    margin: 0px !important;
+    margin-left: auto;
+}
  /*#############-----------New Search Css start-------------##################*/
  .search-field {
      position: relative;
@@ -10905,7 +10905,7 @@ background-color: #f1f1f1;
     margin-top: -13px;
 }
 .select-btn {
-    height: 42px;
+    height: 40px;
     min-width: 131px;
     text-align: left;
     display: flex;

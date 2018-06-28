@@ -58,27 +58,129 @@
       </div>
       <div class="search-nav-main">
         <div class="search-bar">
-          <div class="search-filed-box">
-            <div class="select-search">
-              <select class="selectpicker">
-                <option>All</option>
-                <option>Citation</option>
-                <option>Party</option>
-                <option>Party</option>
-                <option>Bench</option>
-              </select>
-            </div>
-            <div class="search-field">
+          <div class="search-filed-box d-flex align-items-center  search-nav">
+<div class="search-select">
+<button class="btn btn-primary select-btn" data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
+All
+</button>
+<div class="collapse" id="select-dropdown">
+<div class="card card-body">
+<div class="select-block">
+<strong>Case Law</strong>
+<ul>
+  <li>
+    <div class="select-radio">
+      <div class="select-radio-inner">
+        <span>Free text search</span>
+        <label>
+          <input type="radio" name="search-radio" value="free-text-box" checked>
+          <span>All</span>
+        </label>
+      </div>
 
-              <input type="text" class="form-control" placeholder="Search Cases, Statutes and Regulations">
-              <div class="search-btn">
-                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-              </div>
+    </div>
+  </li>
+  <li>
+    <div class="select-radio">
+      <div class="select-radio-inner">
+        <span>Name-Year-Vol-Page</span>
+        <label>
+          <input type="radio" name="search-radio" value="citation-box">
+          <span>Citation</span>
+        </label>
+      </div>
+
+    </div>
+  </li>
+  <li>
+    <div class="select-radio">
+      <div class="select-radio-inner">
+          <span>Last name – first name</span>
+          <label>
+            <input type="radio" name="search-radio" value="judge-box">
+            <span>Judge Name</span>
+          </label>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="select-radio">
+      <div class="select-radio-inner">
+        <span>Petitioner - respondent</span>
+        <label>
+          <input type="radio" name="search-radio" value="party-box">
+          <span>Party Name</span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="select-radio">
+      <div class="select-radio-inner">
+        <span>Act name- Section</span>
+        <label>
+          <input type="radio" name="search-radio" value="act-box">
+          <span>Act Name</span>
+        </label>
+      </div>
+    </div>
+  </li>
+</ul>
+</div>
+
+<div class="select-block">
+<strong>Bare Act Search</strong>
+<ul>
+  <li>
+    <div class="select-radio">
+      <div class="select-radio-inner">
+        <span>Search bare Act</span>
+        <label>
+          <input type="radio" name="search-radio" value="act-search-box">
+          <span>Act Name</span>
+        </label>
+      </div>
+
+    </div>
+  </li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="position-relative flex-fill">
+<div id="free-text-box" class="search-field flex-fill show">
+<input class="form-control" placeholder="Search by title, case number, issue, ..." >
+</div>
+<div id="citation-box" class="search-field flex-fill">
+<input id="example1" class="form-control journal-input" placeholder="Journal">
+<input id="example2" class="form-control" placeholder="Year - Volume - Page" >
+</div>
+<div id="judge-box" class="search-field flex-fill">
+<input class="form-control" placeholder="Last name">
+<input class="form-control" placeholder="First name">
+</div>
+<div id="party-box" class="search-field flex-fill">
+<input class="form-control" placeholder="petitioner/respondent">
+<input class="form-control" placeholder="petitioner/respondent">
+</div>
+<div id="act-box" class="search-field flex-fill">
+<input class="form-control" placeholder="Act Name">
+<input class="form-control section-input" placeholder="Section">
+</div>
+<div id="act-search-box" class="search-field flex-fill">
+<input class="form-control" placeholder="Search bare Act">
+</div>
+<div class="search-btn">
+<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+</div>
+</div>
 
 
-            </div>
 
-          </div>
+</div>
         </div>
         <div id="main-menu" class="collapse navbar-collapse ">
 
@@ -804,7 +906,7 @@
   <script type='text/javascript' src='wp-content/themes/js/jquery-ui.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/jquery.slimscroll.min.js'></script>
   <script type='text/javascript' src='wp-content/themes/js/bootstrap-select.min.js'></script>
-
+  <script src=./wp-content/themes/jquery.inputmask.bundle.js></script>
 <script type="text/javascript">
 //Get Exising Select Options
 $('form#filter-select select').each(function(i, select){
@@ -918,6 +1020,45 @@ $('form#filter-select select').each(function(i, select){
 
     });
   </script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+      $("input[name=search-radio]").on( "change", function() {
+
+           var test = $(this).val();
+           var sText = $(this).next().text();
+
+           $(".search-field").removeClass('show');
+           $("#"+test).addClass('show');
+           $(".select-btn").text(sText)
+      } );
+
+      $(".select-radio label span").on("click", function() {
+        $("#select-dropdown").removeClass("in");
+
+      });
+
+      $(document).on('click',function(e) {
+          e.stopPropagation();
+          var container = $("#select-dropdown");
+
+          //check if the clicked area is dropDown or not
+          if (container.has(e.target).length === 0) {
+              $('#select-dropdown').removeClass('in');
+          }
+
+      });
+
+
+    });
+
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#example1").inputmask("******");
+$("#example2").inputmask("******-9999-999-999");
+});
+</script>
 </body>
 
 </html>
