@@ -10959,10 +10959,17 @@ background-color: #f1f1f1;
   position: relative;
 }
  /*#############-----------New Search Css end-------------##################*/
-
+.login-box{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.login-box .radio-primary{
+  display: inline-block;
+  margin-right: 10px
+}
 @media (max-width:992px) {
   .search-nav-main .search-bar .search-filed-box {
-  
+
     max-width: 100%;
     margin-left: 0px !important;
 }
